@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Álvaro Salinas Ortiz | Asesor Estratégico en Toma de Datos y Análisis</title>
+    <!-- Modern Typography: Outfit & Inter from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Background Animated Gradients -->
+    <div class="blob-cont">
+      <div class="yellow blob"></div>
+      <div class="blue blob"></div>
+      <div class="purple blob"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="container">
+      
+      <!-- HERO SECTION -->
+      <header class="hero">
+        <h3 class="role-badge">Asesor Estratégico en Toma de Datos y Análisis · Data Storyteller Senior</h3>
+        <h1 class="hero-title">Álvaro Salinas Ortiz</h1>
+        <p class="hero-subtitle">
+          El código es la materia prima; el <strong>pensamiento lógico y la estrategia de negocio</strong> son los bienes escasos. 
+          Con 10 años de egreso profesional y base en metodologías de investigación, diseño infraestructuras analíticas y orquesto Inteligencia Artificial de frontera para transformar datos complejos en decisiones de negocio de alto impacto.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/alvarosalinaso" target="_blank" class="btn primary">Visitar GitHub Público</a>
+          <a href="mailto:" class="btn transparent">Contactar Directamente</a>
+        </div>
+      </header>
+
+      <!-- INTERACTIVE STRATEGY LAB (DASHBOARDS) -->
+      <section class="strategy-lab">
+        <div class="lab-header">
+          <h2 class="section-heading">Ecosistema Interactivo de Decisiones <span class="pulse-dot"></span></h2>
+          <p class="section-subheading">Laboratorio de simulación en tiempo real. Interactúa con las métricas para evaluar la correlación entre estrategia deportiva, financiera y de mercado.</p>
+        </div>
+
+        <div class="glass-lab-container">
+          <!-- Navigation Tabs -->
+          <div class="lab-tabs">
+            <button class="tab-btn active" data-tab="manchester-tab">
+              <span class="tab-icon">📊</span>
+              <span class="tab-text">Auditoría Financiera M. United</span>
+            </button>
+            <button class="tab-btn" data-tab="gamer-tab">
+              <span class="tab-icon">🎮</span>
+              <span class="tab-text">Simulador de Viabilidad Gamer</span>
+            </button>
+            <button class="tab-btn" data-tab="tactical-tab">
+              <span class="tab-icon">🕸️</span>
+              <span class="tab-text">Redes Tácticas & Grafos</span>
+            </button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="lab-content-wrapper">
+            
+            <!-- TAB 1: MANCHESTER UNITED AUDIT -->
+            <div class="tab-content active" id="manchester-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Parámetros de Auditoría</h3>
+                  <p class="control-description">Evalúa el ROI de la última década. Selecciona un director técnico y altera la inversión neta proyectada para modelar el retorno de puntos e indemnizaciones de despido.</p>
+                  
+                  <div class="control-group">
+                    <label for="coach-select">Director Técnico Evaluado</label>
+                    <select id="coach-select" class="glass-select">
+                      <option value="mourinho" selected>José Mourinho (2016-2018)</option>
+                      <option value="solskjaer">Ole Gunnar Solskjær (2018-2021)</option>
+                      <option value="tenhag">Erik ten Hag (2022-2024)</option>
+                      <option value="amorim">Rúben Amorim (Proyectado)</option>
+                    </select>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="slider-labels">
+                      <label for="net-spend-slider">Inversión Neta Proyectada (M£)</label>
+                      <span id="slider-val" class="badge-value">250 M£</span>
+                    </div>
+                    <input type="range" id="net-spend-slider" min="50" max="450" step="10" value="250" class="glass-slider">
+                  </div>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="metrics-grid">
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Gasto Neto Acumulado</span>
+                      <span class="metric-value" id="m-net-spend">250.0 M£</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Puntos de Premier Proyectados</span>
+                      <span class="metric-value text-glow-green" id="m-points">74 pts</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Gasto Neto por Punto (ROI)</span>
+                      <span class="metric-value" id="m-spend-per-point">3.37 M£/pt</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Costo de Rescisión Proyectado</span>
+                      <span class="metric-value text-glow-red" id="m-termination">19.6 M£</span>
+                    </div>
+                  </div>
+
+                  <!-- Dynamic Recommendation Card -->
+                  <div class="executive-insight-card">
+                    <h4 class="insight-title"><span class="insight-icon">💡</span> Strategic Insight de Negocio</h4>
+                    <p id="m-insight-text">Cargando análisis estratégico...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: GAMER VIABILITY SIMULATOR -->
+            <div class="tab-content" id="gamer-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Simulador Comercial (ML Random Forest)</h3>
+                  <p class="control-description">Prueba un concepto de videojuego para clasificar de forma algorítmica su viabilidad comercial frente a la estructura de costos de desarrollo en Chile.</p>
+                  
+                  <div class="control-group">
+                    <label for="game-genre">Género del Software</label>
+                    <select id="game-genre" class="glass-select">
+                      <option value="indie-rpg" selected>Indie RPG / Narrativo</option>
+                      <option value="action-roguelike">Acción / Roguelike</option>
+                      <option value="coop-party">Cooperativo / Party Game</option>
+                      <option value="casual-mobile">Casual / Mobile</option>
+                    </select>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="slider-labels">
+                      <label for="budget-slider">Presupuesto de Desarrollo (USD)</label>
+                      <span id="budget-val" class="badge-value">$75,000</span>
+                    </div>
+                    <input type="range" id="budget-slider" min="10000" max="250000" step="5000" value="75000" class="glass-slider">
+                  </div>
+
+                  <div class="control-group">
+                    <label for="marketing-focus">Estrategia de Lanzamiento</label>
+                    <select id="marketing-focus" class="glass-select">
+                      <option value="early-access" selected>Early Access + Actualizaciones Tempranas (Recomendado)</option>
+                      <option value="organic-kickstarter">Financiamiento Orgánico / Kickstarter</option>
+                      <option value="publisher-deal">Acuerdo con Editor (Publisher Global)</option>
+                    </select>
+                  </div>
+
+                  <button id="simulate-game-btn" class="btn primary btn-full">Calcular Viabilidad Comercial</button>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="sim-result-card">
+                    <div class="result-gauge-cont">
+                      <span class="result-label">Probabilidad de Éxito Comercial</span>
+                      <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="g-success-bar" style="width: 0%"></div>
+                      </div>
+                      <span class="result-percent" id="g-success-percent">0%</span>
+                    </div>
+
+                    <div class="metrics-grid" style="margin-top: 1.5rem;">
+                      <div class="mini-metric-card">
+                        <span class="metric-title">Net Revenue Estimado (Global)</span>
+                        <span class="metric-value text-glow-green" id="g-revenue">$0</span>
+                      </div>
+                      <div class="mini-metric-card">
+                        <span class="metric-title">Costo de Sostenibilidad Local</span>
+                        <span class="metric-value" id="g-cost">$720 USD/Mes</span>
+                      </div>
+                    </div>
+
+                    <div class="executive-insight-card" style="margin-top: 1.5rem;">
+                      <h4 class="insight-title"><span class="insight-icon">🎯</span> Diagnóstico Comercial & ROI</h4>
+                      <p id="g-insight-text">Ingresa los parámetros y ejecuta la simulación para obtener la evaluación comercial de la IA predictiva.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 3: TACTICAL GRAPHS (CNA) -->
+            <div class="tab-content" id="tactical-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Análisis de Redes de Pase (Complex Network)</h3>
+                  <p class="control-description">Deconstruye el partido como un Sistema Complejo. Draggea los nodos de los jugadores en la simulación física integrada para comprender las dinámicas relacionales.</p>
+                  
+                  <div class="control-group">
+                    <label>Estrategia de Presión del Oponente</label>
+                    <div class="toggle-container">
+                      <span class="toggle-label">Bloque Bajo / Pasivo</span>
+                      <label class="switch">
+                        <input type="checkbox" id="press-toggle">
+                        <span class="slider round"></span>
+                      </label>
+                      <span class="toggle-label text-glow-red" style="font-weight:600;">Presión Alta / Bloque Alto</span>
+                    </div>
+                  </div>
+
+                  <div class="cna-metrics-table-cont">
+                    <table class="cna-metrics-table">
+                      <thead>
+                        <tr>
+                          <th>Nodo Player</th>
+                          <th>Degree (Volumen)</th>
+                          <th>Betweenness (Falla)</th>
+                          <th>Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody id="cna-table-body">
+                        <!-- Dynamic content filled by JS -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="pitch-container">
+                    <div class="pitch-title">Línea de Mediocampistas - Old Trafford (Interactivo)</div>
+                    <!-- Draggable SVG Soccer Pitch Network -->
+                    <div class="pitch-svg-wrapper">
+                      <svg id="pitch-svg" viewBox="0 0 500 300">
+                        <!-- Soccer Pitch Background lines -->
+                        <rect x="0" y="0" width="500" height="300" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <line x1="250" y1="0" x2="250" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <circle cx="250" cy="150" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <rect x="0" y="75" width="50" height="150" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <rect x="450" y="75" width="50" height="150" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+
+                        <!-- Network Connections (Aristas/Edges) - Rendered dynamically via JS -->
+                        <g id="svg-edges"></g>
+                        <!-- Network Nodes (Jugadores) - Rendered dynamically via JS -->
+                        <g id="svg-nodes"></g>
+                      </svg>
+                    </div>
+                    <div class="pitch-instructions">Draggea y arrastra a los jugadores (nodos) para reconfigurar el circuito táctico de pase en tiempo real.</div>
+                  </div>
+
+                  <div class="executive-insight-card" style="margin-top: 1rem;">
+                    <h4 class="insight-title"><span class="insight-icon">🕸️</span> Diagnóstico de Ciencia de Redes</h4>
+                    <p id="cna-insight-text">Cargando topología de red...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS GRID SECTION -->
+      <section class="projects">
+        <h2 class="section-heading">Portafolio Estratégico de Datos <span class="pulse-dot"></span></h2>
+        <p class="section-subheading">Auditorías técnicas y operativas con valor de negocio. Explora el código fuente y las directrices estratégicas de cada desarrollo.</p>
+        
+        <div class="grid">
+          <!-- CARD 1 -->
+          <div class="glass-card">
+            <div class="card-icon">🗺️</div>
+            <h3>Geopolítica Textual NLP</h3>
+            <p>Cartografía espacial interactiva de discursos y oficios políticos basada en IA y modelos spaCy. Extrae locaciones mencionadas y mapea las fricciones de poder territorial.</p>
+            <div class="tags"><span class="tag">AI NLP</span><span class="tag">Geopandas</span><span class="tag">Folium GIS</span></div>
+            <a href="https://github.com/alvarosalinaso/geopolitica-textual-nlp" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="glass-card">
+            <div class="card-icon">🕸️</div>
+            <h3>Redes Tácticas & Grafos (CNA)</h3>
+            <p>Modelado relacional y análisis de sistemas complejos para evaluar la circulación táctica de pases, detectando puntos únicos de falla (SPOF) mediante NetworkX y PyVis.</p>
+            <div class="tags"><span class="tag">Network Science</span><span class="tag">NetworkX</span><span class="tag">PyVis HTML</span></div>
+            <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="glass-card">
+            <div class="card-icon">📂</div>
+            <h3>API Backend Extractor UC</h3>
+            <p>API RESTful de alta velocidad contenedorizada en Docker y desarrollada con FastAPI. Extrae en memoria matrices y parámetros oficiales de certificados e ingenio escolar en PDF.</p>
+             <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Regex NLP</span></div>
+            <a href="https://github.com/alvarosalinaso/renombrador-institucional-uc" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="glass-card">
+            <div class="card-icon">🎮</div>
+            <h3>Inteligencia Mercado Gamer</h3>
+            <p>Benchmarking comercial y algoritmo predictivo en Scikit-Learn (Random Forests) para auditar el desempeño de la industria chilena y determinar la sostenibilidad financiera.</p>
+             <div class="tags"><span class="tag">Machine Learning</span><span class="tag">Streamlit</span><span class="tag">Market BI</span></div>
+            <a href="https://github.com/alvarosalinaso/chilean-videogames-analysis" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="glass-card">
+            <div class="card-icon">⚽</div>
+            <h3>Net Spend Audit M. United</h3>
+            <p>Auditoría de gasto neto en fichajes frente a la retribución real en puntos durante la última década. Revela correlaciones operativas entre gasto y rescisión de contratos.</p>
+             <div class="tags"><span class="tag">Finance Audit</span><span class="tag">Pandas ETL</span><span class="tag">Streamlit</span></div>
+            <a href="https://github.com/alvarosalinaso/manchester-united-analisis" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="glass-card">
+            <div class="card-icon">🎯</div>
+            <h3>Inteligencia de Pases (xT)</h3>
+            <p>Panel táctico interactivo que evalúa y filtra el rendimiento del mediocampo del Man United, calculando el Peligro Esperado (xT) bajo presión extrema del rival.</p>
+             <div class="tags"><span class="tag">Expected Threat</span><span class="tag">Streamlit Cloud</span><span class="tag">CI pytest</span></div>
+            <a href="https://github.com/alvarosalinaso/united-passing-efficiency-24-25" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+        </div>
+      </section>
+      
+      <!-- GITHUB PAGES & DEPLOYMENT INSTRUCTIONS -->
+      <section class="deploy-section">
+        <div class="glass-card deploy-card">
+          <div class="card-icon">🚀</div>
+          <h3>Publicación Automática en GitHub Pages</h3>
+          <p>Este ecosistema de portafolio y simuladores interactivos está construido utilizando arquitectura web asíncrona de alto rendimiento en memoria local. Puedes compilarlo y hostearlo de forma gratuita en GitHub Pages en menos de 2 minutos.</p>
+          <div class="terminal-box">
+            <code><span class="t-comment"># 1. Compilar el portafolio optimizado</span>
+npm run build
+
+<span class="t-comment"># 2. Desplegar en la rama gh-pages</span>
+npx gh-pages -d dist</code>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Álvaro Salinas Ortiz. Diseñado con rigor metodológico y Orquestación Humano-IA de Nivel Senior.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
