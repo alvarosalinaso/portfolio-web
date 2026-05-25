@@ -795,6 +795,28 @@ input:checked + .slider:before {
   transform: translateX(4px);
 }
 
+.card-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.card-link.primary {
+  background: var(--accent-gradient);
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.card-link.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
 /* Deploy Section & Terminal Box styles */
 .deploy-section {
   margin-bottom: 4rem;
