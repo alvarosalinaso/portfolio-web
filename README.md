@@ -1,0 +1,40 @@
+# Portfolio Web — Álvaro Salinas
+
+Portfolio web personal desarrollado con **Vite + JavaScript**. Diseñado como landing page profesional para mostrar proyectos y habilidades como Data Analyst.
+
+## 🚀 Desarrollo
+
+```bash
+npm install
+npm run dev
+```
+
+## 📦 Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## 🚢 Deploy
+
+```bash
+npm run deploy    # Publica en GitHub Pages
+```
+
+## 📁 Estructura
+
+```
+portfolio-web/
+├── index.html         # Página principal
+├── style.css          # Estilos globales
+├── main.js            # Lógica principal
+├── public/            # Assets estáticos (favicon, icons)
+├── src/               # Recursos JS/CSS
+├── vite.config.js     # Configuración de Vite
+└── package.json       # Dependencias
+```
+
+## 🧑‍💻 Autor
+
+**Álvaro Salinas Ortiz** — [GitHub](https://github.com/alvarosalinaso) · [LinkedIn](https://linkedin.com/in/alvaro-salinas-ortiz/)
