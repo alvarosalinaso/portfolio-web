@@ -1,5 +1,7 @@
 # Portfolio Web — Álvaro Salinas
 
+[![CI](https://github.com/alvarosalinaso/portfolio-web/actions/workflows/ci.yml/badge.svg)](https://github.com/alvarosalinaso/portfolio-web/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Portfolio web personal desarrollado con **Vite + JavaScript**. Diseñado como landing page profesional para mostrar proyectos y habilidades como Data Analyst.
 
 ## 🚀 Desarrollo
