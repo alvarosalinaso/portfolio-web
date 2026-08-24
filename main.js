@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         targetContent.classList.add("active");
         
         // Trigger specific tab activation tasks
-        if (tabId === "tactical-tab") {
+        if (tabId === "tactical-cna-tab") {
           initTacticalGraph();
         }
       }

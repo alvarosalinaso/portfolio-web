@@ -1,0 +1,34 @@
+{
+  "seasons": [
+    {"season": "2013-14", "manager": "Moyes", "manager_clean": "D. Moyes", "points": 64, "champ_pts": 86, "position": 7, "gf": 64, "ga": 43, "wins": 19, "draws": 7, "losses": 12, "games": 38, "manager_fired": true, "ucl_exit": "GS", "comp_fee_m": 5},
+    {"season": "2014-15", "manager": "Van Gaal", "manager_clean": "L. Van Gaal", "points": 70, "champ_pts": 87, "position": 4, "gf": 62, "ga": 37, "wins": 20, "draws": 10, "losses": 8, "games": 38, "manager_fired": false, "ucl_exit": "R16", "comp_fee_m": 0},
+    {"season": "2015-16", "manager": "Van Gaal", "manager_clean": "L. Van Gaal", "points": 66, "champ_pts": 78, "position": 5, "gf": 49, "ga": 35, "wins": 19, "draws": 9, "losses": 10, "games": 38, "manager_fired": false, "ucl_exit": "R16", "comp_fee_m": 0},
+    {"season": "2016-17", "manager": "Mourinho", "manager_clean": "J. Mourinho", "points": 69, "champ_pts": 93, "position": 6, "gf": 54, "ga": 35, "wins": 18, "draws": 15, "losses": 5, "games": 38, "manager_fired": true, "ucl_exit": "SF", "comp_fee_m": 19.6},
+    {"season": "2017-18", "manager": "Mourinho", "manager_clean": "J. Mourinho", "points": 81, "champ_pts": 100, "position": 2, "gf": 68, "ga": 28, "wins": 25, "draws": 6, "losses": 7, "games": 38, "manager_fired": false, "ucl_exit": "R16", "comp_fee_m": 0},
+    {"season": "2018-19", "manager": "Solskjær", "manager_clean": "O. Solskjær", "points": 66, "champ_pts": 98, "position": 6, "gf": 65, "ga": 54, "wins": 19, "draws": 9, "losses": 10, "games": 38, "manager_fired": true, "ucl_exit": "R16", "comp_fee_m": 7.5},
+    {"season": "2019-20", "manager": "Solskjær", "manager_clean": "O. Solskjær", "points": 66, "champ_pts": 81, "position": 3, "gf": 66, "ga": 36, "wins": 18, "draws": 12, "losses": 8, "games": 38, "manager_fired": false, "ucl_exit": "QF", "comp_fee_m": 0},
+    {"season": "2020-21", "manager": "Solskjær", "manager_clean": "O. Solskjær", "points": 74, "champ_pts": 86, "position": 2, "gf": 73, "ga": 44, "wins": 21, "draws": 11, "losses": 6, "games": 38, "manager_fired": false, "ucl_exit": "R16", "comp_fee_m": 0},
+    {"season": "2021-22", "manager": "Rangnick/Ten Hag", "manager_clean": "Mixed", "points": 58, "champ_pts": 93, "position": 6, "gf": 57, "ga": 57, "wins": 16, "draws": 10, "losses": 12, "games": 38, "manager_fired": true, "ucl_exit": "GS", "comp_fee_m": 0},
+    {"season": "2022-23", "manager": "Ten Hag", "manager_clean": "E. Ten Hag", "points": 75, "champ_pts": 89, "position": 3, "gf": 58, "ga": 43, "wins": 23, "draws": 6, "losses": 9, "games": 38, "manager_fired": false, "ucl_exit": "R16", "comp_fee_m": 0},
+    {"season": "2023-24", "manager": "Ten Hag", "manager_clean": "E. Ten Hag", "points": 60, "champ_pts": 89, "position": 8, "gf": 42, "ga": 66, "wins": 15, "draws": 7, "losses": 16, "games": 38, "manager_fired": false, "ucl_exit": "GS", "comp_fee_m": 0}
+  ],
+  "manager_summary": [
+    {"manager_clean": "J. Mourinho", "seasons": 2, "pts_total": 150, "ppg": 1.974, "avg_pos": 4.0, "avg_gf": 61.0, "avg_ga": 31.5, "total_comp": 19.6},
+    {"manager_clean": "E. Ten Hag", "seasons": 2, "pts_total": 135, "ppg": 1.776, "avg_pos": 5.5, "avg_gf": 50.0, "avg_ga": 54.5, "total_comp": 0},
+    {"manager_clean": "O. Solskjær", "seasons": 3, "pts_total": 206, "ppg": 1.807, "avg_pos": 3.7, "avg_gf": 68.0, "avg_ga": 44.7, "total_comp": 7.5},
+    {"manager_clean": "L. Van Gaal", "seasons": 2, "pts_total": 136, "ppg": 1.789, "avg_pos": 4.5, "avg_gf": 55.5, "avg_ga": 36.0, "total_comp": 0},
+    {"manager_clean": "D. Moyes", "seasons": 1, "pts_total": 64, "ppg": 1.684, "avg_pos": 7.0, "avg_gf": 64.0, "avg_ga": 43.0, "total_comp": 5.0},
+    {"manager_clean": "Mixed", "seasons": 1, "pts_total": 58, "ppg": 1.526, "avg_pos": 6.0, "avg_gf": 57.0, "avg_ga": 57.0, "total_comp": 0}
+  ],
+  "totals": {
+    "total_comp_fee": 32.1,
+    "avg_ppg_all": 1.64,
+    "best_ppg": 1.974,
+    "titles": 1,
+    "avg_position": 5.1
+  },
+  "metadata": {
+    "period": "2013-2024",
+    "source": "Premier League official stats + Transfermarkt compensation data"
+  }
+}

@@ -1,60 +1,58 @@
 import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
-    <img src=${viteLogo} class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+export async function loadJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Failed to load ${path}`);
+  return res.json();
+}
 
-<div class="ticks"></div>
+function switchTab(tabId) {
+  document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabId);
+  });
+  document.querySelectorAll('.lab-content-wrapper .tab-content').forEach(content => {
+    content.classList.toggle('active', content.id === tabId);
+  });
+  
+  if (tabId === 'chilean-tab' && !window.chileanInitialized) {
+    import('./charts/ChileanVideogamesChart.js').then(m => m.initChileanVideogames());
+    window.chileanInitialized = true;
+  }
+  if (tabId === 'manutd-tab' && !window.manutdInitialized) {
+    import('./charts/ManchesterUnitedChart.js').then(m => m.initManchesterUnited());
+    window.manutdInitialized = true;
+  }
+  if (tabId === 'passing-tab' && !window.passingInitialized) {
+    import('./charts/UnitedPassingChart.js').then(m => m.initUnitedPassing());
+    window.passingInitialized = true;
+  }
+}
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src=${viteLogo} alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="button-icon" src="${javascriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
 
-<div class="ticks"></div>
-<section id="spacer"></section>
-`
+function switchDashTab(containerId, tabId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  
+  container.querySelectorAll('.dash-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.dashTab === tabId);
+  });
+  container.querySelectorAll('.dash-tab-content').forEach(content => {
+    content.classList.toggle('active', content.id === tabId);
+  });
+}
 
-setupCounter(document.querySelector('#counter'))
+document.addEventListener('click', (e) => {
+  if (e.target.matches('.dash-tab-btn')) {
+    const container = e.target.closest('.tab-content');
+    if (container) switchDashTab(container.id, e.target.dataset.dashTab);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchTab('chilean-tab');
+});
+
+window.switchTab = switchTab;
