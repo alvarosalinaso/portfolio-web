@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "datawrapper",
+    "chart_id": "passing-benchmark",
+    "public_url": "https://datawrapper.dwcdn.net/BlxD1/",
+    "embed_url": "https://datawrapper.dwcdn.net/BlxD1/",
+    "iframe_code": "<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;\">\n  <iframe src=\"https://datawrapper.dwcdn.net/BlxD1/\" title=\"Benchmark de Pases — Manchester United vs Promedio PL\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\" loading=\"lazy\" allowfullscreen></iframe>\n  <noscript><p><a href=\"https://datawrapper.dwcdn.net/BlxD1/\" target=\"_blank\">Ver visualización</a></p></noscript>\n</div>",
+    "title": "Benchmark de Pases — Manchester United vs Promedio PL"
+  },
+  {
+    "platform": "flourish",
+    "chart_id": "passing-network",
+    "public_url": "https://flo.uri.sh/visualisation/482157/embed",
+    "embed_url": "https://flo.uri.sh/visualisation/482157/embed",
+    "iframe_code": "<div id=\"flourish-passing-network\" style=\"width:100%;height:600px;\"></div>\n<script src=\"https://cdn.flourish.rocks/flourish-live-v5.min.js\"></script>\n<script>\n  new Flourish.Live({\n    container: \"flourish-passing-network\",\n    api_key: \"YOUR_FLOURISH_API_KEY\",\n    base_visualisation_id: \"482157\",\n    data: {\n      csv: `source,target,weight,source_position,target_position\nFernandes,Casemiro,0.4427,MF,MF\nMazraoui,Dalot,0.8638,DF,DF\nMazraoui,Ligt,0.5732,DF,DF\nMazraoui,Maguire,0.4799,DF,DF\nMazraoui,Martínez,0.8577,DF,DF\nMazraoui,Yoro,0.4304,DF,DF\nDalot,Ligt,0.6723,DF,DF\nDalot,Maguire,0.5606,DF,DF\nDalot,Martínez,0.9224,DF,DF\nDalot,Yoro,0.5008,DF,DF\nGarnacho,Ugarte,0.9089,MF,MF\nGarnacho,Casemiro,0.5984,MF,MF\nGarnacho,Diallo,0.9405,MF,MF\nGarnacho,Mainoo,0.9026,MF,MF\nGarnacho,Eriksen,0.9428,MF,MF\nGarnacho,Mount,0.4611,MF,MF\nHøjlund,Zirkzee,0.7201,FW,FW\nHøjlund,Rashford,0.9348,FW,FW\nLigt,Maguire,0.8702,DF,DF\nLigt,Martínez,0.7029,DF,DF\nLigt,Yoro,0.8078,DF,DF\nLigt,Dorgu,0.544,DF,DF\nLigt,Lindelöf,0.4341,DF,DF\nLigt,Shaw,0.4006,DF,DF\nUgarte,Casemiro,0.673,MF,MF\nUgarte,Diallo,0.965,MF,MF\nUgarte,Mainoo,0.823,MF,MF\nUgarte,Eriksen,0.8604,MF,MF\nUgarte,Mount,0.4302,MF,MF\nCasemiro,Diallo,0.6456,MF,MF\nCasemiro,Mainoo,0.5367,MF,MF\nCasemiro,Eriksen,0.5597,MF,MF\nMaguire,Martínez,0.5812,DF,DF\nMaguire,Yoro,0.9033,DF,DF\nMaguire,Dorgu,0.6079,DF,DF\nMaguire,Lindelöf,0.4942,DF,DF\nMaguire,Shaw,0.4448,DF,DF\nDiallo,Mainoo,0.8509,MF,MF\nDiallo,Eriksen,0.8894,MF,MF\nDiallo,Mount,0.4421,MF,MF\nMartínez,Yoro,0.515,DF,DF\nZirkzee,Rashford,0.702,FW,FW\nMainoo,Eriksen,0.9578,MF,MF\nMainoo,Mount,0.5058,MF,MF\nYoro,Dorgu,0.6536,DF,DF\nYoro,Lindelöf,0.5404,DF,DF\nYoro,Shaw,0.4755,DF,DF\nEriksen,Mount,0.4831,MF,MF\nDorgu,Lindelöf,0.8455,DF,DF\nDorgu,Shaw,0.7217,DF,DF\nLindelöf,Shaw,0.8104,DF,DF\nEvans,Shaw,0.4833,DF,DF\nEvans,Antony,0.5906,DF,DF\nEvans,Amass,0.6147,DF,DF\nEvans,Malacia,0.7685,DF,DF\nEvans,Heaven,0.5503,DF,DF\nEvans,Fredricson,0.5099,DF,DF\nAntony,Amass,0.8426,DF,DF\nAntony,Malacia,0.7732,DF,DF\nAntony,Heaven,0.9407,DF,DF\nAntony,Fredricson,0.858,DF,DF\nAmass,Malacia,0.8333,DF,DF\nAmass,Heaven,0.8952,DF,DF\nAmass,Fredricson,0.8293,DF,DF\nMalacia,Heaven,0.7285,DF,DF\nMalacia,Fredricson,0.6627,DF,DF\nHeaven,Fredricson,0.9167,DF,DF\n`\n    }\n  });\n</script>\n<noscript>\n  <p><a href=\"https://flo.uri.sh/visualisation/482157/embed\" target=\"_blank\">Ver visualización en Flourish</a></p>\n</noscript>",
+    "title": "Red de Pases Interactiva — Manchester United 2024-25"
+  },
+  {
+    "platform": "observable",
+    "chart_id": "passing-centrality",
+    "public_url": "https://observablehq.com/@alvarosalinaso/passing-centrality",
+    "embed_url": "https://observablehq.com/@alvarosalinaso/passing-centrality",
+    "iframe_code": "<div id=\"observable-passing-centrality\" style=\"width:100%;min-height:400px;background:#0d1117;border-radius:8px;padding:1rem;\">\n  <p style=\"color:#8b949e;text-align:center;\">Cargando visualización...</p>\n</div>\n<script type=\"module\">\nimport * as Plot from \"https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm\";\nimport * as d3 from \"https://cdn.jsdelivr.net/npm/d3@7/+esm\";\n\nconst resp = await fetch(\"https://alvarosalinaso.github.io/portfolio-web/data/observable_centralidad.csv\");\nconst data = await resp.json();\n\nconst container = document.getElementById(\"observable-passing-centrality\");\ncontainer.innerHTML = \"\";\n\nconst chart = Plot.plot({\n  style: { background: \"#0d1117\", color: \"#e6edf3\", fontFamily: \"Inter, sans-serif\" },\n  width: Math.min(container.clientWidth, 960),\n  height: 450,\n  x: { grid: true, label: \"betweenness\" },\n  y: { grid: true, label: \"pass_accuracy\" },\n  marks: [\n    Plot.barY(Array.isArray(data) ? data : data.games || data.seasons || [], {\n      x: \"betweenness\",\n      y: \"pass_accuracy\",\n      fill: \"#58a6ff\"\n    }),\n    Plot.ruleY([0])\n  ]\n});\n\ncontainer.appendChild(chart);\n</script>\n<noscript>\n  <p><a href=\"https://observablehq.com/@alvarosalinaso/passing-centrality\" target=\"_blank\">Ver notebook en Observable</a></p>\n</noscript>",
+    "title": "Centralidad Betweenness vs Precisión de Pase"
+  }
+]

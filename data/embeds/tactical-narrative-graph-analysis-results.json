@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "datawrapper",
+    "chart_id": "tactical-centrality",
+    "public_url": "https://datawrapper.dwcdn.net/ahvhZ/",
+    "embed_url": "https://datawrapper.dwcdn.net/ahvhZ/",
+    "iframe_code": "<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;\">\n  <iframe src=\"https://datawrapper.dwcdn.net/ahvhZ/\" title=\"Benchmark de Centralidad — Jugadores Tácticos\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\" loading=\"lazy\" allowfullscreen></iframe>\n  <noscript><p><a href=\"https://datawrapper.dwcdn.net/ahvhZ/\" target=\"_blank\">Ver visualización</a></p></noscript>\n</div>",
+    "title": "Benchmark de Centralidad — Jugadores Tácticos"
+  },
+  {
+    "platform": "flourish",
+    "chart_id": "tactical-arc",
+    "public_url": "https://flo.uri.sh/visualisation/1304598/embed",
+    "embed_url": "https://flo.uri.sh/visualisation/1304598/embed",
+    "iframe_code": "<div id=\"flourish-tactical-arc\" style=\"width:100%;height:600px;\"></div>\n<script src=\"https://cdn.flourish.rocks/flourish-live-v5.min.js\"></script>\n<script>\n  new Flourish.Live({\n    container: \"flourish-tactical-arc\",\n    api_key: \"YOUR_FLOURISH_API_KEY\",\n    base_visualisation_id: \"1304598\",\n    data: {\n      csv: `source,target,weight,betweenness_source,betweenness_target\nOnana,Martinez,1,0.0,0.0833\nOnana,Dalot,1,0.0,0.05\nMartinez,Bruno Fernandes,1,0.0833,0.2667\nMartinez,Mainoo,1,0.0833,0.0\nDalot,Bruno Fernandes,1,0.05,0.2667\nBruno Fernandes,Garnacho,2,0.2667,0.0\nBruno Fernandes,Hojlund,1,0.2667,0.0\nMainoo,Bruno Fernandes,1,0.0,0.2667\nGarnacho,Hojlund,1,0.0,0.0\n`\n    }\n  });\n</script>\n<noscript>\n  <p><a href=\"https://flo.uri.sh/visualisation/1304598/embed\" target=\"_blank\">Ver visualización en Flourish</a></p>\n</noscript>",
+    "title": "Diagrama de Arcos — Flujo de Pases Tácticos"
+  },
+  {
+    "platform": "observable",
+    "chart_id": "tactical-nodes",
+    "public_url": "https://observablehq.com/@alvarosalinaso/tactical-nodes",
+    "embed_url": "https://observablehq.com/@alvarosalinaso/tactical-nodes",
+    "iframe_code": "<div id=\"observable-tactical-nodes\" style=\"width:100%;min-height:400px;background:#0d1117;border-radius:8px;padding:1rem;\">\n  <p style=\"color:#8b949e;text-align:center;\">Cargando visualización...</p>\n</div>\n<script type=\"module\">\nimport * as Plot from \"https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm\";\nimport * as d3 from \"https://cdn.jsdelivr.net/npm/d3@7/+esm\";\n\nconst resp = await fetch(\"https://alvarosalinaso.github.io/portfolio-web/data/observable_grafo.csv\");\nconst data = await resp.json();\n\nconst container = document.getElementById(\"observable-tactical-nodes\");\ncontainer.innerHTML = \"\";\n\nconst chart = Plot.plot({\n  style: { background: \"#0d1117\", color: \"#e6edf3\", fontFamily: \"Inter, sans-serif\" },\n  width: Math.min(container.clientWidth, 960),\n  height: 450,\n  x: { grid: true, label: \"X\" },\n  y: { grid: true, label: \"Y\" },\n  marks: [\n    Plot.barY(Array.isArray(data) ? data : data.games || data.seasons || [], {\n      x: \"x\",\n      y: \"y\",\n      fill: \"#58a6ff\"\n    }),\n    Plot.ruleY([0])\n  ]\n});\n\ncontainer.appendChild(chart);\n</script>\n<noscript>\n  <p><a href=\"https://observablehq.com/@alvarosalinaso/tactical-nodes\" target=\"_blank\">Ver notebook en Observable</a></p>\n</noscript>",
+    "title": "Grafo de Red de Pases — Análisis de Redes Complejas"
+  }
+]

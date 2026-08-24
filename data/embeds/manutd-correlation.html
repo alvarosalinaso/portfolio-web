@@ -1,0 +1,34 @@
+<div id="observable-manutd-correlation" style="width:100%;min-height:400px;background:#0d1117;border-radius:8px;padding:1rem;">
+  <p style="color:#8b949e;text-align:center;">Cargando visualización...</p>
+</div>
+<script type="module">
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+const resp = await fetch("https://alvarosalinaso.github.io/portfolio-web/data/observable_correlacion.csv");
+const data = await resp.json();
+
+const container = document.getElementById("observable-manutd-correlation");
+container.innerHTML = "";
+
+const chart = Plot.plot({
+  style: { background: "#0d1117", color: "#e6edf3", fontFamily: "Inter, sans-serif" },
+  width: Math.min(container.clientWidth, 960),
+  height: 450,
+  x: { grid: true, label: "net_spend_m" },
+  y: { grid: true, label: "points" },
+  marks: [
+    Plot.barY(Array.isArray(data) ? data : data.games || data.seasons || [], {
+      x: "net_spend_m",
+      y: "points",
+      fill: "#58a6ff"
+    }),
+    Plot.ruleY([0])
+  ]
+});
+
+container.appendChild(chart);
+</script>
+<noscript>
+  <p><a href="https://observablehq.com/@alvarosalinaso/manutd-correlation" target="_blank">Ver notebook en Observable</a></p>
+</noscript>

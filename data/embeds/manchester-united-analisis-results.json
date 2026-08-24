@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "datawrapper",
+    "chart_id": "manutd-benchmark",
+    "public_url": "https://datawrapper.dwcdn.net/vfOvM/",
+    "embed_url": "https://datawrapper.dwcdn.net/vfOvM/",
+    "iframe_code": "<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;\">\n  <iframe src=\"https://datawrapper.dwcdn.net/vfOvM/\" title=\"Benchmark Premier League — Manchester United vs Top 6 vs Rest PL\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\" loading=\"lazy\" allowfullscreen></iframe>\n  <noscript><p><a href=\"https://datawrapper.dwcdn.net/vfOvM/\" target=\"_blank\">Ver visualización</a></p></noscript>\n</div>",
+    "title": "Benchmark Premier League — Manchester United vs Top 6 vs Rest PL"
+  },
+  {
+    "platform": "flourish",
+    "chart_id": "manutd-bump",
+    "public_url": "https://flo.uri.sh/visualisation/7937275/embed",
+    "embed_url": "https://flo.uri.sh/visualisation/7937275/embed",
+    "iframe_code": "<div id=\"flourish-manutd-bump\" style=\"width:100%;height:600px;\"></div>\n<script src=\"https://cdn.flourish.rocks/flourish-live-v5.min.js\"></script>\n<script>\n  new Flourish.Live({\n    container: \"flourish-manutd-bump\",\n    api_key: \"YOUR_FLOURISH_API_KEY\",\n    base_visualisation_id: \"7937275\",\n    data: {\n      csv: `Season,Manager,Position\n2013/14,David Moyes,7\n2014/15,Louis van Gaal,4\n2015/16,Louis van Gaal,5\n2016/17,José Mourinho,6\n2017/18,José Mourinho,2\n2018/19,Mourinho / Solskjær,6\n2019/20,Ole Gunnar Solskjær,3\n2020/21,Ole Gunnar Solskjær,2\n2021/22,Solskjær / Rangnick,6\n2022/23,Erik ten Hag,3\n2023/24,Erik ten Hag,8\n`\n    }\n  });\n</script>\n<noscript>\n  <p><a href=\"https://flo.uri.sh/visualisation/7937275/embed\" target=\"_blank\">Ver visualización en Flourish</a></p>\n</noscript>",
+    "title": "Evolución de Posición por Entrenador — Man United 2014-2024"
+  },
+  {
+    "platform": "observable",
+    "chart_id": "manutd-correlation",
+    "public_url": "https://observablehq.com/@alvarosalinaso/manutd-correlation",
+    "embed_url": "https://observablehq.com/@alvarosalinaso/manutd-correlation",
+    "iframe_code": "<div id=\"observable-manutd-correlation\" style=\"width:100%;min-height:400px;background:#0d1117;border-radius:8px;padding:1rem;\">\n  <p style=\"color:#8b949e;text-align:center;\">Cargando visualización...</p>\n</div>\n<script type=\"module\">\nimport * as Plot from \"https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm\";\nimport * as d3 from \"https://cdn.jsdelivr.net/npm/d3@7/+esm\";\n\nconst resp = await fetch(\"https://alvarosalinaso.github.io/portfolio-web/data/observable_correlacion.csv\");\nconst data = await resp.json();\n\nconst container = document.getElementById(\"observable-manutd-correlation\");\ncontainer.innerHTML = \"\";\n\nconst chart = Plot.plot({\n  style: { background: \"#0d1117\", color: \"#e6edf3\", fontFamily: \"Inter, sans-serif\" },\n  width: Math.min(container.clientWidth, 960),\n  height: 450,\n  x: { grid: true, label: \"net_spend_m\" },\n  y: { grid: true, label: \"points\" },\n  marks: [\n    Plot.barY(Array.isArray(data) ? data : data.games || data.seasons || [], {\n      x: \"net_spend_m\",\n      y: \"points\",\n      fill: \"#58a6ff\"\n    }),\n    Plot.ruleY([0])\n  ]\n});\n\ncontainer.appendChild(chart);\n</script>\n<noscript>\n  <p><a href=\"https://observablehq.com/@alvarosalinaso/manutd-correlation\" target=\"_blank\">Ver notebook en Observable</a></p>\n</noscript>",
+    "title": "Correlación Gasto Neto vs Puntos — Man United"
+  }
+]

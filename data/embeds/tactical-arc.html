@@ -1,0 +1,25 @@
+<div id="flourish-tactical-arc" style="width:100%;height:600px;"></div>
+<script src="https://cdn.flourish.rocks/flourish-live-v5.min.js"></script>
+<script>
+  new Flourish.Live({
+    container: "flourish-tactical-arc",
+    api_key: "YOUR_FLOURISH_API_KEY",
+    base_visualisation_id: "1304598",
+    data: {
+      csv: `source,target,weight,betweenness_source,betweenness_target
+Onana,Martinez,1,0.0,0.0833
+Onana,Dalot,1,0.0,0.05
+Martinez,Bruno Fernandes,1,0.0833,0.2667
+Martinez,Mainoo,1,0.0833,0.0
+Dalot,Bruno Fernandes,1,0.05,0.2667
+Bruno Fernandes,Garnacho,2,0.2667,0.0
+Bruno Fernandes,Hojlund,1,0.2667,0.0
+Mainoo,Bruno Fernandes,1,0.0,0.2667
+Garnacho,Hojlund,1,0.0,0.0
+`
+    }
+  });
+</script>
+<noscript>
+  <p><a href="https://flo.uri.sh/visualisation/1304598/embed" target="_blank">Ver visualización en Flourish</a></p>
+</noscript>

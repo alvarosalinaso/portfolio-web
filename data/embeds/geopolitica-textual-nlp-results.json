@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "datawrapper",
+    "chart_id": "geopolitica-choropleth",
+    "public_url": "https://datawrapper.dwcdn.net/u5dAm/",
+    "embed_url": "https://datawrapper.dwcdn.net/u5dAm/",
+    "iframe_code": "<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;\">\n  <iframe src=\"https://datawrapper.dwcdn.net/u5dAm/\" title=\"Distribución Geográfica de Entidades Geopolíticas — Discursos Presidenciales 1881-2010\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\" loading=\"lazy\" allowfullscreen></iframe>\n  <noscript><p><a href=\"https://datawrapper.dwcdn.net/u5dAm/\" target=\"_blank\">Ver visualización</a></p></noscript>\n</div>",
+    "title": "Distribución Geográfica de Entidades Geopolíticas — Discursos Presidenciales 1881-2010"
+  },
+  {
+    "platform": "flourish",
+    "chart_id": "geopolitica-cooccurrence",
+    "public_url": "https://flo.uri.sh/visualisation/1304598/embed",
+    "embed_url": "https://flo.uri.sh/visualisation/1304598/embed",
+    "iframe_code": "<div id=\"flourish-geopolitica-cooccurrence\" style=\"width:100%;height:600px;\"></div>\n<script src=\"https://cdn.flourish.rocks/flourish-live-v5.min.js\"></script>\n<script>\n  new Flourish.Live({\n    container: \"flourish-geopolitica-cooccurrence\",\n    api_key: \"YOUR_FLOURISH_API_KEY\",\n    base_visualisation_id: \"1304598\",\n    data: {\n      csv: `source,target,weight\nAntofagasta,Arica,1\nAntofagasta,Iquique,2\nAntofagasta,Puerto Montt,1\nAntofagasta,Punta Arenas,1\nAntofagasta,Santiago,2\nAntofagasta,Valdivia,1\nAntofagasta,Valparaíso,1\nArica,Iquique,1\nArica,Punta Arenas,1\nArica,Santiago,1\nChillán,Santiago,1\nChillán,Talca,1\nChillán,Valparaíso,1\nConcepción,Copiapó,1\nConcepción,Osorno,1\nConcepción,Punta Arenas,1\nConcepción,Santiago,2\nConcepción,Talca,1\nConcepción,Talcahuano,1\nConcepción,Temuco,1\nConcepción,Valdivia,1\nConcepción,Valparaíso,1\nCopiapó,Punta Arenas,1\nCopiapó,Temuco,1\nIquique,Punta Arenas,1\nIquique,Santiago,2\nIquique,Valparaíso,1\nOsorno,Santiago,1\nOsorno,Valdivia,1\nPuerto Montt,Valdivia,1\nPunta Arenas,Santiago,1\nPunta Arenas,Temuco,1\nSantiago,Talca,2\nSantiago,Talcahuano,1\nSantiago,Valdivia,1\nSantiago,Valparaíso,3\nTalca,Talcahuano,1\nTalca,Valparaíso,2\nTalcahuano,Valparaíso,1\n`\n    }\n  });\n</script>\n<noscript>\n  <p><a href=\"https://flo.uri.sh/visualisation/1304598/embed\" target=\"_blank\">Ver visualización en Flourish</a></p>\n</noscript>",
+    "title": "Co-ocurrencia de Entidades Geopolíticas"
+  },
+  {
+    "platform": "observable",
+    "chart_id": "geopolitica-frequency",
+    "public_url": "https://observablehq.com/@alvarosalinaso/geopolitica-frequency",
+    "embed_url": "https://observablehq.com/@alvarosalinaso/geopolitica-frequency",
+    "iframe_code": "<div id=\"observable-geopolitica-frequency\" style=\"width:100%;min-height:400px;background:#0d1117;border-radius:8px;padding:1rem;\">\n  <p style=\"color:#8b949e;text-align:center;\">Cargando visualización...</p>\n</div>\n<script type=\"module\">\nimport * as Plot from \"https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm\";\nimport * as d3 from \"https://cdn.jsdelivr.net/npm/d3@7/+esm\";\n\nconst resp = await fetch(\"https://alvarosalinaso.github.io/portfolio-web/data/observable_frecuencias.csv\");\nconst data = await resp.json();\n\nconst container = document.getElementById(\"observable-geopolitica-frequency\");\ncontainer.innerHTML = \"\";\n\nconst chart = Plot.plot({\n  style: { background: \"#0d1117\", color: \"#e6edf3\", fontFamily: \"Inter, sans-serif\" },\n  width: Math.min(container.clientWidth, 960),\n  height: 450,\n  x: { grid: true, label: \"count\" },\n  y: { grid: true, label: \"location\" },\n  marks: [\n    Plot.barY(Array.isArray(data) ? data : data.games || data.seasons || [], {\n      x: \"count\",\n      y: \"location\",\n      fill: \"#58a6ff\"\n    }),\n    Plot.ruleY([0])\n  ]\n});\n\ncontainer.appendChild(chart);\n</script>\n<noscript>\n  <p><a href=\"https://observablehq.com/@alvarosalinaso/geopolitica-frequency\" target=\"_blank\">Ver notebook en Observable</a></p>\n</noscript>",
+    "title": "Frecuencia de Menciones por Ubicación"
+  }
+]
