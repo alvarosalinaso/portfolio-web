@@ -34,7 +34,7 @@ let currentFilters = {
 };
 
 export async function initChileanVideogames() {
-  chileanData = await loadJSON('/data/chilean-videogames.json');
+  chileanData = await loadJSON('./data/chilean-videogames.json');
   currentFilters.genres = [...new Set(chileanData.games.map(g => g.genre))].sort();
   
   renderFilters();

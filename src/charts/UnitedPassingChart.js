@@ -28,7 +28,7 @@ let currentEx = 'xT';
 let currentEy = 'prog';
 
 export async function initUnitedPassing() {
-  passingData = await loadJSON('/data/united-passing.json');
+  passingData = await loadJSON('./data/united-passing.json');
   renderViewSelector();
   renderKPIs();
   renderContent();
