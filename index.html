@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Álvaro Salinas Ortiz | Asesor Estratégico en Toma de Datos y Análisis</title>
+    <!-- Modern Typography: Outfit & Inter from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.35.0.min.js" charset="utf-8"></script>
+    <script type="module" crossorigin src="./assets/index-61K6axZj.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-lhHHWwHU.js">
+    <link rel="modulepreload" crossorigin href="./assets/main-CwWFr9q9.js">
+    <link rel="modulepreload" crossorigin href="./assets/ChileanVideogamesChart-Dn0FU3eC.js">
+    <link rel="modulepreload" crossorigin href="./assets/ManchesterUnitedChart-r7ZdKXTF.js">
+    <link rel="modulepreload" crossorigin href="./assets/UnitedPassingChart-CzAh1va4.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-CsUDhMuy.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-V0TeuEQ3.css">
+  </head>
+  <body>
+    <!-- Background Animated Gradients -->
+    <div class="blob-cont">
+      <div class="yellow blob"></div>
+      <div class="blue blob"></div>
+      <div class="purple blob"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="container">
+      
+      <!-- HERO SECTION -->
+      <header class="hero">
+        <h3 class="role-badge">Asesor Estratégico en Toma de Datos y Análisis · Data Storyteller Senior</h3>
+        <h1 class="hero-title">Álvaro Salinas Ortiz</h1>
+        <p class="hero-subtitle">
+          El código es la materia prima; el <strong>pensamiento lógico y la estrategia de negocio</strong> son los bienes escasos. 
+          Con 10 años de egreso profesional y base en metodologías de investigación, diseño infraestructuras analíticas y orquesto Inteligencia Artificial de frontera para transformar datos complejos en decisiones de negocio de alto impacto.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/alvarosalinaso" target="_blank" class="btn primary">Visitar GitHub Público</a>
+          <a href="mailto:" class="btn transparent">Contactar Directamente</a>
+        </div>
+      </header>
+
+      <!-- INTERACTIVE STRATEGY LAB (DASHBOARDS) -->
+      <section class="strategy-lab">
+        <div class="lab-header">
+          <h2 class="section-heading">Ecosistema Interactivo de Decisiones <span class="pulse-dot"></span></h2>
+          <p class="section-subheading">Laboratorio de simulación en tiempo real. Interactúa con las métricas para evaluar la correlación entre estrategia deportiva, financiera y de mercado.</p>
+        </div>
+
+        <div class="glass-lab-container">
+          <!-- Navigation Tabs -->
+          <div class="lab-tabs">
+            <button class="tab-btn active" data-tab="chilean-tab">
+              <span class="tab-icon">🎮</span>
+              <span class="tab-text">Industria Gamer Chilena</span>
+            </button>
+            <button class="tab-btn" data-tab="manutd-tab">
+              <span class="tab-icon">⚽</span>
+              <span class="tab-text">Manchester United Performance</span>
+            </button>
+            <button class="tab-btn" data-tab="passing-tab">
+              <span class="tab-icon">🕸️</span>
+              <span class="tab-text">Red de Pases United</span>
+            </button>
+            <button class="tab-btn" data-tab="manchester-audit-tab">
+              <span class="tab-icon">📊</span>
+              <span class="tab-text">Auditoría Financiera M. United</span>
+            </button>
+            <button class="tab-btn" data-tab="gamer-sim-tab">
+              <span class="tab-icon">🎮</span>
+              <span class="tab-text">Simulador Viabilidad Gamer</span>
+            </button>
+            <button class="tab-btn" data-tab="tactical-cna-tab">
+              <span class="tab-icon">🕸️</span>
+              <span class="tab-text">Redes Tácticas CNA</span>
+            </button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="lab-content-wrapper">
+            
+            <!-- TAB 1: CHILEAN VIDEOGAMES MARKET INTELLIGENCE -->
+            <div class="tab-content active" id="chilean-tab">
+              <div class="dashboard-header">
+                <h3>🎮 Chilean Videogames Market Intelligence</h3>
+                <p>Steam & Itch.io · Inteligencia competitiva para la industria indie chilena</p>
+              </div>
+              <div id="chilean-kpis" class="kpi-grid"></div>
+              <div id="chilean-filters" class="dashboard-filters"></div>
+              <div class="dashboard-tabs">
+                <button class="dash-tab-btn active" data-dash-tab="chilean-trend">📈 Tendencias de Mercado</button>
+                <button class="dash-tab-btn" data-dash-tab="chilean-genre">🏆 Por Género y Plataforma</button>
+                <button class="dash-tab-btn" data-dash-tab="chilean-sentiment">🔍 Análisis de Sentimientos</button>
+                <button class="dash-tab-btn" data-dash-tab="chilean-opportunity">🗺️ Oportunidad de Mercado</button>
+              </div>
+              <div class="dash-tab-content active" id="chilean-trend">
+                <div class="chart-row">
+                  <div id="chilean-trend-chart" class="chart-container"></div>
+                </div>
+                <div class="chart-row two-cols">
+                  <div id="chilean-revenue-chart" class="chart-container"></div>
+                  <div id="chilean-heatmap-chart" class="chart-container"></div>
+                </div>
+              </div>
+              <div class="dash-tab-content" id="chilean-genre">
+                <div class="chart-row two-cols">
+                  <div id="chilean-genre-bar" class="chart-container"></div>
+                  <div id="chilean-bubble-chart" class="chart-container"></div>
+                </div>
+                <div id="chilean-genre-table" class="table-container"></div>
+              </div>
+              <div class="dash-tab-content" id="chilean-sentiment">
+                <div class="chart-row two-cols">
+                  <div id="chilean-sentiment-hist" class="chart-container"></div>
+                  <div id="chilean-sentiment-box" class="chart-container"></div>
+                </div>
+                <div id="chilean-sentiment-revenue" class="chart-container"></div>
+              </div>
+              <div class="dash-tab-content" id="chilean-opportunity">
+                <div id="chilean-opportunity-chart" class="chart-container"></div>
+                <div class="insight-cards">
+                  <div class="insight-card"><strong>🚀 Clustering de mercado</strong> - K-Means sobre vectores (género, precio, reviews, plataforma, mes) para identificar segmentos: masivo, nicho premium, community-driven</div>
+                  <div class="insight-card"><strong>🔬 NLP en reseñas (Steam API)</strong> - BERT multilingüe sobre texto de reviews (ES/EN) para detectar pain points post-lanzamiento por versión</div>
+                  <div class="insight-card"><strong>📈 Predicción revenue pre-lanzamiento</strong> - Regresión con features: género, precio, plataforma, mes, dev size. Output: rango revenue esperado 6 meses post-lanzamiento</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: MANCHESTER UNITED PERFORMANCE -->
+            <div class="tab-content" id="manutd-tab">
+              <div class="dashboard-header">
+                <h3>⚽ Manchester United · Performance Intelligence</h3>
+                <p>Benchmarking directivo · Premier League 2013-2024 · Herramienta de decisión deportiva</p>
+              </div>
+              <div id="manutd-kpis" class="kpi-grid"></div>
+              <div id="manutd-filters" class="dashboard-filters"></div>
+              <div class="dashboard-tabs">
+                <button class="dash-tab-btn active" data-dash-tab="manutd-historical">📊 Rendimiento Histórico</button>
+                <button class="dash-tab-btn" data-dash-tab="manutd-managers">👔 Análisis por Entrenador</button>
+                <button class="dash-tab-btn" data-dash-tab="manutd-diagnostics">🔬 Diagnóstico Sistémico</button>
+                <button class="dash-tab-btn" data-dash-tab="manutd-simulator">🔮 Proyección & Simulador</button>
+              </div>
+              <div class="dash-tab-content active" id="manutd-historical">
+                <div id="manutd-points-chart" class="chart-container"></div>
+                <div class="chart-row two-cols">
+                  <div id="manutd-goals-chart" class="chart-container"></div>
+                  <div id="manutd-position-chart" class="chart-container"></div>
+                </div>
+              </div>
+              <div class="dash-tab-content" id="manutd-managers">
+                <div class="chart-row two-cols">
+                  <div id="manutd-mgr-bar" class="chart-container"></div>
+                  <div id="manutd-mgr-scatter" class="chart-container"></div>
+                </div>
+                <div id="manutd-mgr-table" class="table-container"></div>
+              </div>
+              <div class="dash-tab-content" id="manutd-diagnostics">
+                <div id="manutd-corr-chart" class="chart-container"></div>
+                <div class="chart-row two-cols">
+                  <div id="manutd-results-chart" class="chart-container"></div>
+                  <div id="manutd-reg-chart" class="chart-container"></div>
+                </div>
+              </div>
+              <div class="dash-tab-content" id="manutd-simulator">
+                <div id="manutd-simulator" class="simulator-container"></div>
+                <div id="manutd-gauge-chart" class="chart-container"></div>
+              </div>
+            </div>
+
+            <!-- TAB 3: UNITED PASSING NETWORK -->
+            <div class="tab-content" id="passing-tab">
+              <div class="dashboard-header">
+                <div class="header-with-crest">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man United Crest" class="crest-img">
+                  <div>
+                    <h3>Manchester United</h3>
+                    <p>Red de Pases · Análisis de Redes Complejas · 2024-25</p>
+                  </div>
+                </div>
+              </div>
+              <div class="desc-box" style="border-left-color: var(--red);">
+                <strong>🏟️ ¿De qué trata esto?</strong> Este dashboard analiza cómo circula el balón en el <strong>Manchester United</strong>
+                durante la temporada 2024-25 usando teoría de redes (Complex Network Analysis). Podés ver <strong>quién conecta con quién</strong>,
+                <strong>qué jugadores son más importantes</strong> en la circulación y <strong>cómo rinde el equipo</strong> comparado con
+                la Premier League. Los datos son sintéticos pero están basados en métricas reales de rendimiento.
+              </div>
+              <div id="passing-kpis" class="kpi-grid"></div>
+              <div id="passing-view-selector" class="dashboard-filters"></div>
+              <div id="passing-content"></div>
+            </div>
+
+            <!-- TAB 4: MANCHESTER UNITED FINANCIAL AUDIT (Simulator) -->
+            <div class="tab-content" id="manchester-audit-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Parámetros de Auditoría</h3>
+                  <p class="control-description">Evalúa el ROI de la última década. Selecciona un director técnico y altera la inversión neta proyectada para modelar el retorno de puntos e indemnizaciones de despido.</p>
+                  
+                  <div class="control-group">
+                    <label for="coach-select">Director Técnico Evaluado</label>
+                    <select id="coach-select" class="glass-select">
+                      <option value="mourinho" selected>José Mourinho (2016-2018)</option>
+                      <option value="solskjaer">Ole Gunnar Solskjær (2018-2021)</option>
+                      <option value="tenhag">Erik ten Hag (2022-2024)</option>
+                      <option value="amorim">Rúben Amorim (Proyectado)</option>
+                    </select>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="slider-labels">
+                      <label for="net-spend-slider">Inversión Neta Proyectada (M£)</label>
+                      <span id="slider-val" class="badge-value">250 M£</span>
+                    </div>
+                    <input type="range" id="net-spend-slider" min="50" max="450" step="10" value="250" class="glass-slider">
+                  </div>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="metrics-grid">
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Gasto Neto Acumulado</span>
+                      <span class="metric-value" id="m-net-spend">250.0 M£</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Puntos de Premier Proyectados</span>
+                      <span class="metric-value text-glow-green" id="m-points">74 pts</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Gasto Neto por Punto (ROI)</span>
+                      <span class="metric-value" id="m-spend-per-point">3.37 M£/pt</span>
+                    </div>
+                    <div class="mini-metric-card">
+                      <span class="metric-title">Costo de Rescisión Proyectado</span>
+                      <span class="metric-value text-glow-red" id="m-termination">19.6 M£</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-insight-card">
+                    <h4 class="insight-title"><span class="insight-icon">💡</span> Strategic Insight de Negocio</h4>
+                    <p id="m-insight-text">Cargando análisis estratégico...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 5: GAMER VIABILITY SIMULATOR -->
+            <div class="tab-content" id="gamer-sim-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Simulador Comercial (ML Random Forest)</h3>
+                  <p class="control-description">Prueba un concepto de videojuego para clasificar de forma algorítmica su viabilidad comercial frente a la estructura de costos de desarrollo en Chile.</p>
+                  
+                  <div class="control-group">
+                    <label for="game-genre">Género del Software</label>
+                    <select id="game-genre" class="glass-select">
+                      <option value="indie-rpg" selected>Indie RPG / Narrativo</option>
+                      <option value="action-roguelike">Acción / Roguelike</option>
+                      <option value="coop-party">Cooperativo / Party Game</option>
+                      <option value="casual-mobile">Casual / Mobile</option>
+                    </select>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="slider-labels">
+                      <label for="budget-slider">Presupuesto de Desarrollo (USD)</label>
+                      <span id="budget-val" class="badge-value">$75,000</span>
+                    </div>
+                    <input type="range" id="budget-slider" min="10000" max="250000" step="5000" value="75000" class="glass-slider">
+                  </div>
+
+                  <div class="control-group">
+                    <label for="marketing-focus">Estrategia de Lanzamiento</label>
+                    <select id="marketing-focus" class="glass-select">
+                      <option value="early-access" selected>Early Access + Actualizaciones Tempranas (Recomendado)</option>
+                      <option value="organic-kickstarter">Financiamiento Orgánico / Kickstarter</option>
+                      <option value="publisher-deal">Acuerdo con Editor (Publisher Global)</option>
+                    </select>
+                  </div>
+
+                  <button id="simulate-game-btn" class="btn primary btn-full">Calcular Viabilidad Comercial</button>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="sim-result-card">
+                    <div class="result-gauge-cont">
+                      <span class="result-label">Probabilidad de Éxito Comercial</span>
+                      <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="g-success-bar" style="width: 0%"></div>
+                      </div>
+                      <span class="result-percent" id="g-success-percent">0%</span>
+                    </div>
+
+                    <div class="metrics-grid" style="margin-top: 1.5rem;">
+                      <div class="mini-metric-card">
+                        <span class="metric-title">Net Revenue Estimado (Global)</span>
+                        <span class="metric-value text-glow-green" id="g-revenue">$0</span>
+                      </div>
+                      <div class="mini-metric-card">
+                        <span class="metric-title">Costo de Sostenibilidad Local</span>
+                        <span class="metric-value" id="g-cost">$720 USD/Mes</span>
+                      </div>
+                    </div>
+
+                    <div class="executive-insight-card" style="margin-top: 1.5rem;">
+                      <h4 class="insight-title"><span class="insight-icon">🎯</span> Diagnóstico Comercial & ROI</h4>
+                      <p id="g-insight-text">Ingresa los parámetros y ejecuta la simulación para obtener la evaluación comercial de la IA predictiva.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 6: TACTICAL CNA -->
+            <div class="tab-content" id="tactical-cna-tab">
+              <div class="lab-grid">
+                <div class="lab-controls">
+                  <h3>Análisis de Redes de Pase (Complex Network)</h3>
+                  <p class="control-description">Deconstruye el partido como un Sistema Complejo. Draggea los nodos de los jugadores en la simulación física integrada para comprender las dinámicas relacionales.</p>
+                  
+                  <div class="control-group">
+                    <label>Estrategia de Presión del Oponente</label>
+                    <div class="toggle-container">
+                      <span class="toggle-label">Bloque Bajo / Pasivo</span>
+                      <label class="switch">
+                        <input type="checkbox" id="press-toggle">
+                        <span class="slider round"></span>
+                      </label>
+                      <span class="toggle-label text-glow-red" style="font-weight:600;">Presión Alta / Bloque Alto</span>
+                    </div>
+                  </div>
+
+                  <div class="cna-metrics-table-cont">
+                    <table class="cna-metrics-table">
+                      <thead>
+                        <tr>
+                          <th>Nodo Player</th>
+                          <th>Degree (Volumen)</th>
+                          <th>Betweenness (Falla)</th>
+                          <th>Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody id="cna-table-body">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="lab-visualizer">
+                  <div class="pitch-container">
+                    <div class="pitch-title">Línea de Mediocampistas - Old Trafford (Interactivo)</div>
+                    <div class="pitch-svg-wrapper">
+                      <svg id="pitch-svg" viewBox="0 0 500 300">
+                        <rect x="0" y="0" width="500" height="300" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <line x1="250" y1="0" x2="250" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <circle cx="250" cy="150" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <rect x="0" y="75" width="50" height="150" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <rect x="450" y="75" width="50" height="150" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                        <g id="svg-edges"></g>
+                        <g id="svg-nodes"></g>
+                      </svg>
+                    </div>
+                    <div class="pitch-instructions">Draggea y arrastra a los jugadores (nodos) para reconfigurar el circuito táctico de pase en tiempo real.</div>
+                  </div>
+
+                  <div class="executive-insight-card" style="margin-top: 1rem;">
+                    <h4 class="insight-title"><span class="insight-icon">🕸️</span> Diagnóstico de Ciencia de Redes</h4>
+                    <p id="cna-insight-text">Cargando topología de red...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS GRID SECTION -->
+      <section class="projects">
+        <h2 class="section-heading">Portafolio Estratégico de Datos <span class="pulse-dot"></span></h2>
+        <p class="section-subheading">Auditorías técnicas y operativas con valor de negocio. Explora el código fuente y las directrices estratégicas de cada desarrollo.</p>
+        
+        <div class="grid">
+          <!-- CARD 1 -->
+          <div class="glass-card">
+            <div class="card-icon">🗺️</div>
+            <h3>Geopolítica Textual NLP</h3>
+            <p>Cartografía espacial interactiva de discursos y oficios políticos basada en IA y modelos spaCy. Extrae locaciones mencionadas y mapea las fricciones de poder territorial.</p>
+            <div class="tags"><span class="tag">AI NLP</span><span class="tag">Geopandas</span><span class="tag">Folium GIS</span></div>
+            <a href="https://github.com/alvarosalinaso/geopolitica-textual-nlp" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="glass-card">
+            <div class="card-icon">🕸️</div>
+            <h3>Redes Tácticas & Grafos (CNA)</h3>
+            <p>Modelado relacional y análisis de sistemas complejos para evaluar la circulación táctica de pases, detectando puntos únicos de falla (SPOF) mediante NetworkX y PyVis.</p>
+            <div class="tags"><span class="tag">Network Science</span><span class="tag">NetworkX</span><span class="tag">PyVis HTML</span></div>
+            <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="glass-card">
+            <div class="card-icon">📂</div>
+            <h3>API Backend Extractor UC</h3>
+            <p>API RESTful de alta velocidad contenedorizada en Docker y desarrollada con FastAPI. Extrae en memoria matrices y parámetros oficiales de certificados e ingenio escolar en PDF.</p>
+             <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Regex NLP</span></div>
+            <a href="https://github.com/alvarosalinaso/renombrador-institucional-uc" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="glass-card">
+            <div class="card-icon">🎮</div>
+            <h3>Inteligencia Mercado Gamer Chileno</h3>
+            <p>Benchmarking comercial y algoritmo predictivo (Random Forests) para auditar el desempeño de la industria chilena y determinar la sostenibilidad financiera. <strong>Datos reales de Steam/Itch.io.</strong></p>
+             <div class="tags"><span class="tag">Machine Learning</span><span class="tag">Plotly.js</span><span class="tag">Market BI</span></div>
+            <div class="card-links">
+              <a href="#chilean-tab" class="card-link primary" onclick="switchTab('chilean-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="https://github.com/alvarosalinaso/chilean-videogames-analysis" target="_blank" class="card-link">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="glass-card">
+            <div class="card-icon">⚽</div>
+            <h3>Manchester United Performance Intelligence</h3>
+            <p>Auditoría de gasto neto en fichajes frente a la retribución real en puntos durante la última década. Revela correlaciones operativas entre gasto y rescisión de contratos. <strong>Tests 11/11 pasan.</strong></p>
+             <div class="tags"><span class="tag">Finance Audit</span><span class="tag">Pandas ETL</span><span class="tag">Plotly.js</span></div>
+            <div class="card-links">
+              <a href="#manutd-tab" class="card-link primary" onclick="switchTab('manutd-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="https://github.com/alvarosalinaso/manchester-united-analisis" target="_blank" class="card-link">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="glass-card">
+            <div class="card-icon">🎯</div>
+            <h3>United Passing Network (xT)</h3>
+            <p>Panel táctico interactivo que evalúa y filtra el rendimiento del mediocampo del Man United, calculando el Peligro Esperado (xT) bajo presión extrema del rival. Análisis de redes complejas.</p>
+             <div class="tags"><span class="tag">Expected Threat</span><span class="tag">Network Science</span><span class="tag">Plotly.js</span></div>
+            <div class="card-links">
+              <a href="#passing-tab" class="card-link primary" onclick="switchTab('passing-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="https://github.com/alvarosalinaso/united-passing-efficiency-24-25" target="_blank" class="card-link">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div class="glass-card">
+            <div class="card-icon">🌍</div>
+            <h3>World Cup 2026 Analysis</h3>
+            <p>Modelado predictivo y análisis de escenarios para el Mundial 2026. Simulación de fase de grupos, eliminatorias y probabilidades de campeón usando Elo ratings y Monte Carlo.</p>
+            <div class="tags"><span class="tag">Predictive Modeling</span><span class="tag">Monte Carlo</span><span class="tag">Elo Ratings</span></div>
+            <a href="https://github.com/alvarosalinaso/worldcup-2026" target="_blank" class="card-link">Explorar Repositorio →</a>
+          </div>
+
+        </div>
+      </section>
+      
+      <!-- GITHUB PAGES & DEPLOYMENT INSTRUCTIONS -->
+      <section class="deploy-section">
+        <div class="glass-card deploy-card">
+          <div class="card-icon">🚀</div>
+          <h3>Publicación Automática en GitHub Pages</h3>
+          <p>Este ecosistema de portafolio y simuladores interactivos está construido utilizando arquitectura web asíncrona de alto rendimiento en memoria local. Puedes compilarlo y hostearlo de forma gratuita en GitHub Pages en menos de 2 minutos.</p>
+          <div class="terminal-box">
+            <code><span class="t-comment"># 1. Compilar el portafolio optimizado</span>
+npm run build
+
+<span class="t-comment"># 2. Desplegar en la rama gh-pages</span>
+npx gh-pages -d dist</code>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Álvaro Salinas Ortiz. Diseñado con rigor metodológico y Orquestación Humano-IA de Nivel Senior.</p>
+      </footer>
+    </main>
+
+  </body>
+</html>

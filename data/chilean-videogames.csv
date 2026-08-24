@@ -1,0 +1,20 @@
+title,year,platform,genre,price,reviews,score,dev_size,revenue_est,launch_month,sentiment,is_free
+Juego CL #1,2010,Steam,Action,9.99,45,7.1,Solo,12000,3,0.42,false
+Juego CL #2,2011,Itch.io,Indie,0,12,6.8,Solo,0,7,0.36,true
+Juego CL #3,2012,Steam,Platformer,4.99,89,7.5,Mini (2-5),28000,11,0.5,false
+Juego CL #4,2013,Itch.io,RPG,0,8,6.2,Solo,0,2,0.24,true
+Juego CL #5,2014,Steam,Horror,9.99,156,8.1,Pequeño (6-15),95000,10,0.62,false
+Juego CL #6,2015,Itch.io,Strategy,1.99,34,7.3,Mini (2-5),4200,5,0.46,false
+Juego CL #7,2016,Steam,Puzzle,4.99,234,7.8,Solo,67000,8,0.56,false
+Juego CL #8,2017,Itch.io,Arcade,0,22,6.5,Solo,0,1,0.3,true
+Juego CL #9,2018,Steam,Adventure,14.99,567,8.3,Pequeño (6-15),420000,6,0.66,false
+Juego CL #10,2019,Itch.io,Simulation,0,15,5.9,Solo,0,9,0.18,true
+Juego CL #11,2020,Steam,Action,19.99,1200,8.5,Pequeño (6-15),1200000,4,0.7,false
+Juego CL #12,2021,Itch.io,Indie,9.99,89,7.6,Mini (2-5),52000,12,0.52,false
+Juego CL #13,2022,Steam,Platformer,14.99,890,8.2,Pequeño (6-15),890000,3,0.64,false
+Juego CL #14,2023,Itch.io,RPG,0,45,7.2,Solo,0,8,0.44,true
+Juego CL #15,2024,Steam,Horror,24.99,2100,8.7,Pequeño (6-15),2500000,10,0.74,false
+Rock of Ages,2011,Steam,Arcade,9.99,2400,8.2,Pequeño (6-15),120000,8,0.64,false
+Zeno Clash,2009,Steam,Action,9.99,1800,7.8,Pequeño (6-15),90000,4,0.58,false
+Tormented Souls,2021,Steam,Horror,19.99,3200,8.5,Mini (2-5),320000,8,0.71,false
+Chroma Squad,2015,Steam,Strategy,14.99,2100,8,Mini (2-5),157500,5,0.62,false

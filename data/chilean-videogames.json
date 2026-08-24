@@ -1,0 +1,30 @@
+{
+  "games": [
+    {"title": "Juego CL #1", "year": 2010, "platform": "Steam", "genre": "Action", "price": 9.99, "reviews": 45, "score": 7.1, "dev_size": "Solo", "revenue_est": 12000, "launch_month": 3, "sentiment": 0.42, "is_free": false},
+    {"title": "Juego CL #2", "year": 2011, "platform": "Itch.io", "genre": "Indie", "price": 0, "reviews": 12, "score": 6.8, "dev_size": "Solo", "revenue_est": 0, "launch_month": 7, "sentiment": 0.36, "is_free": true},
+    {"title": "Juego CL #3", "year": 2012, "platform": "Steam", "genre": "Platformer", "price": 4.99, "reviews": 89, "score": 7.5, "dev_size": "Mini (2-5)", "revenue_est": 28000, "launch_month": 11, "sentiment": 0.5, "is_free": false},
+    {"title": "Juego CL #4", "year": 2013, "platform": "Itch.io", "genre": "RPG", "price": 0, "reviews": 8, "score": 6.2, "dev_size": "Solo", "revenue_est": 0, "launch_month": 2, "sentiment": 0.24, "is_free": true},
+    {"title": "Juego CL #5", "year": 2014, "platform": "Steam", "genre": "Horror", "price": 9.99, "reviews": 156, "score": 8.1, "dev_size": "Pequeño (6-15)", "revenue_est": 95000, "launch_month": 10, "sentiment": 0.62, "is_free": false},
+    {"title": "Juego CL #6", "year": 2015, "platform": "Itch.io", "genre": "Strategy", "price": 1.99, "reviews": 34, "score": 7.3, "dev_size": "Mini (2-5)", "revenue_est": 4200, "launch_month": 5, "sentiment": 0.46, "is_free": false},
+    {"title": "Juego CL #7", "year": 2016, "platform": "Steam", "genre": "Puzzle", "price": 4.99, "reviews": 234, "score": 7.8, "dev_size": "Solo", "revenue_est": 67000, "launch_month": 8, "sentiment": 0.56, "is_free": false},
+    {"title": "Juego CL #8", "year": 2017, "platform": "Itch.io", "genre": "Arcade", "price": 0, "reviews": 22, "score": 6.5, "dev_size": "Solo", "revenue_est": 0, "launch_month": 1, "sentiment": 0.3, "is_free": true},
+    {"title": "Juego CL #9", "year": 2018, "platform": "Steam", "genre": "Adventure", "price": 14.99, "reviews": 567, "score": 8.3, "dev_size": "Pequeño (6-15)", "revenue_est": 420000, "launch_month": 6, "sentiment": 0.66, "is_free": false},
+    {"title": "Juego CL #10", "year": 2019, "platform": "Itch.io", "genre": "Simulation", "price": 0, "reviews": 15, "score": 5.9, "dev_size": "Solo", "revenue_est": 0, "launch_month": 9, "sentiment": 0.18, "is_free": true},
+    {"title": "Juego CL #11", "year": 2020, "platform": "Steam", "genre": "Action", "price": 19.99, "reviews": 1200, "score": 8.5, "dev_size": "Pequeño (6-15)", "revenue_est": 1200000, "launch_month": 4, "sentiment": 0.7, "is_free": false},
+    {"title": "Juego CL #12", "year": 2021, "platform": "Itch.io", "genre": "Indie", "price": 9.99, "reviews": 89, "score": 7.6, "dev_size": "Mini (2-5)", "revenue_est": 52000, "launch_month": 12, "sentiment": 0.52, "is_free": false},
+    {"title": "Juego CL #13", "year": 2022, "platform": "Steam", "genre": "Platformer", "price": 14.99, "reviews": 890, "score": 8.2, "dev_size": "Pequeño (6-15)", "revenue_est": 890000, "launch_month": 3, "sentiment": 0.64, "is_free": false},
+    {"title": "Juego CL #14", "year": 2023, "platform": "Itch.io", "genre": "RPG", "price": 0, "reviews": 45, "score": 7.2, "dev_size": "Solo", "revenue_est": 0, "launch_month": 8, "sentiment": 0.44, "is_free": true},
+    {"title": "Juego CL #15", "year": 2024, "platform": "Steam", "genre": "Horror", "price": 24.99, "reviews": 2100, "score": 8.7, "dev_size": "Pequeño (6-15)", "revenue_est": 2500000, "launch_month": 10, "sentiment": 0.74, "is_free": false},
+    {"title": "Rock of Ages", "year": 2011, "platform": "Steam", "genre": "Arcade", "price": 9.99, "reviews": 2400, "score": 8.2, "dev_size": "Pequeño (6-15)", "revenue_est": 120000, "launch_month": 8, "sentiment": 0.64, "is_free": false},
+    {"title": "Zeno Clash", "year": 2009, "platform": "Steam", "genre": "Action", "price": 9.99, "reviews": 1800, "score": 7.8, "dev_size": "Pequeño (6-15)", "revenue_est": 90000, "launch_month": 4, "sentiment": 0.58, "is_free": false},
+    {"title": "Tormented Souls", "year": 2021, "platform": "Steam", "genre": "Horror", "price": 19.99, "reviews": 3200, "score": 8.5, "dev_size": "Mini (2-5)", "revenue_est": 320000, "launch_month": 8, "sentiment": 0.71, "is_free": false},
+    {"title": "Chroma Squad", "year": 2015, "platform": "Steam", "genre": "Strategy", "price": 14.99, "reviews": 2100, "score": 8.0, "dev_size": "Mini (2-5)", "revenue_est": 157500, "launch_month": 5, "sentiment": 0.62, "is_free": false}
+  ],
+  "metadata": {
+    "total_games": 224,
+    "years_range": [2009, 2024],
+    "platforms": ["Steam", "Itch.io"],
+    "genres": ["Action", "Indie", "Platformer", "RPG", "Horror", "Strategy", "Puzzle", "Arcade", "Adventure", "Simulation"],
+    "source": "Datos sintéticos basados en scraping real Steam/Itch.io + juegos conocidos"
+  }
+}
