@@ -1,4 +1,7 @@
 import './style.css';
+import { initChileanVideogames } from './src/charts/ChileanVideogamesChart.js';
+import { initManchesterUnited } from './src/charts/ManchesterUnitedChart.js';
+import { initUnitedPassing } from './src/charts/UnitedPassingChart.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Sistema de Decisiones e Inteligencia de Datos Inicializado.");
@@ -27,6 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // Trigger specific tab activation tasks
         if (tabId === "tactical-cna-tab") {
           initTacticalGraph();
+        }
+        if (tabId === "chilean-tab" && !window.chileanInitialized) {
+          initChileanVideogames();
+          window.chileanInitialized = true;
+        }
+        if (tabId === "manutd-tab" && !window.manutdInitialized) {
+          initManchesterUnited();
+          window.manutdInitialized = true;
+        }
+        if (tabId === "passing-tab" && !window.passingInitialized) {
+          initUnitedPassing();
+          window.passingInitialized = true;
         }
       }
     });
@@ -490,6 +505,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initial Drawing
     drawGraph();
+  }
+
+  // Initialize Chilean tab on load (it's the default active tab)
+  if (!window.chileanInitialized) {
+    initChileanVideogames();
+    window.chileanInitialized = true;
   }
 
 });
