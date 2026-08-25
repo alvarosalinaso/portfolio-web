@@ -10,7 +10,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 35739.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -23,7 +23,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -36,7 +36,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
     },
     {
@@ -49,8 +49,21 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
+    },
+    {
+      "name": "Hijos del Invierno",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
     },
     {
       "name": "The Signifier Director's Cut",
@@ -62,7 +75,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 256200.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -73,9 +86,9 @@
       "price": 6400.0,
       "reviews": 1167,
       "metacritic": 72,
-      "score": 7.2,
-      "sentiment": 0.44,
-      "revenue_est": 746880.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -88,33 +101,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
     },
     {
-      "name": "Door Kickers 2: Task Force North",
+      "name": "Asterminer",
       "platform": "Steam",
-      "genre": "Acción",
-      "year": 2025,
-      "price": 13000.0,
-      "reviews": 11428,
-      "metacritic": 84,
-      "score": 8.4,
-      "sentiment": 0.68,
-      "revenue_est": 14856400.0,
-      "is_free": false
-    },
-    {
-      "name": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
-      "platform": "Steam",
-      "genre": "Simuladores",
-      "year": 2020,
-      "price": 44990.0,
-      "reviews": 67213,
-      "metacritic": 91,
-      "score": 9.1,
-      "sentiment": 0.82,
-      "revenue_est": 302391287.0,
+      "genre": "Casual",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -127,7 +127,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
     },
     {
@@ -140,7 +140,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Daybreak Slam",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -151,9 +164,9 @@
       "price": 10500.0,
       "reviews": 5707,
       "metacritic": 75,
-      "score": 7.5,
-      "sentiment": 0.5,
-      "revenue_est": 5992350.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -166,7 +179,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 1267500.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -179,7 +192,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 1639900.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -192,7 +205,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -205,7 +218,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 410850.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -218,7 +231,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -231,7 +244,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -244,7 +257,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -257,8 +270,21 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
+    },
+    {
+      "name": "Hoverise Rebellion",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
     },
     {
       "name": "Heroes of The Sacred Tree",
@@ -270,7 +296,33 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Re:Agent",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Genimas: Life reborn",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -283,7 +335,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -296,7 +348,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 260300.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Jet & Sky",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -309,7 +374,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 453760.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -320,9 +385,9 @@
       "price": 4000.0,
       "reviews": 2094,
       "metacritic": 77,
-      "score": 7.7,
-      "sentiment": 0.54,
-      "revenue_est": 837600.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -333,9 +398,9 @@
       "price": 4400.0,
       "reviews": 3209,
       "metacritic": 74,
-      "score": 7.4,
-      "sentiment": 0.48,
-      "revenue_est": 1411960.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -348,7 +413,46 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Sinner's Tavern",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "SPELLRAIN",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Mutter",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -361,7 +465,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -374,7 +478,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Mix the Forgotten",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -387,20 +504,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
-      "is_free": false
-    },
-    {
-      "name": "MENACE",
-      "platform": "Steam",
-      "genre": "Rol",
-      "year": 2026,
-      "price": 14925.0,
-      "reviews": 4048,
-      "metacritic": 0,
-      "score": 0,
-      "sentiment": 0,
-      "revenue_est": 6041640.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -411,9 +515,9 @@
       "price": 15500.0,
       "reviews": 1329,
       "metacritic": 78,
-      "score": 7.8,
-      "sentiment": 0.56,
-      "revenue_est": 2059950.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -426,7 +530,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "PartySaur: Dino Mayhem",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -437,22 +554,22 @@
       "price": 6400.0,
       "reviews": 1265,
       "metacritic": 69,
-      "score": 6.9,
-      "sentiment": 0.38,
-      "revenue_est": 809600.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
-      "name": "The Rise of the Golden Idol",
+      "name": "Ink of Fate",
       "platform": "Steam",
       "genre": "Aventura",
-      "year": 2024,
-      "price": 10500.0,
-      "reviews": 3390,
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 3559500.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -465,7 +582,59 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Cosmic Horror Tales: Roots Below",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Haunted Paws",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Gallery of Shadows - Lycans Returns",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Stop, Pawssport Check",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -478,7 +647,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Arm Around!",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -491,7 +673,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 295620.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -504,7 +686,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 139500.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -517,7 +699,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Night in Delirium",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -530,7 +725,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -543,7 +738,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -556,8 +751,60 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
+    },
+    {
+      "name": "Bulbo's Belief System",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Selve",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Oriontis",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Isekai Guild",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
     },
     {
       "name": "Hybrid Blood",
@@ -569,7 +816,20 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "Scalpel, Please!",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -582,8 +842,21 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": true
+    },
+    {
+      "name": "Forge the Fates",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
     },
     {
       "name": "Mecha Survivors - Early Access",
@@ -595,7 +868,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -608,7 +881,33 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "PaRoKuuu",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": false
+    },
+    {
+      "name": "SAI: Servicio de Auxilio Inmediato",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -621,7 +920,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -634,7 +933,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -647,7 +946,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -660,7 +959,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -673,7 +972,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -686,7 +985,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 1699840.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -699,7 +998,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -712,7 +1011,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 709057.2,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -725,7 +1024,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 79050.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -738,7 +1037,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -751,7 +1050,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -764,7 +1063,7 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 67840.0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -775,9 +1074,9 @@
       "price": 13000.0,
       "reviews": 1009,
       "metacritic": 79,
-      "score": 7.9,
-      "sentiment": 0.58,
-      "revenue_est": 1311700.0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
       "is_free": false
     },
     {
@@ -790,30 +1089,981 @@
       "metacritic": 0,
       "score": 0,
       "sentiment": 0,
-      "revenue_est": 0.0,
+      "revenue_est": 0,
       "is_free": false
+    },
+    {
+      "name": "This is Chile - Psychiatric edition",
+      "platform": "Itch.io",
+      "genre": "Educational",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "CoÃ±aripe",
+      "platform": "Itch.io",
+      "genre": "Fighting",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "DINA",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Froggo Qlero",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Quest for the Epic Treasure",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Nada hacia presagiar",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Huemulixir",
+      "platform": "Itch.io",
+      "genre": "Interactive Fiction",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Age of Origins - Prototype",
+      "platform": "Itch.io",
+      "genre": "Educational",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Super Happy Jump",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Erden - Classic RPG (DEMO)",
+      "platform": "Itch.io",
+      "genre": "Role Playing",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Molly Inc (Prototype)",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Presidential Fighter",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Kito",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Portonazo",
+      "platform": "Itch.io",
+      "genre": "Fighting",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "FireFighters",
+      "platform": "Itch.io",
+      "genre": "Strategy",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Dismal Day",
+      "platform": "Itch.io",
+      "genre": "Survival",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Portales: El peso de la noche",
+      "platform": "Itch.io",
+      "genre": "Role Playing",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "ScapeFromLatam",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "CaleidoMar: La Jaiba",
+      "platform": "Itch.io",
+      "genre": "Simulation",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Zogar",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "STGO SK8 (Santiago Skate)",
+      "platform": "Itch.io",
+      "genre": "Sports",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "MaldiciÃ³n del Alicanto",
+      "platform": "Itch.io",
+      "genre": "Survival",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Michi come back home",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "The Longest Completo",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Churro Maniacs",
+      "platform": "Itch.io",
+      "genre": "Simulation",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Memoria Fragmentada",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Pintamonos",
+      "platform": "Itch.io",
+      "genre": "Visual Novel",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Jueguito para una gamejam de la U xd",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "One Button Prototype",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Retro Penal",
+      "platform": "Itch.io",
+      "genre": "Sports",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Que No Caiga",
+      "platform": "Itch.io",
+      "genre": "Sports",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Suika_CL",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Candy Party",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Finding Gustavo",
+      "platform": "Itch.io",
+      "genre": "Interactive Fiction",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "BODO -QUEST",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Magic Chef",
+      "platform": "Itch.io",
+      "genre": "Simulation",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Shadow Past",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "FUCK! I LOST ALL MY WEED AND NOW I HAVE TO GET IT BACK OR ELSE THE WEED DEMON WILL STEAL MY SOUL: The Game: The Movie",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "\"Quiero ser un mito\"",
+      "platform": "Itch.io",
+      "genre": "Visual Novel",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "What would you do?",
+      "platform": "Itch.io",
+      "genre": "Interactive Fiction",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "La Iglesia de la Noche",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Hirokae",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "La sociedad de la nieve",
+      "platform": "Itch.io",
+      "genre": "Survival",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "La Conquista",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "CHOLITO",
+      "platform": "Itch.io",
+      "genre": "Simulation",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "El Trompo y el PingÃ¼ino",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "CapitÃ¡n Arturo",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Cherry Y La FusiÃ³n Prohibida",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Walter is Coming",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Carnivile",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Dreamnesthesia",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Negro Matapacos",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Battle Power Ultra",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Corrupted CHICKEN Soul",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "VamosÂ³ a la marcha",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "TacosTacosTacos",
+      "platform": "Itch.io",
+      "genre": "Unknown",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Manuel Rodriguez: Operaciones Especiales (VersiÃ³n PC)",
+      "platform": "Itch.io",
+      "genre": "Educational",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Landschaften",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "The Operator Game Jam 2020",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Entropy",
+      "platform": "Itch.io",
+      "genre": "Simulation",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "El Rey del Volantin",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Graffiti Run",
+      "platform": "Itch.io",
+      "genre": "Action",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Informe Zenteno",
+      "platform": "Itch.io",
+      "genre": "Adventure",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "ArmonÃ­a",
+      "platform": "Itch.io",
+      "genre": "Visual Novel",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Pancito Simulator: Breadtastic Love Story",
+      "platform": "Itch.io",
+      "genre": "Visual Novel",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
+    },
+    {
+      "name": "Roboto Mega Force Trio",
+      "platform": "Itch.io",
+      "genre": "Platformer",
+      "year": 0,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0,
+      "is_free": true
     }
   ],
-  "summary": {
-    "total": 61,
-    "steam_count": 61,
-    "itch_count": 0,
-    "genres": [
-      "Deportes",
-      "Acción",
-      "Indie",
-      "Aventura",
-      "Simuladores",
-      "Casual",
-      "Estrategia",
-      "Rol"
-    ],
-    "year_range": [
-      2009,
-      2026
-    ]
-  },
+  "genre_stats": [
+    {
+      "genre": "Acción",
+      "count": 50,
+      "revenue": 0
+    },
+    {
+      "genre": "Unknown",
+      "count": 13,
+      "revenue": 0
+    },
+    {
+      "genre": "Indie",
+      "count": 11,
+      "revenue": 0
+    },
+    {
+      "genre": "Aventura",
+      "count": 11,
+      "revenue": 0
+    },
+    {
+      "genre": "Platformer",
+      "count": 11,
+      "revenue": 0
+    },
+    {
+      "genre": "Adventure",
+      "count": 10,
+      "revenue": 0
+    },
+    {
+      "genre": "Casual",
+      "count": 9,
+      "revenue": 0
+    },
+    {
+      "genre": "Action",
+      "count": 6,
+      "revenue": 0
+    },
+    {
+      "genre": "Simulation",
+      "count": 5,
+      "revenue": 0
+    },
+    {
+      "genre": "Visual Novel",
+      "count": 4,
+      "revenue": 0
+    },
+    {
+      "genre": "Educational",
+      "count": 3,
+      "revenue": 0
+    },
+    {
+      "genre": "Interactive Fiction",
+      "count": 3,
+      "revenue": 0
+    },
+    {
+      "genre": "Survival",
+      "count": 3,
+      "revenue": 0
+    },
+    {
+      "genre": "Sports",
+      "count": 3,
+      "revenue": 0
+    },
+    {
+      "genre": "Fighting",
+      "count": 2,
+      "revenue": 0
+    },
+    {
+      "genre": "Role Playing",
+      "count": 2,
+      "revenue": 0
+    },
+    {
+      "genre": "Deportes",
+      "count": 1,
+      "revenue": 0
+    },
+    {
+      "genre": "Estrategia",
+      "count": 1,
+      "revenue": 0
+    },
+    {
+      "genre": "Simuladores",
+      "count": 1,
+      "revenue": 0
+    },
+    {
+      "genre": "Strategy",
+      "count": 1,
+      "revenue": 0
+    }
+  ],
   "year_platform": [
+    {
+      "year": 0,
+      "platform": "Steam",
+      "count": 27
+    },
+    {
+      "year": 0,
+      "platform": "Itch.io",
+      "count": 66
+    },
     {
       "year": 2009,
       "platform": "Steam",
@@ -857,7 +2107,7 @@
     {
       "year": 2020,
       "platform": "Steam",
-      "count": 7
+      "count": 6
     },
     {
       "year": 2021,
@@ -877,301 +2127,26 @@
     {
       "year": 2024,
       "platform": "Steam",
-      "count": 4
+      "count": 3
     },
     {
       "year": 2025,
       "platform": "Steam",
-      "count": 15
+      "count": 14
     },
     {
       "year": 2026,
       "platform": "Steam",
-      "count": 7
+      "count": 6
     }
   ],
-  "genre_stats": [
-    {
-      "genre": "Acción",
-      "count": 35,
-      "revenue": 32583200.0
-    },
-    {
-      "genre": "Aventura",
-      "count": 8,
-      "revenue": 4935607.2
-    },
-    {
-      "genre": "Indie",
-      "count": 7,
-      "revenue": 1267500.0
-    },
-    {
-      "genre": "Casual",
-      "count": 6,
-      "revenue": 79050.0
-    },
-    {
-      "genre": "Simuladores",
-      "count": 2,
-      "revenue": 302391287.0
-    },
-    {
-      "genre": "Deportes",
-      "count": 1,
-      "revenue": 35739.0
-    },
-    {
-      "genre": "Estrategia",
-      "count": 1,
-      "revenue": 0.0
-    },
-    {
-      "genre": "Rol",
-      "count": 1,
-      "revenue": 6041640.0
-    }
-  ],
-  "monthly_heatmap": [
-    {
-      "year": 2009,
-      "month": 6,
-      "count": 1
-    },
-    {
-      "year": 2009,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2011,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2013,
-      "month": 5,
-      "count": 1
-    },
-    {
-      "year": 2014,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2014,
-      "month": 11,
-      "count": 1
-    },
-    {
-      "year": 2016,
-      "month": 6,
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "month": 5,
-      "count": 1
-    },
-    {
-      "year": 2018,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "month": 11,
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "month": 12,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 2,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 3,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 4,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 5,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 6,
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "month": 12,
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "month": 4,
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "month": 10,
-      "count": 1
-    },
-    {
-      "year": 2022,
-      "month": 6,
-      "count": 2
-    },
-    {
-      "year": 2022,
-      "month": 7,
-      "count": 3
-    },
-    {
-      "year": 2022,
-      "month": 11,
-      "count": 1
-    },
-    {
-      "year": 2023,
-      "month": 1,
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "month": 5,
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2023,
-      "month": 9,
-      "count": 1
-    },
-    {
-      "year": 2023,
-      "month": 10,
-      "count": 1
-    },
-    {
-      "year": 2023,
-      "month": 11,
-      "count": 1
-    },
-    {
-      "year": 2024,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2024,
-      "month": 3,
-      "count": 1
-    },
-    {
-      "year": 2024,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2024,
-      "month": 12,
-      "count": 1
-    },
-    {
-      "year": 2025,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2025,
-      "month": 3,
-      "count": 1
-    },
-    {
-      "year": 2025,
-      "month": 4,
-      "count": 2
-    },
-    {
-      "year": 2025,
-      "month": 5,
-      "count": 2
-    },
-    {
-      "year": 2025,
-      "month": 7,
-      "count": 1
-    },
-    {
-      "year": 2025,
-      "month": 8,
-      "count": 2
-    },
-    {
-      "year": 2025,
-      "month": 9,
-      "count": 1
-    },
-    {
-      "year": 2025,
-      "month": 11,
-      "count": 4
-    },
-    {
-      "year": 2025,
-      "month": 12,
-      "count": 1
-    },
-    {
-      "year": 2026,
-      "month": 1,
-      "count": 1
-    },
-    {
-      "year": 2026,
-      "month": 2,
-      "count": 1
-    },
-    {
-      "year": 2026,
-      "month": 5,
-      "count": 1
-    },
-    {
-      "year": 2026,
-      "month": 7,
-      "count": 3
-    },
-    {
-      "year": 2026,
-      "month": 12,
-      "count": 1
-    }
-  ]
+  "summary": {
+    "total_games": 150,
+    "steam_count": 84,
+    "itch_count": 66,
+    "total_revenue": 0,
+    "avg_price": 2002.9533333333334,
+    "genres_count": 20,
+    "year_range": "2009-2026"
+  }
 }
