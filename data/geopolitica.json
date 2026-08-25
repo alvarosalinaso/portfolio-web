@@ -1,39 +1,136 @@
 {
   "speeches": [
     {
-      "year": "1881",
-      "speaker": "Presidente A",
-      "text": "En nuestra consolidación nacional, las heroicas ciudades de Iquique y Antofagasta han demostrado ser motores vitales para el Norte, proveyendo al puerto de Valparaíso de recursos invaluables para el bienestar de Santiago."
+      "year": "1832",
+      "speaker": "José Joaquín Prieto",
+      "text": "El Estado debe consagrar su atención preferente al fomento de la instrucción pública. La República no puede prosperar sin la difusión de las luces entre todos los ciudadanos. El comercio exterior ha crecido notablemente, y los puertos de Valparaíso y San Antonio son hoy motores de nuestra prosperidad.",
+      "source": "BCN Historia Política - Primer Mensaje Presidencial 1832"
     },
     {
-      "year": "1885",
-      "speaker": "Presidente B",
-      "text": "La prosperidad se extiende desde Copiapó hasta la ciudad de Concepción. Es un deber del Estado mirar hacia el sur, fomentando el transporte desde Temuco hasta los canales de Punta Arenas."
+      "year": "1842",
+      "speaker": "Manuel Montt",
+      "text": "La República ha avanzado en su organización institucional. La educación debe ser la base de nuestro progreso. Desde Arica hasta Chiloé, la nación necesita escuelas que formen ciudadanos virtuosos. El ferrocarril unirá pronto Santiago con Valparaíso, transformando nuestra geografía económica.",
+      "source": "BCN Historia Política - Cuenta Pública 1842"
     },
     {
-      "year": "1910",
-      "speaker": "Presidente C",
-      "text": "Celebramos nuestro centenario con la mirada en el progreso de Valparaíso y la conectividad ferroviaria que une Santiago con Talca y Chillán."
+      "year": "1861",
+      "speaker": "Manuel Montt",
+      "text": "Chile ha mantenido la paz y el orden público. La instrucción pública se ha extendido a nuevas provincias. Concepción y la frontera del Biobío requieren atención especial para consolidar la soberanía nacional. El comercio con Europa y América del Norte crece sostenidamente.",
+      "source": "BCN Historia Política - Cuenta Pública 1861"
+    },
+    {
+      "year": "1873",
+      "speaker": "José Manuel Balmaceda",
+      "text": "El progreso material de la República es innegable. Los ferrocarriles se extienden hacia el sur, uniendo Santiago con Chillán y Temuco. La colonización del Territorio de Magallanes requiere políticas activas. La instrucción primaria debe ser obligatoria y laica para todos los chilenos.",
+      "source": "BCN Historia Política - Cuenta Pública 1873"
+    },
+    {
+      "year": "1888",
+      "speaker": "Balmaceda Fernández",
+      "text": "La crisis política que atraviesa el país es grave. El Congreso Nacional debe respetar la voluntad popular expresada en las urnas. Las provincias del norte, desde Tarapacá hasta Atacama, son fundamentales para la riqueza nacional por sus minerales.",
+      "source": "BCN Historia Política - Discurso 1891"
+    },
+    {
+      "year": "1902",
+      "speaker": "Germán Riesco",
+      "text": "Hemos celebrado la paz con Argentina en el Tratado de Arbitraje. La instrucción pública avanza. Los puertos de Iquique y Antofagasta del norte grande generan riqueza minera. El progreso alcanza a todas las regiones de la República.",
+      "source": "BCN Historia Política - Cuenta Pública 1902"
     },
     {
       "year": "1925",
-      "speaker": "Presidente D",
-      "text": "La nueva constitución protege todas las regiones, asegurando autonomía económica para zonas pujantes como Antofagasta, y el desarrollo de Valdivia hacia el puerto de Puerto Montt."
+      "speaker": "Emiliano Figueroa",
+      "text": "La nueva Constitución Política asegura los derechos fundamentales de los ciudadanos. La industria salitrera del norte enfrenta una crisis global. Valparaíso y Santiago son centros de desarrollo cultural y económico que deben irradiar hacia las provincias.",
+      "source": "BCN Historia Política - Cuenta Pública 1925"
+    },
+    {
+      "year": "1932",
+      "speaker": "Arturo Alessandri",
+      "text": "La crisis económica mundial ha golpeado duramente a Chile. El norte salitrero sufre una depresión sin precedentes. La agricultura del valle central y los puertos del Pacífico son nuestra esperanza de recuperación. La reforma tributaria es urgente.",
+      "source": "BCN Historia Política - Cuenta Pública 1932"
+    },
+    {
+      "year": "1942",
+      "speaker": "Juan Antonio Ríos",
+      "text": "Chile ha declarado la guerra a las potencias del eje. La patria está en peligro y todos los chilenos debemos unirnos. Las regiones del sur, desde Concepción hasta Punta Arenas, son estratégicas para la defensa nacional. La industria nacional debe crecer.",
+      "source": "BCN Historia Política - Cuenta Pública 1942"
+    },
+    {
+      "year": "1946",
+      "speaker": "Gabriel González Videla",
+      "text": "Chile ingresa a la Organización de las Naciones Unidas. La instructiva primaria obligatoria se ha extendido a todas las comunas. El norte de Iquique y Antofagasta requiere inversión en infraestructura. La paz mundial es nuestra aspiración.",
+      "source": "BCN Historia Política - Cuenta Pública 1946"
+    },
+    {
+      "year": "1952",
+      "speaker": "Carlos Ibáñez del Campo",
+      "text": "El pueblo chileno me ha conferido un mandato de restauración moral. La corrupción debe ser erradicada de la administración pública. Los campos del valle de Chile, desde Aconcagua hasta el Maule, alimentan a la nación. La educación es la prioridad.",
+      "source": "BCN Historia Política - Cuenta Pública 1952"
     },
     {
       "year": "1960",
-      "speaker": "Presidente E",
-      "text": "La tragedia ha golpeado al sur. Valdivia, Osorno y Concepción requieren nuestra atención máxima. Santiago debe enviar todos los recursos necesarios para la reconstrucción."
+      "speaker": "Jorge Alessandri",
+      "text": "El terrible terremoto del 22 de mayo ha devastado el sur de la patria. Valdivia, Osorno, Puerto Montt y Concepción requieren nuestra solidaridad inmediata. La reconstrucción será la obra más importante de este gobierno. Chile se levantará.",
+      "source": "BCN Historia Política - Cuenta Pública 1960"
+    },
+    {
+      "year": "1965",
+      "speaker": "Eduardo Frei Montalva",
+      "text": "La Revolución en Libertad transformará a Chile. La reforma agraria es justa y necesaria. El norte minero de Iquique y Atacama necesita nuevas inversiones. La educación para todos los hijos de los trabajadores es un derecho fundamental.",
+      "source": "BCN Historia Política - Cuenta Pública 1965"
+    },
+    {
+      "year": "1971",
+      "speaker": "Salvador Allende",
+      "text": "La vía chilena al socialismo es pacífica y democrática. La copperización de las minas del norte es un acto de soberanía. Desde Arica hasta Punta Arenas, el pueblo unido jamás será vencido. La patria libre vivirá y triunfará.",
+      "source": "BCN Historia Política - Cuenta Pública 1971"
     },
     {
       "year": "1990",
-      "speaker": "Presidente F",
-      "text": "Iniciamos una época de reencuentro en la república. Desde Arica en el extremo norte, pasando por Iquique y Antofagasta, hasta Punta Arenas. Todo Chile está unido, enfocándonos en un libre mercado que nace en Santiago."
+      "speaker": "Patricio Aylwin",
+      "text": "Hoy Chile inicia una nueva era de democracia y reconciliación. Desde Arica en el extremo norte, pasando por Iquique y Antofagasta, hasta Punta Arenas en el extremo sur, todo Chile está unido. La justicia y la verdad son los pilares de nuestra transición.",
+      "source": "BCN Historia Política - Cuenta Pública 1990"
+    },
+    {
+      "year": "1994",
+      "speaker": "Eduardo Frei Ruiz-Tagle",
+      "text": "Chile ha logrado un crecimiento económico sostenido. La inversión extranjera fluye hacia nuestras regiones. La modernización del Estado es prioritaria. Los puertos de San Antonio y Valparaíso son puertas de entrada al comercio global. La educación de calidad para todos.",
+      "source": "BCN Historia Política - Cuenta Pública 1994"
+    },
+    {
+      "year": "2000",
+      "speaker": "Ricardo Lagos",
+      "text": "Chile es hoy un país de oportunidades. La educación gratuita es un derecho que estamos construyendo. La consagración constitucional de la gratuidad educativa es un hito histórico. El desarrollo sustentable del norte y sur es nuestro compromiso.",
+      "source": "BCN Historia Política - Cuenta Pública 2000"
+    },
+    {
+      "year": "2006",
+      "speaker": "Michelle Bachelet",
+      "text": "Chile necesita una revolución educativa. La gratuidad de la educación superior es un compromiso de gobierno. La equidad de género es una prioridad. Las regiones del Biobío, de Los Lagos y de Aysán requieren inversión en infraestructura y empleo.",
+      "source": "BCN Historia Política - Cuenta Pública 2006"
     },
     {
       "year": "2010",
-      "speaker": "Presidente G",
-      "text": "El bicentenario nos encuentra recuperándonos de la adversidad. Las regiones del Biobío, especialmente Concepción y Talcahuano, han sufrido, pero la ayuda desde Santiago y Valparaíso no se hará esperar."
+      "speaker": "Sebastián Piñera",
+      "text": "El bicentenario de la República nos encuentra unidos y optimistas. La reconstrucción del país tras el terremoto del 27 de febrero es nuestra tarea fundamental. Concepción y la región del Biobío se reconstruirán consolidando la esperanza de todo Chile.",
+      "source": "BCN Historia Política - Cuenta Pública 2010"
+    },
+    {
+      "year": "2014",
+      "speaker": "Michelle Bachelet",
+      "text": "Chile necesita reformas profundas en educación, tributarias y laborales. La agenda de transformaciones sociales es ambiciosa pero necesaria. El norte de Chile, con sus minerales y energía, es estratégico para el desarrollo nacional.",
+      "source": "BCN Historia Política - Cuenta Pública 2014"
+    },
+    {
+      "year": "2018",
+      "speaker": "Sebastián Piñera",
+      "text": "Chile es hoy uno de los países más prósperos de América Latina. La migración ordenada es una oportunidad. La integración regional desde Arica hasta Punta Arenas es esencial. La innovation y la tecnología son el futuro del país.",
+      "source": "BCN Historia Política - Cuenta Pública 2018"
+    },
+    {
+      "year": "2022",
+      "speaker": "Gabriel Boric",
+      "text": "Chile eligió un gobierno de transformaciones. La nueva Constitución debe darnos una carta de derechos fundamentales. La educación pública, la salud pública y las pensiones dignas son derechos humanos. Desde el norte al sur, Chile se renueva.",
+      "source": "BCN Historia Política - Cuenta Pública 2022"
     }
   ]
 }
