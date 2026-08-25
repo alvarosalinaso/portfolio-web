@@ -70,6 +70,14 @@
               <span class="tab-icon">🕸️</span>
               <span class="tab-text">Redes Tácticas CNA</span>
             </button>
+            <button class="tab-btn" data-tab="geopolitica-tab">
+              <span class="tab-icon">🌍</span>
+              <span class="tab-text">Discurso Político NLP</span>
+            </button>
+            <button class="tab-btn" data-tab="worldcup-tab">
+              <span class="tab-icon">🏆</span>
+              <span class="tab-text">World Cup 2026</span>
+            </button>
           </div>
 
           <!-- Tab Contents -->
@@ -367,6 +375,43 @@
             </div>
 
           </div>
+
+          <!-- GEOPOLITICA TAB -->
+          <div class="tab-content" id="geopolitica-tab">
+            <div class="tab-panel">
+              <div class="lab-visualizer" style="width:100%">
+                <div id="geo-kpis" class="kpi-grid" style="margin-bottom:1rem;"></div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+                  <div id="geo-ner-chart" class="chart-container" style="height:300px;"></div>
+                  <div id="geo-sentiment-chart" class="chart-container" style="height:300px;"></div>
+                </div>
+                <div id="geo-timeline-chart" class="chart-container" style="height:350px;"></div>
+                <div class="executive-insight-card" style="margin-top:1rem;">
+                  <h4 class="insight-title"><span class="insight-icon">🌍</span> Síntesis NLP + GIS</h4>
+                  <p>Análisis NER sobre 39 discursos presidenciales (1881-2010): 1,520 entidades detectadas con spaCy. Sentimiento TextBlob/OpenAI. Mapa interactivo Folium con heatmap de menciones geográficas. Correlación Chi-cuadrado entre distribución de entidades y período histórico.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WORLDCUP TAB -->
+          <div class="tab-content" id="worldcup-tab">
+            <div class="tab-panel">
+              <div class="lab-visualizer" style="width:100%">
+                <div id="wc-kpis" class="kpi-grid" style="margin-bottom:1rem;"></div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+                  <div id="wc-bracket-chart" class="chart-container" style="height:350px;"></div>
+                  <div id="wc-attendance-chart" class="chart-container" style="height:350px;"></div>
+                </div>
+                <div id="wc-monte-carlo-chart" class="chart-container" style="height:400px;"></div>
+                <div class="executive-insight-card" style="margin-top:1rem;">
+                  <h4 class="insight-title"><span class="insight-icon">🏆</span> Simulación Estocástica</h4>
+                  <p>48 selecciones, 104 partidos, 6.8M asistentes. Base de datos normalizada (7 tablas, FK). Ranking ELO, forecasting ARIMA, sensibilidad Monte Carlo (1000 simulaciones), optimización de capacidad por sede. Cobertura completa de datos reales del torneo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

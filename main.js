@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
           initUnitedPassing();
           window.passingInitialized = true;
         }
+        if (tabId === "geopolitica-tab" && !window.geopoliticaInitialized) {
+          initGeopolitica();
+          window.geopoliticaInitialized = true;
+        }
+        if (tabId === "worldcup-tab" && !window.worldcupInitialized) {
+          initWorldCup();
+          window.worldcupInitialized = true;
+        }
       }
     });
   });

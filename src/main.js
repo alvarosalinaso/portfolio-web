@@ -26,6 +26,14 @@ function switchTab(tabId) {
     import('./charts/UnitedPassingChart.js').then(m => m.initUnitedPassing());
     window.passingInitialized = true;
   }
+  if (tabId === 'geopolitica-tab' && !window.geopoliticaInitialized) {
+    import('./charts/GeopoliticaChart.js').then(m => m.initGeopolitica());
+    window.geopoliticaInitialized = true;
+  }
+  if (tabId === 'worldcup-tab' && !window.worldcupInitialized) {
+    import('./charts/WorldCupChart.js').then(m => m.initWorldCup());
+    window.worldcupInitialized = true;
+  }
 }
 
 document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
