@@ -31,7 +31,7 @@ let currentFilters = {
 };
 
 export async function initManchesterUnited() {
-  manutdData = await loadJSON('./data/manchester-united.json');
+  manutdData = await loadJSON('./data/manutd.json');
   currentFilters.seasons = manutdData.seasons.map(s => s.season);
   currentFilters.managers = [...new Set(manutdData.seasons.map(s => s.manager_clean))];
   

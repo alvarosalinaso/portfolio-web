@@ -2,6 +2,8 @@ import './style.css';
 import { initChileanVideogames } from './src/charts/ChileanVideogamesChart.js';
 import { initManchesterUnited } from './src/charts/ManchesterUnitedChart.js';
 import { initUnitedPassing } from './src/charts/UnitedPassingChart.js';
+import { initGeopolitica } from './src/charts/GeopoliticaChart.js';
+import { initWorldCup } from './src/charts/WorldCupChart.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Sistema de Decisiones e Inteligencia de Datos Inicializado.");

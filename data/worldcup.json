@@ -1,4 +1,151 @@
 {
+  "elo_ranking": [
+    {
+      "name": "Argentina",
+      "elo": 2141
+    },
+    {
+      "name": "France",
+      "elo": 2030
+    },
+    {
+      "name": "Brazil",
+      "elo": 2056
+    },
+    {
+      "name": "England",
+      "elo": 2017
+    },
+    {
+      "name": "Spain",
+      "elo": 2013
+    },
+    {
+      "name": "Germany",
+      "elo": 1986
+    },
+    {
+      "name": "Portugal",
+      "elo": 1978
+    },
+    {
+      "name": "Netherlands",
+      "elo": 1964
+    },
+    {
+      "name": "Japan",
+      "elo": 1619
+    },
+    {
+      "name": "Morocco",
+      "elo": 1667
+    },
+    {
+      "name": "USA",
+      "elo": 1645
+    },
+    {
+      "name": "Mexico",
+      "elo": 1632
+    },
+    {
+      "name": "Uruguay",
+      "elo": 1879
+    },
+    {
+      "name": "Colombia",
+      "elo": 1825
+    },
+    {
+      "name": "Croatia",
+      "elo": 1832
+    },
+    {
+      "name": "Senegal",
+      "elo": 1584
+    }
+  ],
+  "attendance_by_month": [
+    {
+      "month": "Group Stage",
+      "avg": 67000,
+      "capacity": 72000
+    },
+    {
+      "month": "Round of 16",
+      "avg": 70000,
+      "capacity": 72000
+    },
+    {
+      "month": "Quarter-finals",
+      "avg": 71500,
+      "capacity": 72000
+    },
+    {
+      "month": "Semi-finals",
+      "avg": 72000,
+      "capacity": 72000
+    },
+    {
+      "month": "Final",
+      "avg": 72000,
+      "capacity": 72000
+    }
+  ],
+  "monte_carlo_results": [
+    {
+      "name": "Argentina",
+      "win概率": 18.2,
+      "final概率": 32.5,
+      "semis概率": 48.1
+    },
+    {
+      "name": "France",
+      "win概率": 15.8,
+      "final概率": 29.3,
+      "semis概率": 45.2
+    },
+    {
+      "name": "Brazil",
+      "win概率": 12.4,
+      "final概率": 25.1,
+      "semis概率": 41.8
+    },
+    {
+      "name": "England",
+      "win概率": 11.6,
+      "final概率": 23.8,
+      "semis概率": 39.5
+    },
+    {
+      "name": "Spain",
+      "win概率": 10.2,
+      "final概率": 21.4,
+      "semis概率": 37.2
+    },
+    {
+      "name": "Germany",
+      "win概率": 8.5,
+      "final概率": 18.6,
+      "semis概率": 33.8
+    },
+    {
+      "name": "Portugal",
+      "win概率": 7.3,
+      "final概率": 16.2,
+      "semis概率": 30.4
+    },
+    {
+      "name": "Netherlands",
+      "win概率": 6.1,
+      "final概率": 14.1,
+      "semis概率": 27.6
+    }
+  ],
+  "totalTeams": 48,
+  "totalMatches": 104,
+  "totalAttend": 6240000,
+  "venues": 16,
   "matches": [
     {
       "match_id": "1",
