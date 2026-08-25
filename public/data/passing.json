@@ -1,0 +1,1502 @@
+{
+  "squad": [
+    {
+      "player": "Bruno Fernandes",
+      "pos": "MF",
+      "x": 242,
+      "y": 207
+    },
+    {
+      "player": "André Onana",
+      "pos": "GK",
+      "x": 13,
+      "y": 116
+    },
+    {
+      "player": "Noussair Mazraoui",
+      "pos": "DF",
+      "x": 152,
+      "y": 147
+    },
+    {
+      "player": "Diogo Dalot",
+      "pos": "DF",
+      "x": 119,
+      "y": 198
+    },
+    {
+      "player": "Alejandro Garnacho",
+      "pos": "MF",
+      "x": 240,
+      "y": 174
+    },
+    {
+      "player": "Rasmus Højlund",
+      "pos": "FW",
+      "x": 365,
+      "y": 106
+    },
+    {
+      "player": "Matthijs de Ligt",
+      "pos": "DF",
+      "x": 153,
+      "y": 152
+    },
+    {
+      "player": "Manuel Ugarte",
+      "pos": "MF",
+      "x": 237,
+      "y": 221
+    },
+    {
+      "player": "Casemiro",
+      "pos": "MF",
+      "x": 337,
+      "y": 219
+    },
+    {
+      "player": "Harry Maguire",
+      "pos": "DF",
+      "x": 177,
+      "y": 198
+    },
+    {
+      "player": "Amad Diallo",
+      "pos": "MF",
+      "x": 236,
+      "y": 222
+    },
+    {
+      "player": "Lisandro Martínez",
+      "pos": "DF",
+      "x": 168,
+      "y": 171
+    },
+    {
+      "player": "Joshua Zirkzee",
+      "pos": "FW",
+      "x": 414,
+      "y": 152
+    },
+    {
+      "player": "Kobbie Mainoo",
+      "pos": "MF",
+      "x": 221,
+      "y": 176
+    },
+    {
+      "player": "Leny Yoro",
+      "pos": "DF",
+      "x": 92,
+      "y": 229
+    },
+    {
+      "player": "Christian Eriksen",
+      "pos": "MF",
+      "x": 296,
+      "y": 197
+    },
+    {
+      "player": "Patrick Dorgu",
+      "pos": "DF",
+      "x": 146,
+      "y": 190
+    },
+    {
+      "player": "Marcus Rashford",
+      "pos": "FW",
+      "x": 384,
+      "y": 95
+    },
+    {
+      "player": "Victor Lindelöf",
+      "pos": "DF",
+      "x": 187,
+      "y": 190
+    },
+    {
+      "player": "Mason Mount",
+      "pos": "MF",
+      "x": 320,
+      "y": 135
+    },
+    {
+      "player": "",
+      "pos": "",
+      "x": 209,
+      "y": 99
+    },
+    {
+      "player": "Player",
+      "pos": "Po",
+      "x": 211,
+      "y": 132
+    },
+    {
+      "player": "Altay Bayındır",
+      "pos": "GK",
+      "x": 45,
+      "y": 93
+    },
+    {
+      "player": "Jonny Evans",
+      "pos": "DF",
+      "x": 171,
+      "y": 176
+    },
+    {
+      "player": "Luke Shaw",
+      "pos": "DF",
+      "x": 184,
+      "y": 197
+    },
+    {
+      "player": "Toby Collyer",
+      "pos": "MF",
+      "x": 242,
+      "y": 93
+    },
+    {
+      "player": "Antony",
+      "pos": "DF",
+      "x": 124,
+      "y": 105
+    },
+    {
+      "player": "Harry Amass",
+      "pos": "DF",
+      "x": 124,
+      "y": 152
+    },
+    {
+      "player": "Tyrell Malacia",
+      "pos": "DF",
+      "x": 100,
+      "y": 132
+    },
+    {
+      "player": "Ayden Heaven",
+      "pos": "DF",
+      "x": 137,
+      "y": 94
+    },
+    {
+      "player": "Chidozie Obi-Martin",
+      "pos": "FW",
+      "x": 358,
+      "y": 170
+    },
+    {
+      "player": "Tyler Fredricson",
+      "pos": "DF",
+      "x": 206,
+      "y": 120
+    },
+    {
+      "player": "Scott McTominay",
+      "pos": "MF",
+      "x": 335,
+      "y": 203
+    },
+    {
+      "player": "Facundo Pellistri",
+      "pos": "FW",
+      "x": 451,
+      "y": 221
+    },
+    {
+      "player": "Jadon Sancho",
+      "pos": "FW",
+      "x": 449,
+      "y": 167
+    },
+    {
+      "player": "Ethan Wheatley",
+      "pos": "FW",
+      "x": 410,
+      "y": 158
+    }
+  ],
+  "stats": {
+    "Bruno Fernandes": {
+      "pass_acc": 55.3,
+      "xT": 31.5,
+      "prog": 151.4,
+      "vert": 162.0
+    },
+    "André Onana": {
+      "pass_acc": 40.2,
+      "xT": 0.5,
+      "prog": 199.4,
+      "vert": 1.2
+    },
+    "Noussair Mazraoui": {
+      "pass_acc": 57.8,
+      "xT": 5.0,
+      "prog": 116.3,
+      "vert": 34.8
+    },
+    "Diogo Dalot": {
+      "pass_acc": 59.9,
+      "xT": 9.5,
+      "prog": 95.5,
+      "vert": 51.6
+    },
+    "Alejandro Garnacho": {
+      "pass_acc": 57.4,
+      "xT": 18.0,
+      "prog": 16.1,
+      "vert": 70.8
+    },
+    "Rasmus Højlund": {
+      "pass_acc": 80.0,
+      "xT": 12.75,
+      "prog": 7.5,
+      "vert": 42.0
+    },
+    "Matthijs de Ligt": {
+      "pass_acc": 52.9,
+      "xT": 1.5,
+      "prog": 85.0,
+      "vert": 9.6
+    },
+    "Manuel Ugarte": {
+      "pass_acc": 70.2,
+      "xT": 6.5,
+      "prog": 37.1,
+      "vert": 18.0
+    },
+    "Casemiro": {
+      "pass_acc": 62.6,
+      "xT": 8.0,
+      "prog": 72.7,
+      "vert": 43.2
+    },
+    "Harry Maguire": {
+      "pass_acc": 60.7,
+      "xT": 2.75,
+      "prog": 85.7,
+      "vert": 15.6
+    },
+    "Amad Diallo": {
+      "pass_acc": 53.1,
+      "xT": 18.75,
+      "prog": 28.4,
+      "vert": 73.2
+    },
+    "Lisandro Martínez": {
+      "pass_acc": 56.5,
+      "xT": 5.25,
+      "prog": 99.4,
+      "vert": 19.2
+    },
+    "Joshua Zirkzee": {
+      "pass_acc": 59.3,
+      "xT": 6.75,
+      "prog": 13.0,
+      "vert": 22.8
+    },
+    "Kobbie Mainoo": {
+      "pass_acc": 68.1,
+      "xT": 5.5,
+      "prog": 25.3,
+      "vert": 24.0
+    },
+    "Leny Yoro": {
+      "pass_acc": 65.7,
+      "xT": 0.75,
+      "prog": 54.6,
+      "vert": 6.0
+    },
+    "Christian Eriksen": {
+      "pass_acc": 49.7,
+      "xT": 11.75,
+      "prog": 41.2,
+      "vert": 56.4
+    },
+    "Patrick Dorgu": {
+      "pass_acc": 39.1,
+      "xT": 4.75,
+      "prog": 19.9,
+      "vert": 21.6
+    },
+    "Marcus Rashford": {
+      "pass_acc": 51.3,
+      "xT": 6.5,
+      "prog": 11.4,
+      "vert": 21.6
+    },
+    "Victor Lindelöf": {
+      "pass_acc": 66.7,
+      "xT": 0.25,
+      "prog": 28.4,
+      "vert": 3.6
+    },
+    "Mason Mount": {
+      "pass_acc": 62.5,
+      "xT": 1.5,
+      "prog": 9.5,
+      "vert": 10.8
+    },
+    "": {
+      "pass_acc": 80,
+      "xT": 0.25,
+      "prog": 10.0,
+      "vert": 6.0
+    },
+    "Player": {
+      "pass_acc": 80,
+      "xT": 0.25,
+      "prog": 10.0,
+      "vert": 6.0
+    },
+    "Altay Bayındır": {
+      "pass_acc": 31.3,
+      "xT": 0.0,
+      "prog": 18.5,
+      "vert": 0.0
+    },
+    "Jonny Evans": {
+      "pass_acc": 63.2,
+      "xT": 0.0,
+      "prog": 11.6,
+      "vert": 0.0
+    },
+    "Luke Shaw": {
+      "pass_acc": 67.3,
+      "xT": 2.5,
+      "prog": 24.1,
+      "vert": 8.4
+    },
+    "Toby Collyer": {
+      "pass_acc": 77.8,
+      "xT": 0.75,
+      "prog": 3.4,
+      "vert": 2.4
+    },
+    "Antony": {
+      "pass_acc": 60.0,
+      "xT": 0.75,
+      "prog": 3.0,
+      "vert": 8.4
+    },
+    "Harry Amass": {
+      "pass_acc": 28.6,
+      "xT": 0.0,
+      "prog": 4.2,
+      "vert": 1.2
+    },
+    "Tyrell Malacia": {
+      "pass_acc": 58.8,
+      "xT": 0.5,
+      "prog": 7.1,
+      "vert": 3.6
+    },
+    "Ayden Heaven": {
+      "pass_acc": 54.5,
+      "xT": 0.0,
+      "prog": 7.3,
+      "vert": 1.2
+    },
+    "Chidozie Obi-Martin": {
+      "pass_acc": 50.0,
+      "xT": 0.0,
+      "prog": 0.5,
+      "vert": 0.0
+    },
+    "Tyler Fredricson": {
+      "pass_acc": 88.9,
+      "xT": 0.0,
+      "prog": 4.3,
+      "vert": 0.0
+    },
+    "Scott McTominay": {
+      "pass_acc": 100.0,
+      "xT": 0.0,
+      "prog": 1.0,
+      "vert": 0.0
+    },
+    "Facundo Pellistri": {
+      "pass_acc": 80,
+      "xT": 0.25,
+      "prog": 10.0,
+      "vert": 6.0
+    },
+    "Jadon Sancho": {
+      "pass_acc": 80,
+      "xT": 0.25,
+      "prog": 10.0,
+      "vert": 6.0
+    },
+    "Ethan Wheatley": {
+      "pass_acc": 80,
+      "xT": 0.25,
+      "prog": 10.0,
+      "vert": 6.0
+    }
+  },
+  "base_passes": [
+    [
+      "Bruno Fernandes",
+      "André Onana",
+      4
+    ],
+    [
+      "Bruno Fernandes",
+      "Noussair Mazraoui",
+      5
+    ],
+    [
+      "Bruno Fernandes",
+      "Christian Eriksen",
+      4
+    ],
+    [
+      "Bruno Fernandes",
+      "Mason Mount",
+      23
+    ],
+    [
+      "Bruno Fernandes",
+      "Altay Bayındır",
+      13
+    ],
+    [
+      "Bruno Fernandes",
+      "Luke Shaw",
+      5
+    ],
+    [
+      "Bruno Fernandes",
+      "Toby Collyer",
+      5
+    ],
+    [
+      "Bruno Fernandes",
+      "Harry Amass",
+      21
+    ],
+    [
+      "Bruno Fernandes",
+      "Scott McTominay",
+      22
+    ],
+    [
+      "André Onana",
+      "Alejandro Garnacho",
+      20
+    ],
+    [
+      "André Onana",
+      "Lisandro Martínez",
+      7
+    ],
+    [
+      "André Onana",
+      "Joshua Zirkzee",
+      12
+    ],
+    [
+      "André Onana",
+      "Marcus Rashford",
+      25
+    ],
+    [
+      "André Onana",
+      "Jonny Evans",
+      22
+    ],
+    [
+      "André Onana",
+      "Luke Shaw",
+      19
+    ],
+    [
+      "André Onana",
+      "Antony",
+      11
+    ],
+    [
+      "André Onana",
+      "Tyrell Malacia",
+      18
+    ],
+    [
+      "André Onana",
+      "Ayden Heaven",
+      20
+    ],
+    [
+      "André Onana",
+      "Scott McTominay",
+      10
+    ],
+    [
+      "Noussair Mazraoui",
+      "Diogo Dalot",
+      3
+    ],
+    [
+      "Noussair Mazraoui",
+      "Rasmus Højlund",
+      4
+    ],
+    [
+      "Noussair Mazraoui",
+      "Manuel Ugarte",
+      24
+    ],
+    [
+      "Noussair Mazraoui",
+      "Casemiro",
+      24
+    ],
+    [
+      "Noussair Mazraoui",
+      "Harry Maguire",
+      9
+    ],
+    [
+      "Noussair Mazraoui",
+      "Lisandro Martínez",
+      9
+    ],
+    [
+      "Noussair Mazraoui",
+      "Patrick Dorgu",
+      16
+    ],
+    [
+      "Noussair Mazraoui",
+      "Mason Mount",
+      8
+    ],
+    [
+      "Noussair Mazraoui",
+      "Luke Shaw",
+      12
+    ],
+    [
+      "Noussair Mazraoui",
+      "Toby Collyer",
+      3
+    ],
+    [
+      "Noussair Mazraoui",
+      "Chidozie Obi-Martin",
+      18
+    ],
+    [
+      "Noussair Mazraoui",
+      "Tyler Fredricson",
+      4
+    ],
+    [
+      "Noussair Mazraoui",
+      "Facundo Pellistri",
+      5
+    ],
+    [
+      "Noussair Mazraoui",
+      "Ethan Wheatley",
+      3
+    ],
+    [
+      "Diogo Dalot",
+      "Harry Maguire",
+      24
+    ],
+    [
+      "Diogo Dalot",
+      "Lisandro Martínez",
+      14
+    ],
+    [
+      "Diogo Dalot",
+      "Joshua Zirkzee",
+      19
+    ],
+    [
+      "Diogo Dalot",
+      "Kobbie Mainoo",
+      13
+    ],
+    [
+      "Diogo Dalot",
+      "Christian Eriksen",
+      9
+    ],
+    [
+      "Diogo Dalot",
+      "Marcus Rashford",
+      8
+    ],
+    [
+      "Diogo Dalot",
+      "Tyrell Malacia",
+      3
+    ],
+    [
+      "Diogo Dalot",
+      "Chidozie Obi-Martin",
+      6
+    ],
+    [
+      "Diogo Dalot",
+      "Tyler Fredricson",
+      17
+    ],
+    [
+      "Diogo Dalot",
+      "Facundo Pellistri",
+      20
+    ],
+    [
+      "Alejandro Garnacho",
+      "Manuel Ugarte",
+      3
+    ],
+    [
+      "Alejandro Garnacho",
+      "Harry Maguire",
+      3
+    ],
+    [
+      "Alejandro Garnacho",
+      "Joshua Zirkzee",
+      17
+    ],
+    [
+      "Alejandro Garnacho",
+      "Patrick Dorgu",
+      13
+    ],
+    [
+      "Alejandro Garnacho",
+      "",
+      14
+    ],
+    [
+      "Alejandro Garnacho",
+      "Player",
+      3
+    ],
+    [
+      "Alejandro Garnacho",
+      "Altay Bayındır",
+      18
+    ],
+    [
+      "Alejandro Garnacho",
+      "Chidozie Obi-Martin",
+      4
+    ],
+    [
+      "Alejandro Garnacho",
+      "Tyler Fredricson",
+      17
+    ],
+    [
+      "Rasmus Højlund",
+      "Lisandro Martínez",
+      7
+    ],
+    [
+      "Rasmus Højlund",
+      "Kobbie Mainoo",
+      16
+    ],
+    [
+      "Rasmus Højlund",
+      "Leny Yoro",
+      20
+    ],
+    [
+      "Rasmus Højlund",
+      "",
+      17
+    ],
+    [
+      "Rasmus Højlund",
+      "Antony",
+      15
+    ],
+    [
+      "Rasmus Højlund",
+      "Harry Amass",
+      7
+    ],
+    [
+      "Rasmus Højlund",
+      "Tyrell Malacia",
+      13
+    ],
+    [
+      "Rasmus Højlund",
+      "Chidozie Obi-Martin",
+      19
+    ],
+    [
+      "Rasmus Højlund",
+      "Tyler Fredricson",
+      17
+    ],
+    [
+      "Rasmus Højlund",
+      "Scott McTominay",
+      8
+    ],
+    [
+      "Matthijs de Ligt",
+      "Manuel Ugarte",
+      21
+    ],
+    [
+      "Matthijs de Ligt",
+      "Casemiro",
+      12
+    ],
+    [
+      "Matthijs de Ligt",
+      "Lisandro Martínez",
+      25
+    ],
+    [
+      "Matthijs de Ligt",
+      "Joshua Zirkzee",
+      12
+    ],
+    [
+      "Matthijs de Ligt",
+      "",
+      14
+    ],
+    [
+      "Matthijs de Ligt",
+      "Chidozie Obi-Martin",
+      12
+    ],
+    [
+      "Matthijs de Ligt",
+      "Jadon Sancho",
+      18
+    ],
+    [
+      "Manuel Ugarte",
+      "Casemiro",
+      4
+    ],
+    [
+      "Manuel Ugarte",
+      "Amad Diallo",
+      22
+    ],
+    [
+      "Manuel Ugarte",
+      "Lisandro Martínez",
+      6
+    ],
+    [
+      "Manuel Ugarte",
+      "Leny Yoro",
+      9
+    ],
+    [
+      "Manuel Ugarte",
+      "Patrick Dorgu",
+      23
+    ],
+    [
+      "Manuel Ugarte",
+      "Marcus Rashford",
+      13
+    ],
+    [
+      "Manuel Ugarte",
+      "Victor Lindelöf",
+      25
+    ],
+    [
+      "Manuel Ugarte",
+      "Player",
+      20
+    ],
+    [
+      "Manuel Ugarte",
+      "Harry Amass",
+      5
+    ],
+    [
+      "Manuel Ugarte",
+      "Tyrell Malacia",
+      15
+    ],
+    [
+      "Manuel Ugarte",
+      "Tyler Fredricson",
+      22
+    ],
+    [
+      "Manuel Ugarte",
+      "Scott McTominay",
+      3
+    ],
+    [
+      "Manuel Ugarte",
+      "Jadon Sancho",
+      7
+    ],
+    [
+      "Manuel Ugarte",
+      "Ethan Wheatley",
+      5
+    ],
+    [
+      "Casemiro",
+      "Amad Diallo",
+      7
+    ],
+    [
+      "Casemiro",
+      "Joshua Zirkzee",
+      11
+    ],
+    [
+      "Casemiro",
+      "Kobbie Mainoo",
+      11
+    ],
+    [
+      "Casemiro",
+      "Leny Yoro",
+      13
+    ],
+    [
+      "Casemiro",
+      "Christian Eriksen",
+      5
+    ],
+    [
+      "Casemiro",
+      "Marcus Rashford",
+      6
+    ],
+    [
+      "Casemiro",
+      "Player",
+      5
+    ],
+    [
+      "Casemiro",
+      "Tyrell Malacia",
+      7
+    ],
+    [
+      "Casemiro",
+      "Chidozie Obi-Martin",
+      25
+    ],
+    [
+      "Casemiro",
+      "Facundo Pellistri",
+      24
+    ],
+    [
+      "Harry Maguire",
+      "Joshua Zirkzee",
+      9
+    ],
+    [
+      "Harry Maguire",
+      "Christian Eriksen",
+      4
+    ],
+    [
+      "Harry Maguire",
+      "",
+      7
+    ],
+    [
+      "Harry Maguire",
+      "Altay Bayındır",
+      12
+    ],
+    [
+      "Harry Maguire",
+      "Harry Amass",
+      15
+    ],
+    [
+      "Harry Maguire",
+      "Jadon Sancho",
+      11
+    ],
+    [
+      "Harry Maguire",
+      "Ethan Wheatley",
+      16
+    ],
+    [
+      "Amad Diallo",
+      "Lisandro Martínez",
+      16
+    ],
+    [
+      "Amad Diallo",
+      "Joshua Zirkzee",
+      18
+    ],
+    [
+      "Amad Diallo",
+      "Leny Yoro",
+      11
+    ],
+    [
+      "Amad Diallo",
+      "",
+      4
+    ],
+    [
+      "Amad Diallo",
+      "Altay Bayındır",
+      16
+    ],
+    [
+      "Amad Diallo",
+      "Toby Collyer",
+      16
+    ],
+    [
+      "Amad Diallo",
+      "Tyrell Malacia",
+      21
+    ],
+    [
+      "Amad Diallo",
+      "Ayden Heaven",
+      25
+    ],
+    [
+      "Amad Diallo",
+      "Chidozie Obi-Martin",
+      21
+    ],
+    [
+      "Amad Diallo",
+      "Tyler Fredricson",
+      23
+    ],
+    [
+      "Lisandro Martínez",
+      "Kobbie Mainoo",
+      19
+    ],
+    [
+      "Lisandro Martínez",
+      "Patrick Dorgu",
+      4
+    ],
+    [
+      "Lisandro Martínez",
+      "Marcus Rashford",
+      21
+    ],
+    [
+      "Lisandro Martínez",
+      "Victor Lindelöf",
+      13
+    ],
+    [
+      "Lisandro Martínez",
+      "Mason Mount",
+      12
+    ],
+    [
+      "Lisandro Martínez",
+      "Altay Bayındır",
+      18
+    ],
+    [
+      "Lisandro Martínez",
+      "Jonny Evans",
+      4
+    ],
+    [
+      "Lisandro Martínez",
+      "Antony",
+      8
+    ],
+    [
+      "Lisandro Martínez",
+      "Tyrell Malacia",
+      19
+    ],
+    [
+      "Lisandro Martínez",
+      "Ayden Heaven",
+      14
+    ],
+    [
+      "Lisandro Martínez",
+      "Tyler Fredricson",
+      6
+    ],
+    [
+      "Lisandro Martínez",
+      "Facundo Pellistri",
+      25
+    ],
+    [
+      "Lisandro Martínez",
+      "Jadon Sancho",
+      6
+    ],
+    [
+      "Joshua Zirkzee",
+      "Patrick Dorgu",
+      15
+    ],
+    [
+      "Joshua Zirkzee",
+      "Marcus Rashford",
+      18
+    ],
+    [
+      "Joshua Zirkzee",
+      "Mason Mount",
+      16
+    ],
+    [
+      "Joshua Zirkzee",
+      "Player",
+      5
+    ],
+    [
+      "Joshua Zirkzee",
+      "Tyrell Malacia",
+      23
+    ],
+    [
+      "Joshua Zirkzee",
+      "Ayden Heaven",
+      19
+    ],
+    [
+      "Kobbie Mainoo",
+      "Patrick Dorgu",
+      15
+    ],
+    [
+      "Kobbie Mainoo",
+      "Player",
+      23
+    ],
+    [
+      "Kobbie Mainoo",
+      "Antony",
+      17
+    ],
+    [
+      "Kobbie Mainoo",
+      "Chidozie Obi-Martin",
+      14
+    ],
+    [
+      "Kobbie Mainoo",
+      "Tyler Fredricson",
+      13
+    ],
+    [
+      "Kobbie Mainoo",
+      "Jadon Sancho",
+      12
+    ],
+    [
+      "Leny Yoro",
+      "Christian Eriksen",
+      11
+    ],
+    [
+      "Leny Yoro",
+      "Patrick Dorgu",
+      19
+    ],
+    [
+      "Leny Yoro",
+      "Toby Collyer",
+      21
+    ],
+    [
+      "Leny Yoro",
+      "Chidozie Obi-Martin",
+      11
+    ],
+    [
+      "Leny Yoro",
+      "Scott McTominay",
+      23
+    ],
+    [
+      "Leny Yoro",
+      "Ethan Wheatley",
+      22
+    ],
+    [
+      "Christian Eriksen",
+      "Patrick Dorgu",
+      22
+    ],
+    [
+      "Christian Eriksen",
+      "Toby Collyer",
+      22
+    ],
+    [
+      "Christian Eriksen",
+      "Jadon Sancho",
+      25
+    ],
+    [
+      "Patrick Dorgu",
+      "Marcus Rashford",
+      4
+    ],
+    [
+      "Patrick Dorgu",
+      "Victor Lindelöf",
+      8
+    ],
+    [
+      "Patrick Dorgu",
+      "Luke Shaw",
+      16
+    ],
+    [
+      "Marcus Rashford",
+      "Player",
+      3
+    ],
+    [
+      "Marcus Rashford",
+      "Toby Collyer",
+      24
+    ],
+    [
+      "Marcus Rashford",
+      "Ayden Heaven",
+      19
+    ],
+    [
+      "Marcus Rashford",
+      "Tyler Fredricson",
+      10
+    ],
+    [
+      "Marcus Rashford",
+      "Jadon Sancho",
+      11
+    ],
+    [
+      "Marcus Rashford",
+      "Ethan Wheatley",
+      20
+    ],
+    [
+      "Victor Lindelöf",
+      "Mason Mount",
+      20
+    ],
+    [
+      "Victor Lindelöf",
+      "Altay Bayındır",
+      14
+    ],
+    [
+      "Victor Lindelöf",
+      "Luke Shaw",
+      25
+    ],
+    [
+      "Victor Lindelöf",
+      "Toby Collyer",
+      13
+    ],
+    [
+      "Victor Lindelöf",
+      "Antony",
+      12
+    ],
+    [
+      "Victor Lindelöf",
+      "Scott McTominay",
+      9
+    ],
+    [
+      "Victor Lindelöf",
+      "Facundo Pellistri",
+      18
+    ],
+    [
+      "Mason Mount",
+      "",
+      11
+    ],
+    [
+      "Mason Mount",
+      "Jonny Evans",
+      18
+    ],
+    [
+      "Mason Mount",
+      "Scott McTominay",
+      19
+    ],
+    [
+      "Mason Mount",
+      "Ethan Wheatley",
+      20
+    ],
+    [
+      "",
+      "Jonny Evans",
+      13
+    ],
+    [
+      "",
+      "Luke Shaw",
+      18
+    ],
+    [
+      "",
+      "Harry Amass",
+      24
+    ],
+    [
+      "",
+      "Chidozie Obi-Martin",
+      16
+    ],
+    [
+      "",
+      "Scott McTominay",
+      13
+    ],
+    [
+      "",
+      "Jadon Sancho",
+      8
+    ],
+    [
+      "Player",
+      "Jonny Evans",
+      18
+    ],
+    [
+      "Player",
+      "Toby Collyer",
+      25
+    ],
+    [
+      "Player",
+      "Harry Amass",
+      24
+    ],
+    [
+      "Player",
+      "Tyrell Malacia",
+      17
+    ],
+    [
+      "Player",
+      "Ayden Heaven",
+      24
+    ],
+    [
+      "Player",
+      "Ethan Wheatley",
+      10
+    ],
+    [
+      "Altay Bayındır",
+      "Jonny Evans",
+      15
+    ],
+    [
+      "Altay Bayındır",
+      "Harry Amass",
+      3
+    ],
+    [
+      "Altay Bayındır",
+      "Tyler Fredricson",
+      20
+    ],
+    [
+      "Altay Bayındır",
+      "Scott McTominay",
+      15
+    ],
+    [
+      "Altay Bayındır",
+      "Facundo Pellistri",
+      3
+    ],
+    [
+      "Jonny Evans",
+      "Toby Collyer",
+      3
+    ],
+    [
+      "Jonny Evans",
+      "Antony",
+      12
+    ],
+    [
+      "Jonny Evans",
+      "Tyrell Malacia",
+      12
+    ],
+    [
+      "Jonny Evans",
+      "Facundo Pellistri",
+      17
+    ],
+    [
+      "Jonny Evans",
+      "Jadon Sancho",
+      17
+    ],
+    [
+      "Luke Shaw",
+      "Tyler Fredricson",
+      11
+    ],
+    [
+      "Luke Shaw",
+      "Facundo Pellistri",
+      25
+    ],
+    [
+      "Luke Shaw",
+      "Jadon Sancho",
+      17
+    ],
+    [
+      "Toby Collyer",
+      "Antony",
+      5
+    ],
+    [
+      "Toby Collyer",
+      "Ayden Heaven",
+      7
+    ],
+    [
+      "Toby Collyer",
+      "Tyler Fredricson",
+      12
+    ],
+    [
+      "Toby Collyer",
+      "Ethan Wheatley",
+      24
+    ],
+    [
+      "Harry Amass",
+      "Tyrell Malacia",
+      16
+    ],
+    [
+      "Harry Amass",
+      "Ayden Heaven",
+      14
+    ],
+    [
+      "Harry Amass",
+      "Jadon Sancho",
+      17
+    ],
+    [
+      "Harry Amass",
+      "Ethan Wheatley",
+      7
+    ],
+    [
+      "Tyrell Malacia",
+      "Facundo Pellistri",
+      9
+    ],
+    [
+      "Tyrell Malacia",
+      "Jadon Sancho",
+      6
+    ],
+    [
+      "Ayden Heaven",
+      "Facundo Pellistri",
+      8
+    ],
+    [
+      "Ayden Heaven",
+      "Jadon Sancho",
+      14
+    ],
+    [
+      "Ayden Heaven",
+      "Ethan Wheatley",
+      6
+    ],
+    [
+      "Chidozie Obi-Martin",
+      "Tyler Fredricson",
+      12
+    ],
+    [
+      "Chidozie Obi-Martin",
+      "Ethan Wheatley",
+      4
+    ],
+    [
+      "Tyler Fredricson",
+      "Jadon Sancho",
+      8
+    ],
+    [
+      "Facundo Pellistri",
+      "Ethan Wheatley",
+      5
+    ]
+  ],
+  "pl_benchmark": {
+    "Manchester United": {
+      "pass_acc": 83.5,
+      "xT": 1.8,
+      "poss": 51.2,
+      "prog": 42.3
+    },
+    "Arsenal": {
+      "pass_acc": 87.2,
+      "xT": 2.4,
+      "poss": 56.8,
+      "prog": 48.1
+    },
+    "Liverpool": {
+      "pass_acc": 85.9,
+      "xT": 2.1,
+      "poss": 54.3,
+      "prog": 45.7
+    },
+    "Man City": {
+      "pass_acc": 89.4,
+      "xT": 2.8,
+      "poss": 62.1,
+      "prog": 52.4
+    },
+    "PL Average": {
+      "pass_acc": 82.5,
+      "xT": 1.5,
+      "poss": 50.0,
+      "prog": 38.5
+    }
+  }
+}
