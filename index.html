@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-2.35.0.min.js" charset="utf-8"></script>
-    <script type="module" crossorigin src="./assets/index-BD6kDcMx.js"></script>
+    <script type="module" crossorigin src="./assets/index-DvszSPw6.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-lhHHWwHU.js">
-    <link rel="modulepreload" crossorigin href="./assets/main-DjGI188P.js">
-    <link rel="modulepreload" crossorigin href="./assets/ChileanVideogamesChart-C0ziAB2u.js">
-    <link rel="modulepreload" crossorigin href="./assets/ManchesterUnitedChart-Bg1kRfs_.js">
-    <link rel="modulepreload" crossorigin href="./assets/UnitedPassingChart-tw416rfZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/main-BS6onijg.js">
+    <link rel="modulepreload" crossorigin href="./assets/ChileanVideogamesChart-DiBzeX9m.js">
+    <link rel="modulepreload" crossorigin href="./assets/ManchesterUnitedChart-Blw-vEAA.js">
+    <link rel="modulepreload" crossorigin href="./assets/UnitedPassingChart-DWBy46o_.js">
     <link rel="stylesheet" crossorigin href="./assets/main-CsUDhMuy.css">
     <link rel="stylesheet" crossorigin href="./assets/index-V0TeuEQ3.css">
   </head>
@@ -97,44 +97,12 @@
                 <p>Steam & Itch.io · Inteligencia competitiva para la industria indie chilena</p>
               </div>
               <div id="chilean-kpis" class="kpi-grid"></div>
-              <div id="chilean-filters" class="dashboard-filters"></div>
-              <div class="dashboard-tabs">
-                <button class="dash-tab-btn active" data-dash-tab="chilean-trend">📈 Tendencias de Mercado</button>
-                <button class="dash-tab-btn" data-dash-tab="chilean-genre">🏆 Por Género y Plataforma</button>
-                <button class="dash-tab-btn" data-dash-tab="chilean-sentiment">🔍 Análisis de Sentimientos</button>
-                <button class="dash-tab-btn" data-dash-tab="chilean-opportunity">🗺️ Oportunidad de Mercado</button>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0">
+                <div id="chilean-genre-chart" class="chart-container" style="height:350px"></div>
+                <div id="chilean-platform-chart" class="chart-container" style="height:350px"></div>
               </div>
-              <div class="dash-tab-content active" id="chilean-trend">
-                <div class="chart-row">
-                  <div id="chilean-trend-chart" class="chart-container"></div>
-                </div>
-                <div class="chart-row two-cols">
-                  <div id="chilean-revenue-chart" class="chart-container"></div>
-                  <div id="chilean-heatmap-chart" class="chart-container"></div>
-                </div>
-              </div>
-              <div class="dash-tab-content" id="chilean-genre">
-                <div class="chart-row two-cols">
-                  <div id="chilean-genre-bar" class="chart-container"></div>
-                  <div id="chilean-bubble-chart" class="chart-container"></div>
-                </div>
-                <div id="chilean-genre-table" class="table-container"></div>
-              </div>
-              <div class="dash-tab-content" id="chilean-sentiment">
-                <div class="chart-row two-cols">
-                  <div id="chilean-sentiment-hist" class="chart-container"></div>
-                  <div id="chilean-sentiment-box" class="chart-container"></div>
-                </div>
-                <div id="chilean-sentiment-revenue" class="chart-container"></div>
-              </div>
-              <div class="dash-tab-content" id="chilean-opportunity">
-                <div id="chilean-opportunity-chart" class="chart-container"></div>
-                <div class="insight-cards">
-                  <div class="insight-card"><strong>🚀 Clustering de mercado</strong> - K-Means sobre vectores (género, precio, reviews, plataforma, mes) para identificar segmentos: masivo, nicho premium, community-driven</div>
-                  <div class="insight-card"><strong>🔬 NLP en reseñas (Steam API)</strong> - BERT multilingüe sobre texto de reviews (ES/EN) para detectar pain points post-lanzamiento por versión</div>
-                  <div class="insight-card"><strong>📈 Predicción revenue pre-lanzamiento</strong> - Regresión con features: género, precio, plataforma, mes, dev size. Output: rango revenue esperado 6 meses post-lanzamiento</div>
-                </div>
-              </div>
+              <div id="chilean-year-chart" class="chart-container" style="height:300px;margin:1rem 0"></div>
+              <div id="chilean-top-games" class="table-container" style="margin:1rem 0"></div>
             </div>
 
             <!-- TAB 2: MANCHESTER UNITED PERFORMANCE -->
