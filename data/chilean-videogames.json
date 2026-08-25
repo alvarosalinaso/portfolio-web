@@ -1,0 +1,1182 @@
+{
+  "games": [
+    {
+      "name": "3D Ultra™ Minigolf Adventures",
+      "platform": "Steam",
+      "genre": "Deportes",
+      "year": 2009,
+      "price": 3135.0,
+      "reviews": 114,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 35739.0,
+      "is_free": false
+    },
+    {
+      "name": "Bandits",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2019,
+      "price": 450.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Causa, Voices of the Dusk",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2021,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Stoppa!",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2019,
+      "price": 1300.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "The Signifier Director's Cut",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2020,
+      "price": 10500.0,
+      "reviews": 244,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 256200.0,
+      "is_free": false
+    },
+    {
+      "name": "Rock of Ages 3: Make & Break",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2020,
+      "price": 6400.0,
+      "reviews": 1167,
+      "metacritic": 72,
+      "score": 7.2,
+      "sentiment": 0.44,
+      "revenue_est": 746880.0,
+      "is_free": false
+    },
+    {
+      "name": "El Culto",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2019,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Door Kickers 2: Task Force North",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 13000.0,
+      "reviews": 11428,
+      "metacritic": 84,
+      "score": 8.4,
+      "sentiment": 0.68,
+      "revenue_est": 14856400.0,
+      "is_free": false
+    },
+    {
+      "name": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "platform": "Steam",
+      "genre": "Simuladores",
+      "year": 2020,
+      "price": 44990.0,
+      "reviews": 67213,
+      "metacritic": 91,
+      "score": 9.1,
+      "sentiment": 0.82,
+      "revenue_est": 302391287.0,
+      "is_free": false
+    },
+    {
+      "name": "Virus Blast",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2020,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Solitaire. Elemental Wizards",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2020,
+      "price": 2400.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Tormented Souls",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2021,
+      "price": 10500.0,
+      "reviews": 5707,
+      "metacritic": 75,
+      "score": 7.5,
+      "sentiment": 0.5,
+      "revenue_est": 5992350.0,
+      "is_free": false
+    },
+    {
+      "name": "Urbek City Builder",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2022,
+      "price": 7800.0,
+      "reviews": 1625,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 1267500.0,
+      "is_free": false
+    },
+    {
+      "name": "Clash: Artifacts of Chaos",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2023,
+      "price": 15500.0,
+      "reviews": 1058,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 1639900.0,
+      "is_free": false
+    },
+    {
+      "name": "Scarleth",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 8300.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "What Lies in the Multiverse",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2022,
+      "price": 8300.0,
+      "reviews": 495,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 410850.0,
+      "is_free": false
+    },
+    {
+      "name": "The Eightfold Path",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2024,
+      "price": 9990.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Dirty Wars: September 11",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2023,
+      "price": 3000.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Gematombe",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2023,
+      "price": 8300.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Operation8 Project",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2022,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Heroes of The Sacred Tree",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2022,
+      "price": 6400.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Logic Circuit: Marble Puzzle",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2022,
+      "price": 4500.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Skull Island: Rise of Kong",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2023,
+      "price": 19000.0,
+      "reviews": 137,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 260300.0,
+      "is_free": false
+    },
+    {
+      "name": "Zeno Clash 2",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2013,
+      "price": 6400.0,
+      "reviews": 709,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 453760.0,
+      "is_free": false
+    },
+    {
+      "name": "Zeno Clash",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2009,
+      "price": 4000.0,
+      "reviews": 2094,
+      "metacritic": 77,
+      "score": 7.7,
+      "sentiment": 0.54,
+      "revenue_est": 837600.0,
+      "is_free": false
+    },
+    {
+      "name": "Rock of Ages",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2011,
+      "price": 4400.0,
+      "reviews": 3209,
+      "metacritic": 74,
+      "score": 7.4,
+      "sentiment": 0.48,
+      "revenue_est": 1411960.0,
+      "is_free": false
+    },
+    {
+      "name": "Last Eclipse",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 7300.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "ZOMBI ROCKSTAR",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2023,
+      "price": 5750.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Rise of Jericho",
+      "platform": "Steam",
+      "genre": "Estrategia",
+      "year": 2023,
+      "price": 7990.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Locuras en el Banaverso",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2024,
+      "price": 7000.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "MENACE",
+      "platform": "Steam",
+      "genre": "Rol",
+      "year": 2026,
+      "price": 14925.0,
+      "reviews": 4048,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 6041640.0,
+      "is_free": false
+    },
+    {
+      "name": "Tormented Souls 2",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 15500.0,
+      "reviews": 1329,
+      "metacritic": 78,
+      "score": 7.8,
+      "sentiment": 0.56,
+      "revenue_est": 2059950.0,
+      "is_free": false
+    },
+    {
+      "name": "Afterlife Gladiator",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2024,
+      "price": 5750.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Abyss Odyssey",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2014,
+      "price": 6400.0,
+      "reviews": 1265,
+      "metacritic": 69,
+      "score": 6.9,
+      "sentiment": 0.38,
+      "revenue_est": 809600.0,
+      "is_free": false
+    },
+    {
+      "name": "The Rise of the Golden Idol",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2024,
+      "price": 10500.0,
+      "reviews": 3390,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 3559500.0,
+      "is_free": false
+    },
+    {
+      "name": "Orphans",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2025,
+      "price": 9200.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Selknam Defense",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2014,
+      "price": 3000.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "The Rangers In The South",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 3900.0,
+      "reviews": 758,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 295620.0,
+      "is_free": false
+    },
+    {
+      "name": "The Trolley Solution",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 3000.0,
+      "reviews": 465,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 139500.0,
+      "is_free": false
+    },
+    {
+      "name": "Leap Galaxy",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Tiles in Time",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2025,
+      "price": 5200.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Dungeon Shifters",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 3000.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "El Pasante Elementalista",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2025,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Hybrid Blood",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 9800.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Valiants: Arena",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2025,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": true
+    },
+    {
+      "name": "Mecha Survivors - Early Access",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2025,
+      "price": 1900.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Avoidthis",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2025,
+      "price": 1900.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Don Pepe y sus globos",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Microlandia",
+      "platform": "Steam",
+      "genre": "Simuladores",
+      "year": 2025,
+      "price": 4200.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Space Evolver",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Stick Out!",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Chromatic Battles",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Rock of Ages 2: Bigger & Boulder™",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2017,
+      "price": 6400.0,
+      "reviews": 2656,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 1699840.0,
+      "is_free": false
+    },
+    {
+      "name": "Omen of Sorrow",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2023,
+      "price": 3960.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Long Gone Days",
+      "platform": "Steam",
+      "genre": "Aventura",
+      "year": 2023,
+      "price": 15618.0,
+      "reviews": 454,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 709057.2,
+      "is_free": false
+    },
+    {
+      "name": "Santa Rockstar",
+      "platform": "Steam",
+      "genre": "Casual",
+      "year": 2016,
+      "price": 3100.0,
+      "reviews": 255,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 79050.0,
+      "is_free": false
+    },
+    {
+      "name": "Dungeon of the Forgotten King",
+      "platform": "Steam",
+      "genre": "Indie",
+      "year": 2026,
+      "price": 0.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Omnibion War",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2020,
+      "price": 4200.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    },
+    {
+      "name": "Cyber Ops",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2020,
+      "price": 6400.0,
+      "reviews": 106,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 67840.0,
+      "is_free": false
+    },
+    {
+      "name": "The Eternal Cylinder",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2022,
+      "price": 13000.0,
+      "reviews": 1009,
+      "metacritic": 79,
+      "score": 7.9,
+      "sentiment": 0.58,
+      "revenue_est": 1311700.0,
+      "is_free": false
+    },
+    {
+      "name": "Defenders of Ekron - Definitive Edition",
+      "platform": "Steam",
+      "genre": "Acción",
+      "year": 2018,
+      "price": 6400.0,
+      "reviews": 0,
+      "metacritic": 0,
+      "score": 0,
+      "sentiment": 0,
+      "revenue_est": 0.0,
+      "is_free": false
+    }
+  ],
+  "summary": {
+    "total": 61,
+    "steam_count": 61,
+    "itch_count": 0,
+    "genres": [
+      "Deportes",
+      "Acción",
+      "Indie",
+      "Aventura",
+      "Simuladores",
+      "Casual",
+      "Estrategia",
+      "Rol"
+    ],
+    "year_range": [
+      2009,
+      2026
+    ]
+  },
+  "year_platform": [
+    {
+      "year": 2009,
+      "platform": "Steam",
+      "count": 2
+    },
+    {
+      "year": 2011,
+      "platform": "Steam",
+      "count": 1
+    },
+    {
+      "year": 2013,
+      "platform": "Steam",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "platform": "Steam",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "platform": "Steam",
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "platform": "Steam",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "platform": "Steam",
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "platform": "Steam",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "platform": "Steam",
+      "count": 7
+    },
+    {
+      "year": 2021,
+      "platform": "Steam",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "platform": "Steam",
+      "count": 6
+    },
+    {
+      "year": 2023,
+      "platform": "Steam",
+      "count": 8
+    },
+    {
+      "year": 2024,
+      "platform": "Steam",
+      "count": 4
+    },
+    {
+      "year": 2025,
+      "platform": "Steam",
+      "count": 15
+    },
+    {
+      "year": 2026,
+      "platform": "Steam",
+      "count": 7
+    }
+  ],
+  "genre_stats": [
+    {
+      "genre": "Acción",
+      "count": 35,
+      "revenue": 32583200.0
+    },
+    {
+      "genre": "Aventura",
+      "count": 8,
+      "revenue": 4935607.2
+    },
+    {
+      "genre": "Indie",
+      "count": 7,
+      "revenue": 1267500.0
+    },
+    {
+      "genre": "Casual",
+      "count": 6,
+      "revenue": 79050.0
+    },
+    {
+      "genre": "Simuladores",
+      "count": 2,
+      "revenue": 302391287.0
+    },
+    {
+      "genre": "Deportes",
+      "count": 1,
+      "revenue": 35739.0
+    },
+    {
+      "genre": "Estrategia",
+      "count": 1,
+      "revenue": 0.0
+    },
+    {
+      "genre": "Rol",
+      "count": 1,
+      "revenue": 6041640.0
+    }
+  ],
+  "monthly_heatmap": [
+    {
+      "year": 2009,
+      "month": 3,
+      "count": 1
+    },
+    {
+      "year": 2009,
+      "month": 11,
+      "count": 1
+    },
+    {
+      "year": 2011,
+      "month": 6,
+      "count": 1
+    },
+    {
+      "year": 2013,
+      "month": 9,
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "month": 4,
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "month": 11,
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "month": 10,
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "count": 2
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "count": 2
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "count": 4
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "count": 2
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "month": 12,
+      "count": 1
+    }
+  ]
+}

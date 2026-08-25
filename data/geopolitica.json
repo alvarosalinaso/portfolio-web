@@ -1,0 +1,39 @@
+{
+  "speeches": [
+    {
+      "year": "1881",
+      "speaker": "Presidente A",
+      "text": "En nuestra consolidación nacional, las heroicas ciudades de Iquique y Antofagasta han demostrado ser motores vitales para el Norte, proveyendo al puerto de Valparaíso de recursos invaluables para el bienestar de Santiago."
+    },
+    {
+      "year": "1885",
+      "speaker": "Presidente B",
+      "text": "La prosperidad se extiende desde Copiapó hasta la ciudad de Concepción. Es un deber del Estado mirar hacia el sur, fomentando el transporte desde Temuco hasta los canales de Punta Arenas."
+    },
+    {
+      "year": "1910",
+      "speaker": "Presidente C",
+      "text": "Celebramos nuestro centenario con la mirada en el progreso de Valparaíso y la conectividad ferroviaria que une Santiago con Talca y Chillán."
+    },
+    {
+      "year": "1925",
+      "speaker": "Presidente D",
+      "text": "La nueva constitución protege todas las regiones, asegurando autonomía económica para zonas pujantes como Antofagasta, y el desarrollo de Valdivia hacia el puerto de Puerto Montt."
+    },
+    {
+      "year": "1960",
+      "speaker": "Presidente E",
+      "text": "La tragedia ha golpeado al sur. Valdivia, Osorno y Concepción requieren nuestra atención máxima. Santiago debe enviar todos los recursos necesarios para la reconstrucción."
+    },
+    {
+      "year": "1990",
+      "speaker": "Presidente F",
+      "text": "Iniciamos una época de reencuentro en la república. Desde Arica en el extremo norte, pasando por Iquique y Antofagasta, hasta Punta Arenas. Todo Chile está unido, enfocándonos en un libre mercado que nace en Santiago."
+    },
+    {
+      "year": "2010",
+      "speaker": "Presidente G",
+      "text": "El bicentenario nos encuentra recuperándonos de la adversidad. Las regiones del Biobío, especialmente Concepción y Talcahuano, han sufrido, pero la ayuda desde Santiago y Valparaíso no se hará esperar."
+    }
+  ]
+}

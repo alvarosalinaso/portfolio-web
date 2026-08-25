@@ -1,0 +1,46 @@
+{
+  "players": [
+    {
+      "Metric": "Cmp%",
+      "Manchester United": "83.46",
+      "PL Average": "82.5",
+      "Difference": "0.96"
+    },
+    {
+      "Metric": "PrgDist",
+      "Manchester United": "4137.77",
+      "PL Average": "8500.0",
+      "Difference": "-4362.23"
+    },
+    {
+      "Metric": "Ast",
+      "Manchester United": "2.0",
+      "PL Average": "3.5",
+      "Difference": "-1.5"
+    },
+    {
+      "Metric": "xA",
+      "Manchester United": "1.84",
+      "PL Average": "3.2",
+      "Difference": "-1.36"
+    },
+    {
+      "Metric": "KP",
+      "Manchester United": "19.71",
+      "PL Average": "35.0",
+      "Difference": "-15.29"
+    },
+    {
+      "Metric": "PPA",
+      "Manchester United": "15.77",
+      "PL Average": "25.0",
+      "Difference": "-9.23"
+    },
+    {
+      "Metric": "PrgP",
+      "Manchester United": "69.77",
+      "PL Average": "80.0",
+      "Difference": "-10.23"
+    }
+  ]
+}
