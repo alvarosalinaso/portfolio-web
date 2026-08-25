@@ -120,8 +120,8 @@
     },
     {
       "president": "Salvador Allende",
-      "year": 1971,
-      "sentiment": 1.0
+      "year": 1973,
+      "sentiment": -1.0
     },
     {
       "president": "Patricio Aylwin",
@@ -142,5 +142,5 @@
   "total_speeches": 16,
   "total_entities": 418,
   "avg_sentiment": 0.562,
-  "coverage_years": "2000-1832"
+  "coverage_years": "2000-1832 (16 Cuentas Públicas)"
 }
