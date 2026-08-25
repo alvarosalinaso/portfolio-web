@@ -1,0 +1,160 @@
+{
+  "birthplace_counts": {
+    "Santiago": 23,
+    "Concepción": 3,
+    "Longaví": 2,
+    "Temuco": 2,
+    "Valparaíso": 2,
+    "La Serena": 2,
+    "Petorca": 1,
+    "Casablanca": 1,
+    "Rancagua": 1,
+    "Nacimiento": 1,
+    "Punitaqui": 1,
+    "Viña del Mar": 1,
+    "Punta Arenas": 1
+  },
+  "region_population": {
+    "Arica y Parinacota": 226,
+    "Tarapacá": 382,
+    "Antofagasta": 607,
+    "Atacama": 301,
+    "Coquimbo": 757,
+    "Valparaíso": 1855,
+    "Metropolitana": 7113,
+    "O'Higgins": 915,
+    "Maule": 1045,
+    "Ñuble": 511,
+    "Biobío": 1555,
+    "La Araucanía": 957,
+    "Los Ríos": 406,
+    "Los Lagos": 823,
+    "Aysén": 107,
+    "Magallanes": 178
+  },
+  "events": [
+    {
+      "year": 1810,
+      "event": "Primera Junta de Gobierno",
+      "type": "político"
+    },
+    {
+      "year": 1817,
+      "event": "Batalla de Chacabuco",
+      "type": "militar"
+    },
+    {
+      "year": 1818,
+      "event": "Batalla de Maipú",
+      "type": "militar"
+    },
+    {
+      "year": 1818,
+      "event": "Independencia de Chile",
+      "type": "político"
+    },
+    {
+      "year": 1833,
+      "event": "Constitución Política",
+      "type": "político"
+    },
+    {
+      "year": 1866,
+      "event": "Batalla de Iquique",
+      "type": "militar"
+    },
+    {
+      "year": 1879,
+      "event": "Guerra del Pacífico (inicio)",
+      "type": "militar"
+    },
+    {
+      "year": 1883,
+      "event": "Tratado de Ancón",
+      "type": "político"
+    },
+    {
+      "year": 1906,
+      "event": "Terremoto de Valparaíso",
+      "type": "desastre"
+    },
+    {
+      "year": 1925,
+      "event": "Nueva Constitución",
+      "type": "político"
+    },
+    {
+      "year": 1938,
+      "event": "Matanza del Seguro Obrero",
+      "type": "político"
+    },
+    {
+      "year": 1945,
+      "event": "Fin de la Segunda Guerra Mundial",
+      "type": "político"
+    },
+    {
+      "year": 1960,
+      "event": "Gran Terremoto de Valdivia",
+      "type": "desastre"
+    },
+    {
+      "year": 1962,
+      "event": "Copa Mundial de Fútbol",
+      "type": "deportivo"
+    },
+    {
+      "year": 1964,
+      "event": "Reforma Agraria",
+      "type": "político"
+    },
+    {
+      "year": 1970,
+      "event": "Elección de Salvador Allende",
+      "type": "político"
+    },
+    {
+      "year": 1973,
+      "event": "Golpe de Estado",
+      "type": "político"
+    },
+    {
+      "year": 1985,
+      "event": "Atentado contra Pinochet",
+      "type": "político"
+    },
+    {
+      "year": 1988,
+      "event": "Plebiscito (NO gana)",
+      "type": "político"
+    },
+    {
+      "year": 1990,
+      "event": "Retorno a la democracia",
+      "type": "político"
+    },
+    {
+      "year": 2010,
+      "event": "Terremoto del 27F",
+      "type": "desastre"
+    },
+    {
+      "year": 2010,
+      "event": "Rescate mineros Copiapó",
+      "type": "social"
+    },
+    {
+      "year": 2019,
+      "event": "Estallido Social",
+      "type": "político"
+    },
+    {
+      "year": 2022,
+      "event": "Proceso Constituyente",
+      "type": "político"
+    }
+  ],
+  "total_presidents": 41,
+  "total_census_records": 113,
+  "total_events": 24
+}

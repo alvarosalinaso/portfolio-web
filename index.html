@@ -78,6 +78,10 @@
               <span class="tab-icon">🏆</span>
               <span class="tab-text">World Cup 2026</span>
             </button>
+            <button class="tab-btn" data-tab="chile-geo-tab">
+              <span class="tab-icon">🗺️</span>
+              <span class="tab-text">Geografía Histórica</span>
+            </button>
           </div>
 
           <!-- Tab Contents -->
@@ -378,12 +382,27 @@
                 </div>
               </div>
             </div>
+
+            <!-- TAB 9: CHILE GEOGRAFÍA HISTÓRICA -->
+            <div class="tab-content" id="chile-geo-tab">
+              <div class="dashboard-header">
+                <h3>🗺️ Chile Geografía Histórica</h3>
+                <p>41 presidentes, 113 registros censales, 24 eventos históricos · Datos de BCN, INE y Wikipedia</p>
+              </div>
+              <div id="chile-geo-kpis" class="kpi-grid"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0">
+                <div id="chile-geo-birthplace-chart" class="chart-container" style="height:350px"></div>
+                <div id="chile-geo-events-chart" class="chart-container" style="height:350px"></div>
+              </div>
+              <div id="chile-geo-region-chart" class="chart-container" style="height:300px;margin:1rem 0"></div>
+              <div class="executive-insight-card" style="margin:1rem 0">
+                <h4 class="insight-title"><span class="insight-icon">📐</span> Contexto Metodológico</h4>
+                <p>Los datos georreferenciados provienen de fuentes oficiales: Geopackage de la BCN (regiones y comunas), INE (censos 1907-2017), y Wikipedia (presidentes y eventos). Coordenadas de nacimiento de presidentes basadas en la ciudad de origen documentada.</p>
+              </div>
+            </div>
+
           </div>
-
         </div>
-      </section>
-
-      <!-- PROJECTS GRID SECTION -->
       <section class="projects">
         <h2 class="section-heading">Portafolio Estratégico de Datos <span class="pulse-dot"></span></h2>
         <p class="section-subheading">Auditorías técnicas y operativas con valor de negocio. Explora el código fuente y las directrices estratégicas de cada desarrollo.</p>

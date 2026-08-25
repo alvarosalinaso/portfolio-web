@@ -34,6 +34,10 @@ function switchTab(tabId) {
     import('./charts/WorldCupChart.js').then(m => m.initWorldCup());
     window.worldcupInitialized = true;
   }
+  if (tabId === 'chile-geo-tab' && !window.chileGeoInitialized) {
+    import('./charts/ChileGeografiaChart.js').then(m => m.initChileGeografia());
+    window.chileGeoInitialized = true;
+  }
 }
 
 function switchDashTab(containerId, tabId) {
