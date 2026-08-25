@@ -36,10 +36,6 @@ function switchTab(tabId) {
   }
 }
 
-document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
-});
-
 function switchDashTab(containerId, tabId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -57,10 +53,6 @@ document.addEventListener('click', (e) => {
     const container = e.target.closest('.tab-content');
     if (container) switchDashTab(container.id, e.target.dataset.dashTab);
   }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  switchTab('chilean-tab');
 });
 
 window.switchTab = switchTab;

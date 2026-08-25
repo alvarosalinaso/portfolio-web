@@ -91,9 +91,9 @@ function generateSyntheticData() {
     elo_ranking: teams.sort((a, b) => b.elo - a.elo).slice(0, 10),
     monte_carlo_results: teams.slice(0, 8).map(t => ({
       name: t.name,
-      win概率: parseFloat((Math.random() * 20 + 2).toFixed(1)),
-      final概率: parseFloat((Math.random() * 25 + 8).toFixed(1)),
-      semis概率: parseFloat((Math.random() * 20 + 15).toFixed(1))
+      win_prob: parseFloat((Math.random() * 20 + 2).toFixed(1)),
+      final_prob: parseFloat((Math.random() * 25 + 8).toFixed(1)),
+      semis_prob: parseFloat((Math.random() * 20 + 15).toFixed(1))
     }))
   };
 }
@@ -190,12 +190,12 @@ function renderMonteCarloChart() {
 
   const trace1 = {
     y: results.map(r => r.name),
-    x: results.map(r => r['win概率']),
+    x: results.map(r => r['win_prob']),
     type: 'bar',
     orientation: 'h',
     name: 'Campeón',
     marker: { color: COLORS.gold, line: { width: 0 } },
-    text: results.map(r => `${r['win概率']}%`),
+    text: results.map(r => `${r['win_prob']}%`),
     textposition: 'outside',
     textfont: { color: COLORS.text, size: 10 },
     hovertemplate: '<b>%{y}</b><br>Campeón: %{x:.1f}%<extra></extra>'
@@ -203,7 +203,7 @@ function renderMonteCarloChart() {
 
   const trace2 = {
     y: results.map(r => r.name),
-    x: results.map(r => r['final概率']),
+    x: results.map(r => r['final_prob']),
     type: 'bar',
     orientation: 'h',
     name: 'Final',

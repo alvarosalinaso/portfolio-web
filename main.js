@@ -34,23 +34,23 @@ document.addEventListener("DOMContentLoaded", () => {
           initTacticalGraph();
         }
         if (tabId === "chilean-tab" && !window.chileanInitialized) {
-          initChileanVideogames();
+          initChileanVideogames().catch(err => console.error('Chilean chart init failed:', err));
           window.chileanInitialized = true;
         }
         if (tabId === "manutd-tab" && !window.manutdInitialized) {
-          initManchesterUnited();
+          initManchesterUnited().catch(err => console.error('ManUtd chart init failed:', err));
           window.manutdInitialized = true;
         }
         if (tabId === "passing-tab" && !window.passingInitialized) {
-          initUnitedPassing();
+          initUnitedPassing().catch(err => console.error('Passing chart init failed:', err));
           window.passingInitialized = true;
         }
         if (tabId === "geopolitica-tab" && !window.geopoliticaInitialized) {
-          initGeopolitica();
+          initGeopolitica().catch(err => console.error('Geopolitica chart init failed:', err));
           window.geopoliticaInitialized = true;
         }
         if (tabId === "worldcup-tab" && !window.worldcupInitialized) {
-          initWorldCup();
+          initWorldCup().catch(err => console.error('WorldCup chart init failed:', err));
           window.worldcupInitialized = true;
         }
       }
@@ -519,7 +519,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize Chilean tab on load (it's the default active tab)
   if (!window.chileanInitialized) {
-    initChileanVideogames();
+    initChileanVideogames().catch(err => console.error('Chilean chart init failed:', err));
     window.chileanInitialized = true;
   }
 
