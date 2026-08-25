@@ -22,26 +22,26 @@
     "República"
   ],
   "ner_counts": [
-    391,
-    69,
-    72,
-    88,
-    72,
-    56,
-    15,
-    12,
-    76,
-    52,
-    23,
-    0,
-    0,
-    23,
-    0,
-    17,
+    198,
+    22,
+    26,
+    18,
     0,
     0,
     24,
-    125
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    23,
+    21,
+    0,
+    0,
+    0,
+    42,
+    44
   ],
   "entity_types": [
     "LOC",
@@ -51,7 +51,7 @@
     "NORP"
   ],
   "entity_type_counts": [
-    441,
+    248,
     30,
     25,
     35,
@@ -79,14 +79,9 @@
       "sentiment": 1.0
     },
     {
-      "president": "Balmaceda Fernández",
-      "year": 1888,
-      "sentiment": -1.0
-    },
-    {
       "president": "Germán Riesco",
       "year": 1902,
-      "sentiment": 1.0
+      "sentiment": 0.0
     },
     {
       "president": "Emiliano Figueroa",
@@ -94,9 +89,9 @@
       "sentiment": 0.0
     },
     {
-      "president": "Arturo Alessandri",
+      "president": "Juan Esteban Montero",
       "year": 1932,
-      "sentiment": 0.0
+      "sentiment": -1.0
     },
     {
       "president": "Juan Antonio Ríos",
@@ -111,7 +106,7 @@
     {
       "president": "Carlos Ibáñez del Campo",
       "year": 1952,
-      "sentiment": 0.0
+      "sentiment": 1.0
     },
     {
       "president": "Jorge Alessandri",
@@ -126,7 +121,7 @@
     {
       "president": "Salvador Allende",
       "year": 1971,
-      "sentiment": 0.0
+      "sentiment": 1.0
     },
     {
       "president": "Patricio Aylwin",
@@ -136,41 +131,16 @@
     {
       "president": "Eduardo Frei Ruiz-Tagle",
       "year": 1994,
-      "sentiment": 0.0
+      "sentiment": 1.0
     },
     {
       "president": "Ricardo Lagos",
       "year": 2000,
       "sentiment": 1.0
-    },
-    {
-      "president": "Michelle Bachelet",
-      "year": 2006,
-      "sentiment": 0.0
-    },
-    {
-      "president": "Sebastián Piñera",
-      "year": 2010,
-      "sentiment": 1.0
-    },
-    {
-      "president": "Michelle Bachelet",
-      "year": 2014,
-      "sentiment": 1.0
-    },
-    {
-      "president": "Sebastián Piñera",
-      "year": 2018,
-      "sentiment": 0.0
-    },
-    {
-      "president": "Gabriel Boric",
-      "year": 2022,
-      "sentiment": 0.0
     }
   ],
-  "total_speeches": 22,
-  "total_entities": 1115,
-  "avg_sentiment": 0.409,
-  "coverage_years": "2022-1832"
+  "total_speeches": 16,
+  "total_entities": 418,
+  "avg_sentiment": 0.562,
+  "coverage_years": "2000-1832"
 }
