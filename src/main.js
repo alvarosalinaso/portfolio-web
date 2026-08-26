@@ -1,10 +1,47 @@
 import './style.css'
 
+let currentLang = localStorage.getItem('lang') || 'es';
+let translations = {};
+
 export async function loadJSON(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`Failed to load ${path}`);
   return res.json();
 }
+
+async function loadTranslations() {
+  try {
+    translations = await loadJSON('./data/translations.json');
+  } catch (e) {
+    console.warn('Translations not loaded:', e);
+  }
+}
+
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[currentLang] && translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
+    }
+  });
+  
+  const langBtn = document.getElementById('lang-btn');
+  if (langBtn) {
+    langBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+  }
+  
+  document.documentElement.lang = currentLang;
+}
+
+window.toggleLanguage = function() {
+  currentLang = currentLang === 'es' ? 'en' : 'es';
+  localStorage.setItem('lang', currentLang);
+  applyTranslations();
+};
+
+loadTranslations().then(() => {
+  applyTranslations();
+});
 
 function switchTab(tabId) {
   document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
