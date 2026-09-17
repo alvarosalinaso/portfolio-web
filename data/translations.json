@@ -1,7 +1,7 @@
 {
   "es": {
     "title": "Álvaro Salinas Ortiz",
-    "role": "Licenciado en Historia · Analista de Datos",
+    "role": "Analista de Datos · Prompt Engineer",
     "subtitle": "Entiendo comportamientos humanos a través de datos.",
     "hero_description": "Trabajo en la Dirección de Registros Académicos de la PUC, donde automatizo procesos y analizo información. Aprendí Python y SQL por mi cuenta, aplicándolo directamente a problemas reales.",
     "visit_github": "Visitar GitHub",
@@ -32,7 +32,7 @@
   },
   "en": {
     "title": "Álvaro Salinas Ortiz",
-    "role": "History Graduate · Data Analyst",
+    "role": "Data Analyst · Prompt Engineer",
     "subtitle": "Understanding human behavior through data.",
     "hero_description": "I work at PUC's Academic Records office, automating processes and analyzing data. I learned Python and SQL on my own, applying them directly to real problems.",
     "visit_github": "Visit GitHub",
