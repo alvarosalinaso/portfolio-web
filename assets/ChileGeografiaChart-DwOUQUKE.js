@@ -1,4 +1,4 @@
-import{t as e}from"./main-Dr0AtSMC.js";async function t(){let t=await e(`./data/chile-geografia.json`),n=document.getElementById(`chile-geo-kpis`);n&&(n.innerHTML=`
+import{t as e}from"./main-D0nHFRpM.js";async function t(){let t=await e(`./data/chile-geografia.json`),n=document.getElementById(`chile-geo-kpis`);n&&(n.innerHTML=`
       <div class="kpi-card">
         <span class="kpi-value">${t.total_presidents}</span>
         <span class="kpi-label">Presidentes</span>
