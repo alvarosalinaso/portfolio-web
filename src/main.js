@@ -47,9 +47,13 @@ function switchTab(tabId) {
   document.querySelectorAll('.lab-tabs .tab-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.tab === tabId);
   });
-  document.querySelectorAll('.lab-content-wrapper .tab-content').forEach(content => {
+  document.querySelectorAll('.tab-content').forEach(content => {
     content.classList.toggle('active', content.id === tabId);
   });
+
+  // Scroll to the lab section
+  const lab = document.querySelector('.strategy-lab');
+  if (lab) lab.scrollIntoView({ behavior: 'smooth', block: 'start' });
   
   if (tabId === 'chilean-tab' && !window.chileanInitialized) {
     import('./charts/ChileanVideogamesChart.js').then(m => m.initChileanVideogames());

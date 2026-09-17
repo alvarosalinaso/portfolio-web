@@ -165,6 +165,12 @@ body {
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.6rem;
+  }
+}
+
 .section-subheading {
   color: var(--text-secondary);
   font-size: 1.05rem;
@@ -1479,22 +1485,77 @@ footer {
   color: #8b949e;
 }
 
+/* Deploy Links */
+.deploy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.deploy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.deploy-link:hover {
+  border-color: var(--accent-color);
+  background: rgba(99, 102, 241, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+/* Chart Grid Layouts */
+.chart-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .chart-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .lab-tabs {
-    flex-direction: column;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0;
+  }
+
+  .lab-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .tab-btn {
     min-width: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--glass-border);
-    padding: 1rem;
-    font-size: 0.85rem;
+    flex: 0 0 auto;
+    border-right: 1px solid var(--glass-border);
+    border-bottom: none;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   .lab-content-wrapper {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .values-grid {
@@ -1506,10 +1567,34 @@ footer {
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    letter-spacing: -1px;
   }
 
   .section-heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .chart-row.two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  [style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
   }
 }
