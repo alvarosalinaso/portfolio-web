@@ -102,8 +102,31 @@ document.addEventListener('click', (e) => {
 
 window.switchTab = switchTab;
 
-// WCAG tab roles
+// Visitor counter (localStorage-based)
+function initVisitorCounter() {
+  const counterEl = document.getElementById('visitor-counter');
+  if (!counterEl) return;
+
+  let count = parseInt(localStorage.getItem('portfolio_visits') || '0');
+  
+  // Only count unique visits per day
+  const today = new Date().toDateString();
+  const lastVisit = localStorage.getItem('portfolio_last_visit');
+  
+  if (lastVisit !== today) {
+    count += 1;
+    localStorage.setItem('portfolio_visits', count.toString());
+    localStorage.setItem('portfolio_last_visit', today);
+  }
+
+  counterEl.innerHTML = '<span style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.4rem 1rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.2);border-radius:50px;font-size:0.8rem;color:#a5b4fc;"><span style="width:8px;height:8px;background:#22c55e;border-radius:50;animation:pulse 2.5s infinite;"></span> ' + count + ' visitas</span>';
+}
+
+// Init everything on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
+  initVisitorCounter();
+  
+  // WCAG tab roles
   const tabBtns = document.querySelectorAll('.lab-tabs .tab-btn');
   const tabPanels = document.querySelectorAll('.tab-content');
   
