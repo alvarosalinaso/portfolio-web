@@ -101,3 +101,96 @@ document.addEventListener('click', (e) => {
 });
 
 window.switchTab = switchTab;
+
+// WCAG tab roles
+document.addEventListener('DOMContentLoaded', () => {
+  const tabBtns = document.querySelectorAll('.lab-tabs .tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-content');
+  
+  tabBtns.forEach(btn => {
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', btn.classList.contains('active'));
+    btn.setAttribute('aria-controls', btn.dataset.tab);
+  });
+  
+  tabPanels.forEach(panel => {
+    panel.setAttribute('role', 'tabpanel');
+  });
+
+  // Keyboard navigation for tabs
+  document.querySelector('.lab-tabs')?.addEventListener('keydown', (e) => {
+    const tabs = Array.from(tabBtns);
+    const current = tabs.findIndex(t => t.classList.contains('active'));
+    
+    if (e.key === 'ArrowRight') {
+      const next = tabs[(current + 1) % tabs.length];
+      switchTab(next.dataset.tab);
+      next.focus();
+    } else if (e.key === 'ArrowLeft') {
+      const prev = tabs[(current - 1 + tabs.length) % tabs.length];
+      switchTab(prev.dataset.tab);
+      prev.focus();
+    }
+  });
+});
+
+// SVG pitch touch support
+function initPitchTouch() {
+  const svg = document.getElementById('pitch-svg');
+  if (!svg) return;
+
+  const nodes = svg.querySelectorAll('#svg-nodes circle, #svg-nodes text');
+  
+  nodes.forEach(node => {
+    let isDragging = false;
+    let currentX, currentY;
+    
+    const getPos = (e) => {
+      const pt = svg.createSVGPoint();
+      const touch = e.touches ? e.touches[0] : e;
+      pt.x = touch.clientX;
+      pt.y = touch.clientY;
+      return pt.matrixTransform(svg.getScreenCTM().inverse());
+    };
+
+    node.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      const pos = getPos(e);
+      currentX = pos.x;
+      currentY = pos.y;
+      e.preventDefault();
+    }, { passive: false });
+
+    node.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const pos = getPos(e);
+      const dx = pos.x - currentX;
+      const dy = pos.y - currentY;
+      
+      const cx = parseFloat(node.getAttribute('cx') || node.getAttribute('x')) + dx;
+      const cy = parseFloat(node.getAttribute('cy') || node.getAttribute('y')) + dy;
+      
+      if (node.getAttribute('cx')) {
+        node.setAttribute('cx', cx);
+        node.setAttribute('cy', cy);
+      }
+      
+      currentX = pos.x;
+      currentY = pos.y;
+      e.preventDefault();
+    }, { passive: false });
+
+    node.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+  });
+}
+
+// Init touch when tactical tab is shown
+const originalSwitchTab = window.switchTab;
+window.switchTab = function(tabId) {
+  originalSwitchTab(tabId);
+  if (tabId === 'tactical-cna-tab') {
+    setTimeout(initPitchTouch, 100);
+  }
+};
