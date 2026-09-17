@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Álvaro Salinas Ortiz | Asesor Estratégico en Toma de Datos y Análisis</title>
+    <title>Álvaro Salinas Ortiz | Analista de Datos & Historiador</title>
+    <meta name="description" content="Licenciado en Historia PUC transformado en Analista de Datos. Python, SQL, Dash, NLP, Machine Learning. Portafolio de proyectos con datos reales." />
+    <meta name="author" content="Álvaro Salinas Ortiz" />
+    <meta property="og:title" content="Álvaro Salinas Ortiz | Analista de Datos" />
+    <meta property="og:description" content="Portafolio de análisis de datos con proyectos reales: NLP, Machine Learning, Dashboards interactivos, Análisis de Redes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvarosalinaso.github.io/portfolio-web/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://alvarosalinaso.github.io/portfolio-web/" />
     <!-- Modern Typography: Outfit & Inter from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +48,56 @@
         </p>
         <div class="social-links">
           <a href="https://github.com/alvarosalinaso" target="_blank" class="btn primary" data-i18n="visit_github">Visitar GitHub</a>
+          <a href="https://www.linkedin.com/in/alvarosalinaso" target="_blank" class="btn transparent">LinkedIn</a>
           <a href="mailto:alvarosalinasortiz@gmail.com" class="btn transparent" data-i18n="contact">Contactar</a>
         </div>
       </header>
+
+      <!-- HOW I WORK -->
+      <section class="how-i-work">
+        <h2 class="section-heading">Cómo Trabajo <span class="pulse-dot"></span></h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">📊</div>
+            <h4>Datos reales, no ficticios</h4>
+            <p>Steam API, StatsBomb, INE Chile, BCN. Cuando uso datos sintéticos, lo digo.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🔁</div>
+            <h4>Reproducible</h4>
+            <p>Docker, requirements.txt, tests, CI/GitHub Actions. Cualquiera puede replicar.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">📝</div>
+            <h4>Documentación clara</h4>
+            <p>READMEs bilingües con metodología, fuentes y resultados.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🎯</div>
+            <h4>Sin humo</h4>
+            <p>Si un modelo tiene 60% de accuracy, lo digo. Transparencia total.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="tech-stack">
+        <h2 class="section-heading">Stack Tecnológico <span class="pulse-dot"></span></h2>
+        <div class="tech-grid">
+          <div class="tech-item"><span class="tech-dot" style="background:#3572A5"></span>Python</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#e34c26"></span>SQL</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#1572B6"></span>Pandas</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#11318B"></span>Polars</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#FFF000"></span>DuckDB</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#96588A"></span>spaCy</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#3D6B99"></span>Plotly</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#EF553B"></span>Dash</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#F05514"></span>NetworkX</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#FF6F00"></span>scikit-learn</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#2496ED"></span>Docker</div>
+          <div class="tech-item"><span class="tech-dot" style="background:#F05032"></span>Git</div>
+        </div>
+      </section>
 
       <!-- INTERACTIVE STRATEGY LAB (DASHBOARDS) -->
       <section class="strategy-lab">
@@ -424,7 +479,9 @@
             <h3>Geopolítica Textual NLP</h3>
             <p>Cartografía espacial interactiva de discursos y oficios políticos basada en IA y modelos spaCy. Extrae locaciones mencionadas y mapea las fricciones de poder territorial.</p>
             <div class="tags"><span class="tag">AI NLP</span><span class="tag">Geopandas</span><span class="tag">Folium GIS</span></div>
-            <a href="https://github.com/alvarosalinaso/geopolitica-textual-nlp" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <div class="card-links">
+              <a href="https://github.com/alvarosalinaso/geopolitica-textual-nlp" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
           <!-- CARD 2 -->
@@ -433,7 +490,9 @@
             <h3>Redes Tácticas & Grafos (CNA)</h3>
             <p>Modelado relacional y análisis de sistemas complejos para evaluar la circulación táctica de pases, detectando puntos únicos de falla (SPOF) mediante NetworkX y PyVis.</p>
             <div class="tags"><span class="tag">Network Science</span><span class="tag">NetworkX</span><span class="tag">PyVis HTML</span></div>
-            <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <div class="card-links">
+              <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
           <!-- CARD 3 -->
@@ -442,17 +501,19 @@
             <h3>API Backend Extractor UC</h3>
             <p>API RESTful de alta velocidad contenedorizada en Docker y desarrollada con FastAPI. Extrae en memoria matrices y parámetros oficiales de certificados e ingenio escolar en PDF.</p>
              <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Regex NLP</span></div>
-            <a href="https://github.com/alvarosalinaso/renombrador-institucional-uc" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <div class="card-links">
+              <a href="https://github.com/alvarosalinaso/renombrador-institucional-uc" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
           <!-- CARD 4 -->
           <div class="glass-card">
             <div class="card-icon">🎮</div>
             <h3>Inteligencia Mercado Gamer Chileno</h3>
-            <p>Benchmarking comercial y algoritmo predictivo (Random Forests) para auditar el desempeño de la industria chilena y determinar la sostenibilidad financiera. <strong>Datos reales de Steam/Itch.io.</strong></p>
+            <p>Benchmarking comercial y algoritmo predictivo (Random Forests) para auditar el desempeño de la industria chilena. <strong>Datos reales de Steam/Itch.io.</strong></p>
              <div class="tags"><span class="tag">Machine Learning</span><span class="tag">Plotly.js</span><span class="tag">Market BI</span></div>
             <div class="card-links">
-              <a href="#chilean-tab" class="card-link primary" onclick="switchTab('chilean-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="#chilean-tab" class="card-link primary" onclick="switchTab('chilean-tab'); return false;">📊 Dashboard →</a>
               <a href="https://github.com/alvarosalinaso/chilean-videogames-analysis" target="_blank" class="card-link">GitHub →</a>
             </div>
           </div>
@@ -460,11 +521,11 @@
           <!-- CARD 5 -->
           <div class="glass-card">
             <div class="card-icon">⚽</div>
-            <h3>Manchester United Performance Intelligence</h3>
-            <p>Auditoría de gasto neto en fichajes frente a la retribución real en puntos durante la última década. Revela correlaciones operativas entre gasto y rescisión de contratos. <strong>Tests 11/11 pasan.</strong></p>
+            <h3>Manchester United Performance</h3>
+            <p>Auditoría de gasto neto en fichajes frente a la retribución real en puntos. <strong>Tests 11/11 pasan.</strong></p>
              <div class="tags"><span class="tag">Finance Audit</span><span class="tag">Pandas ETL</span><span class="tag">Plotly.js</span></div>
             <div class="card-links">
-              <a href="#manutd-tab" class="card-link primary" onclick="switchTab('manutd-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="#manutd-tab" class="card-link primary" onclick="switchTab('manutd-tab'); return false;">📊 Dashboard →</a>
               <a href="https://github.com/alvarosalinaso/manchester-united-analisis" target="_blank" class="card-link">GitHub →</a>
             </div>
           </div>
@@ -473,10 +534,10 @@
           <div class="glass-card">
             <div class="card-icon">🎯</div>
             <h3>United Passing Network (xT)</h3>
-            <p>Panel táctico interactivo que evalúa y filtra el rendimiento del mediocampo del Man United, calculando el Peligro Esperado (xT) bajo presión extrema del rival. Análisis de redes complejas.</p>
+            <p>Panel táctico que evalúa el rendimiento del mediocampo calculando el Peligro Esperado (xT) bajo presión extrema.</p>
              <div class="tags"><span class="tag">Expected Threat</span><span class="tag">Network Science</span><span class="tag">Plotly.js</span></div>
             <div class="card-links">
-              <a href="#passing-tab" class="card-link primary" onclick="switchTab('passing-tab'); return false;">📊 Ver Dashboard Integrado →</a>
+              <a href="#passing-tab" class="card-link primary" onclick="switchTab('passing-tab'); return false;">📊 Dashboard →</a>
               <a href="https://github.com/alvarosalinaso/united-passing-efficiency-24-25" target="_blank" class="card-link">GitHub →</a>
             </div>
           </div>
@@ -484,28 +545,35 @@
           <!-- CARD 7 -->
           <div class="glass-card">
             <div class="card-icon">🌍</div>
-            <h3>World Cup 2026 Analysis</h3>
-            <p>Modelado predictivo y análisis de escenarios para el Mundial 2026. Simulación de fase de grupos, eliminatorias y probabilidades de campeón usando Elo ratings y Monte Carlo.</p>
-            <div class="tags"><span class="tag">Predictive Modeling</span><span class="tag">Monte Carlo</span><span class="tag">Elo Ratings</span></div>
-            <a href="https://github.com/alvarosalinaso/worldcup-2026" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <h3>World Cup 2026</h3>
+            <p>ML predictions, Monte Carlo simulation, team comparison. <strong>Datos reales FIFA/StatsBomb.</strong></p>
+            <div class="tags"><span class="tag">RandomForest</span><span class="tag">Monte Carlo</span><span class="tag">Elo Ratings</span></div>
+            <div class="card-links">
+              <a href="#worldcup-tab" class="card-link primary" onclick="switchTab('worldcup-tab'); return false;">📊 Dashboard →</a>
+              <a href="https://github.com/alvarosalinaso/worldcup-2026" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
           <!-- CARD 8 -->
           <div class="glass-card">
             <div class="card-icon">📦</div>
             <h3>Cajas Alimentación Santiago</h3>
-            <p>Análisis espacial de puntos de entrega de cajas alimentarias en Santiago usando K-Means (10 clusters, 80,595 puntos). Dashboard Dash con estilo Keith Haring.</p>
+            <p>Análisis espacial con K-Means (10 clusters, 80K+ puntos). Dashboard Dash estilo Keith Haring.</p>
             <div class="tags"><span class="tag">Spatial Analysis</span><span class="tag">K-Means</span><span class="tag">Dash</span></div>
-            <a href="https://github.com/alvarosalinaso/cajas-alimentacion" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <div class="card-links">
+              <a href="https://github.com/alvarosalinaso/cajas-alimentacion" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
           <!-- CARD 9 -->
           <div class="glass-card">
             <div class="card-icon">🏙️</div>
             <h3>Sanitización Santiago</h3>
-            <p>Mapeo de 87 puntos de solicitud de sanitización extraídos de KML. Dashboard Dash con estilo Mondrian (De Stijl) y filtros interactivos por tipo y nombre.</p>
+            <p>87 puntos de solicitud de sanitización. Dashboard Dash estilo Mondrian con filtros interactivos.</p>
             <div class="tags"><span class="tag">GIS</span><span class="tag">KML</span><span class="tag">Dash</span></div>
-            <a href="https://github.com/alvarosalinaso/sanitizacion-santiago" target="_blank" class="card-link">Explorar Repositorio →</a>
+            <div class="card-links">
+              <a href="https://github.com/alvarosalinaso/sanitizacion-santiago" target="_blank" class="card-link">GitHub →</a>
+            </div>
           </div>
 
         </div>
