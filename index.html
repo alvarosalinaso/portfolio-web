@@ -127,10 +127,6 @@
               <span class="tab-icon">🕸️</span>
               <span class="tab-text">Red de Pases United</span>
             </button>
-            <button class="tab-btn" data-tab="manchester-audit-tab">
-              <span class="tab-icon">📊</span>
-              <span class="tab-text">Auditoría Financiera M. United</span>
-            </button>
             <button class="tab-btn" data-tab="gamer-sim-tab">
               <span class="tab-icon">🎮</span>
               <span class="tab-text">Simulador Viabilidad Gamer</span>
@@ -232,60 +228,6 @@
               <div id="passing-kpis" class="kpi-grid"></div>
               <div id="passing-view-selector" class="dashboard-filters"></div>
               <div id="passing-content"></div>
-            </div>
-
-            <!-- TAB 4: MANCHESTER UNITED FINANCIAL AUDIT (Simulator) -->
-            <div class="tab-content" id="manchester-audit-tab">
-              <div class="lab-grid">
-                <div class="lab-controls">
-                  <h3>Parámetros de Auditoría</h3>
-                  <p class="control-description">Evalúa el ROI de la última década. Selecciona un director técnico y altera la inversión neta proyectada para modelar el retorno de puntos e indemnizaciones de despido.</p>
-                  
-                  <div class="control-group">
-                    <label for="coach-select">Director Técnico Evaluado</label>
-                    <select id="coach-select" class="glass-select">
-                      <option value="mourinho" selected>José Mourinho (2016-2018)</option>
-                      <option value="solskjaer">Ole Gunnar Solskjær (2018-2021)</option>
-                      <option value="tenhag">Erik ten Hag (2022-2024)</option>
-                      <option value="amorim">Rúben Amorim (Proyectado)</option>
-                    </select>
-                  </div>
-
-                  <div class="control-group">
-                    <div class="slider-labels">
-                      <label for="net-spend-slider">Inversión Neta Proyectada (M£)</label>
-                      <span id="slider-val" class="badge-value">250 M£</span>
-                    </div>
-                    <input type="range" id="net-spend-slider" min="50" max="450" step="10" value="250" class="glass-slider">
-                  </div>
-                </div>
-
-                <div class="lab-visualizer">
-                  <div class="metrics-grid">
-                    <div class="mini-metric-card">
-                      <span class="metric-title">Gasto Neto Acumulado</span>
-                      <span class="metric-value" id="m-net-spend">250.0 M£</span>
-                    </div>
-                    <div class="mini-metric-card">
-                      <span class="metric-title">Puntos de Premier Proyectados</span>
-                      <span class="metric-value text-glow-green" id="m-points">74 pts</span>
-                    </div>
-                    <div class="mini-metric-card">
-                      <span class="metric-title">Gasto Neto por Punto (ROI)</span>
-                      <span class="metric-value" id="m-spend-per-point">3.37 M£/pt</span>
-                    </div>
-                    <div class="mini-metric-card">
-                      <span class="metric-title">Costo de Rescisión Proyectado</span>
-                      <span class="metric-value text-glow-red" id="m-termination">19.6 M£</span>
-                    </div>
-                  </div>
-
-                  <div class="executive-insight-card">
-                    <h4 class="insight-title"><span class="insight-icon">💡</span> Strategic Insight de Negocio</h4>
-                    <p id="m-insight-text">Cargando análisis estratégico...</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- TAB 5: GAMER VIABILITY SIMULATOR -->
