@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const marketing = marketingFocus.value;
 
     simulateGameBtn.disabled = true;
-    simulateGameBtn.textContent = "Calculando con Random Forest...";
+    simulateGameBtn.textContent = "Calculando con reglas simples...";
 
     // Reset gauge visually during calculation
     gSuccessBar.style.width = "0%";
@@ -263,11 +263,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // Strategic recommendation synthesis
       let strategicText = "";
       if (successChance > 70) {
-        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes teóricos). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial. Decisión Recomendada: Comprometer capital inicial y avanzar a fase de desarrollo intensiva.`;
+        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes teóricos). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial.`;
       } else if (successChance >= 45) {
         strategicText = `VIABILIDAD COMERCIAL MODERADA. El proyecto presenta oportunidades de retorno de capital, pero está expuesto a un alto riesgo operativo por saturación de nicho. Se recomienda optimizar el presupuesto inicial a un sweet-spot de ~$60,000 USD y explorar un acuerdo de pre-financiamiento con un Publisher para transferir el riesgo de marketing digital.`;
       } else {
-        strategicText = `VULNERABILIDAD FINANCIERA CRÍTICA. El modelado predictivo clasifica este proyecto bajo zona de alta tasa de mortalidad comercial. La combinación de género de software con la estrategia de lanzamiento no genera el volumen mínimo de reviews orgánicas exigido por algoritmos de distribución (Steam). Decisión Recomendada: Pivotar el concepto o re-estructurar costos antes de iniciar la inversión.`;
+        strategicText = `VULNERABILIDAD FINANCIERA CRÍTICA. El simulador clasifica este proyecto bajo zona de alta tasa de mortalidad comercial. La combinación de género de software con la estrategia de lanzamiento no genera el volumen mínimo de reviews orgánicas exigido por algoritmos de distribución (Steam). Decisión Recomendada: Pivotar el concepto o re-estructurar costos antes de iniciar la inversión.`;
       }
       gInsightText.textContent = strategicText;
 
