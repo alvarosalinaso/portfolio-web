@@ -1,9 +1,9 @@
 import './style.css';
 import { initChileanVideogames } from './src/charts/ChileanVideogamesChart.js';
 import { initManchesterUnited } from './src/charts/ManchesterUnitedChart.js';
-import { initUnitedPassing } from './src/charts/UnitedPassingChart.js';
 import { initGeopolitica } from './src/charts/GeopoliticaChart.js';
 import { initWorldCup } from './src/charts/WorldCupChart.js';
+import { initChileGeografia } from './src/charts/ChileGeografiaChart.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Sistema de Decisiones e Inteligencia de Datos Inicializado.");
@@ -41,10 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
           initManchesterUnited().catch(err => console.error('ManUtd chart init failed:', err));
           window.manutdInitialized = true;
         }
-        if (tabId === "passing-tab" && !window.passingInitialized) {
-          initUnitedPassing().catch(err => console.error('Passing chart init failed:', err));
-          window.passingInitialized = true;
-        }
         if (tabId === "geopolitica-tab" && !window.geopoliticaInitialized) {
           initGeopolitica().catch(err => console.error('Geopolitica chart init failed:', err));
           window.geopoliticaInitialized = true;
@@ -52,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (tabId === "worldcup-tab" && !window.worldcupInitialized) {
           initWorldCup().catch(err => console.error('WorldCup chart init failed:', err));
           window.worldcupInitialized = true;
+        }
+        if (tabId === "chile-geo-tab" && !window.chileGeoInitialized) {
+          initChileGeografia().catch(err => console.error('ChileGeo chart init failed:', err));
+          window.chileGeoInitialized = true;
         }
       }
     });
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Strategic recommendation synthesis
       let strategicText = "";
       if (successChance > 70) {
-        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes teóricos). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial.`;
+        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes, parámetro ilustrativo). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial.`;
       } else if (successChance >= 45) {
         strategicText = `VIABILIDAD COMERCIAL MODERADA. El proyecto presenta oportunidades de retorno de capital, pero está expuesto a un alto riesgo operativo por saturación de nicho. Se recomienda optimizar el presupuesto inicial a un sweet-spot de ~$60,000 USD y explorar un acuerdo de pre-financiamiento con un Publisher para transferir el riesgo de marketing digital.`;
       } else {

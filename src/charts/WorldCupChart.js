@@ -28,201 +28,96 @@ let wcData = null;
 export async function initWorldCup() {
   try {
     wcData = await loadJSON('./data/worldcup.json');
-  } catch {
-    wcData = generateSyntheticData();
+  } catch (e) {
+    const el = document.getElementById('wc-kpis');
+    if (el) el.innerHTML = '<p style="color:#8b949e">No se pudieron cargar los datos reales del torneo.</p>';
+    return;
   }
-  renderBracket();
-  renderAttendanceChart();
-  renderMonteCarloChart();
   renderKPIs();
-}
-
-function generateSyntheticData() {
-  const confederations = ['AFC', 'CAF', 'CONCACAF', 'CONMEBOL', 'OFC', 'UEFA'];
-  const confCounts = [8, 9, 6, 6, 1, 16];
-  const groups = 'ABCDEFGH'.split('');
-  const teams = [
-    { name: 'Argentina', elo: 2141, conf: 'CONMEBOL' },
-    { name: 'France', elo: 2030, conf: 'UEFA' },
-    { name: 'Brazil', elo: 2056, conf: 'CONMEBOL' },
-    { name: 'England', elo: 2017, conf: 'UEFA' },
-    { name: 'Spain', elo: 2013, conf: 'UEFA' },
-    { name: 'Germany', elo: 1986, conf: 'UEFA' },
-    { name: 'Portugal', elo: 1978, conf: 'UEFA' },
-    { name: 'Netherlands', elo: 1964, conf: 'UEFA' },
-    { name: 'Japan', elo: 1619, conf: 'AFC' },
-    { name: 'Morocco', elo: 1667, conf: 'CAF' },
-    { name: 'USA', elo: 1645, conf: 'CONCACAF' },
-    { name: 'Mexico', elo: 1632, conf: 'CONCACAF' },
-    { name: 'Uruguay', elo: 1879, conf: 'CONMEBOL' },
-    { name: 'Colombia', elo: 1825, conf: 'CONMEBOL' },
-    { name: 'Croatia', elo: 1832, conf: 'UEFA' },
-    { name: 'Senegal', elo: 1584, conf: 'CAF' }
-  ];
-  const matches = [];
-  groups.forEach(g => {
-    for (let i = 0; i < 3; i++) {
-      for (let j = i + 1; j < 4; j++) {
-        matches.push({
-          group: g,
-          team1: teams[i % teams.length].name,
-          team2: teams[j % teams.length].name,
-          score1: Math.floor(Math.random() * 4),
-          score2: Math.floor(Math.random() * 3)
-        });
-      }
-    }
-  });
-  return {
-    teams,
-    groups,
-    confederations,
-    confCounts,
-    matches,
-    totalMatches: 104,
-    totalTeams: 48,
-    totalAttend: 6800000,
-    venues: 16,
-    attendance_by_month: ['Jun', 'Jul'].map(m => ({
-      month: m,
-      avg: Math.floor(Math.random() * 15000 + 60000),
-      capacity: 72000
-    })),
-    elo_ranking: teams.sort((a, b) => b.elo - a.elo).slice(0, 10),
-    monte_carlo_results: teams.slice(0, 8).map(t => ({
-      name: t.name,
-      win_prob: parseFloat((Math.random() * 20 + 2).toFixed(1)),
-      final_prob: parseFloat((Math.random() * 25 + 8).toFixed(1)),
-      semis_prob: parseFloat((Math.random() * 20 + 15).toFixed(1))
-    }))
-  };
+  renderStagesChart();
+  renderHistoricalChart();
 }
 
 function renderKPIs() {
   const container = document.getElementById('wc-kpis');
   if (!container) return;
+  const t = wcData.totals;
   container.innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Equipos</div><div class="kpi-value">${wcData.totalTeams}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Partidos</div><div class="kpi-value">${wcData.totalMatches}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Asistencia Total</div><div class="kpi-value">${(wcData.totalAttend / 1e6).toFixed(1)}M</div></div>
-    <div class="kpi-card"><div class="kpi-label">Sedes</div><div class="kpi-value">${wcData.venues}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Selecciones</div><div class="kpi-value">${t.teams}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Partidos</div><div class="kpi-value">${t.matches}</div><div class="kpi-delta">resultados reales</div></div>
+    <div class="kpi-card"><div class="kpi-label">Goles</div><div class="kpi-value">${t.goals}</div><div class="kpi-delta">openfootball CC0</div></div>
+    <div class="kpi-card"><div class="kpi-label">Sedes</div><div class="kpi-value">${t.venues}</div><div class="kpi-delta">Canadá · EE.UU. · México</div></div>
   `;
 }
 
-function renderBracket() {
+function renderStagesChart() {
   const el = document.getElementById('wc-bracket-chart');
   if (!el) return;
 
-  const topTeams = wcData.elo_ranking.slice(0, 8);
+  const stages = wcData.stages;
   const trace = {
-    y: topTeams.map(t => t.name),
-    x: topTeams.map(t => t.elo),
+    y: stages.map(s => s.stage),
+    x: stages.map(s => s.goals),
     type: 'bar',
     orientation: 'h',
-    marker: {
-      color: topTeams.map((_, i) => {
-        const colors = [COLORS.gold, COLORS.accent, COLORS.green, COLORS.purple, COLORS.orange, COLORS.red, COLORS.text2, COLORS.text2];
-        return colors[i];
-      }),
-      line: { width: 0 }
-    },
-    text: topTeams.map(t => `${t.elo}`),
+    marker: { color: COLORS.accent, line: { width: 0 } },
+    text: stages.map(s => `${s.goals} goles · ${s.matches} partidos`),
     textposition: 'outside',
     textfont: { color: COLORS.text, size: 11 },
-    hovertemplate: '<b>%{y}</b><br>ELO: %{x}<extra></extra>'
+    hovertemplate: '<b>%{y}</b><br>Goles: %{x}<br>Partidos: %{customdata}<extra></extra>',
+    customdata: stages.map(s => s.matches)
   };
 
   const layout = {
     ...PLOTLY_THEME,
-    title: { text: 'Ranking ELO — Top 8 Favoritos', font: { size: 14, color: COLORS.text } },
-    xaxis: { ...PLOTLY_THEME.xaxis, title: 'ELO Rating' },
-    yaxis: { ...PLOTLY_THEME.yaxis, automargin: true },
+    title: { text: 'Goles por fase — Mundial 2026 (resultados reales)', font: { size: 14, color: COLORS.text } },
+    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Goles' },
+    yaxis: { ...PLOTLY_THEME.yaxis, automargin: true, autorange: 'reversed' },
     showlegend: false,
-    margin: { ...PLOTLY_THEME.margin, l: 120 }
+    margin: { ...PLOTLY_THEME.margin, l: 140, b: 70 }
   };
 
   Plotly.newPlot(el, [trace], layout, { responsive: true, displayModeBar: false });
 }
 
-function renderAttendanceChart() {
-  const el = document.getElementById('wc-attendance-chart');
-  if (!el) return;
-
-  const trace = {
-    x: wcData.attendance_by_month.map(a => a.month),
-    y: wcData.attendance_by_month.map(a => a.avg),
-    type: 'bar',
-    name: 'Asistencia Promedio',
-    marker: { color: COLORS.accent, line: { width: 0 } },
-    text: wcData.attendance_by_month.map(a => `${(a.avg / 1000).toFixed(0)}K`),
-    textposition: 'outside',
-    textfont: { color: COLORS.text, size: 11 },
-    hovertemplate: '<b>%{x}</b><br>Promedio: %{y:,}<extra></extra>'
-  };
-
-  const trace2 = {
-    x: wcData.attendance_by_month.map(a => a.month),
-    y: wcData.attendance_by_month.map(a => a.capacity),
-    type: 'scatter',
-    mode: 'lines',
-    name: 'Capacidad Máxima',
-    line: { color: COLORS.red, width: 2, dash: 'dash' },
-    hovertemplate: '<b>%{x}</b><br>Capacidad: %{y:,}<extra></extra>'
-  };
-
-  const layout = {
-    ...PLOTLY_THEME,
-    title: { text: 'Asistencia vs Capacidad por Fase', font: { size: 14, color: COLORS.text } },
-    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Fase' },
-    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Asistentes' },
-    showlegend: true,
-    legend: { font: { color: COLORS.text }, bgcolor: 'rgba(0,0,0,0)' }
-  };
-
-  Plotly.newPlot(el, [trace, trace2], layout, { responsive: true, displayModeBar: false });
-}
-
-function renderMonteCarloChart() {
+function renderHistoricalChart() {
   const el = document.getElementById('wc-monte-carlo-chart');
   if (!el) return;
 
-  const results = wcData.monte_carlo_results;
+  const hist = wcData.historical;
+  const years = hist.map(h => h.year);
 
-  const trace1 = {
-    y: results.map(r => r.name),
-    x: results.map(r => r['win_prob']),
-    type: 'bar',
-    orientation: 'h',
-    name: 'Campeón',
+  const traceGoals = {
+    x: years, y: hist.map(h => h.goals),
+    name: 'Goles', type: 'bar',
     marker: { color: COLORS.gold, line: { width: 0 } },
-    text: results.map(r => `${r['win_prob']}%`),
-    textposition: 'outside',
-    textfont: { color: COLORS.text, size: 10 },
-    hovertemplate: '<b>%{y}</b><br>Campeón: %{x:.1f}%<extra></extra>'
+    text: hist.map(h => h.goals), textposition: 'outside',
+    textfont: { color: COLORS.text, size: 11 },
+    hovertemplate: '<b>%{x}</b><br>Goles: %{y}<br>Campeón: %{customdata}<extra></extra>',
+    customdata: hist.map(h => `${h.champion} · ${h.matches} partidos`)
   };
 
-  const trace2 = {
-    y: results.map(r => r.name),
-    x: results.map(r => r['final_prob']),
-    type: 'bar',
-    orientation: 'h',
-    name: 'Final',
-    marker: { color: COLORS.accent, line: { width: 0 } },
-    hovertemplate: '<b>%{y}</b><br>Final: %{x:.1f}%<extra></extra>'
+  const histWithAtt = hist.filter(h => h.attendance != null);
+  const traceAtt = {
+    x: histWithAtt.map(h => h.year), y: histWithAtt.map(h => h.attendance / 1e6),
+    name: 'Asistencia total (M)', type: 'scatter', mode: 'lines+markers',
+    yaxis: 'y2',
+    line: { color: COLORS.green, width: 2.5 }, marker: { size: 8 },
+    hovertemplate: '<b>%{x}</b><br>Asistencia: %{y:.2f}M<extra></extra>'
   };
 
   const layout = {
     ...PLOTLY_THEME,
-    title: { text: 'Simulación Monte Carlo — Probabilidades de Avance (1000 sims)', font: { size: 14, color: COLORS.text } },
-    barmode: 'stack',
-    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Probabilidad (%)' },
-    yaxis: { ...PLOTLY_THEME.yaxis, automargin: true },
-    showlegend: true,
+    title: { text: 'Comparativo Mundiales 2014–2026 (goles y asistencia)', font: { size: 14, color: COLORS.text } },
+    barmode: 'group',
+    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Mundial', dtick: 1 },
+    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Goles' },
+    yaxis2: { title: 'Asistencia (millones)', overlaying: 'y', side: 'right', gridcolor: 'rgba(0,0,0,0)', color: COLORS.text2 },
     legend: { font: { color: COLORS.text }, bgcolor: 'rgba(0,0,0,0)' },
-    margin: { ...PLOTLY_THEME.margin, l: 120 }
+    margin: { ...PLOTLY_THEME.margin, b: 70 }
   };
 
-  Plotly.newPlot(el, [trace1, trace2], layout, { responsive: true, displayModeBar: false });
+  Plotly.newPlot(el, [traceGoals, traceAtt], layout, { responsive: true, displayModeBar: false });
 }
 
 window.initWorldCup = initWorldCup;

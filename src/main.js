@@ -63,10 +63,6 @@ function switchTab(tabId) {
     import('./charts/ManchesterUnitedChart.js').then(m => m.initManchesterUnited());
     window.manutdInitialized = true;
   }
-  if (tabId === 'passing-tab' && !window.passingInitialized) {
-    import('./charts/UnitedPassingChart.js').then(m => m.initUnitedPassing());
-    window.passingInitialized = true;
-  }
   if (tabId === 'geopolitica-tab' && !window.geopoliticaInitialized) {
     import('./charts/GeopoliticaChart.js').then(m => m.initGeopolitica());
     window.geopoliticaInitialized = true;

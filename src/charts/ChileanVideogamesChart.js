@@ -41,18 +41,19 @@ export async function initChileanVideogames() {
 function renderKPIs() {
   const el = document.getElementById('chilean-kpis');
   if (!el) return;
+  const k = data.kpis || {};
   const games = data.games || [];
-  const total = games.length;
-  const steam = games.filter(g => g.platform === 'Steam').length;
-  const itch = games.filter(g => g.platform === 'Itch.io').length;
-  const totalRevenue = games.reduce((s, g) => s + (g.revenue_est || 0), 0);
-  const avgPrice = games.length ? games.reduce((s, g) => s + (g.price || 0), 0) / total : 0;
+  const steam = k.steam ?? games.filter(g => g.platform === 'Steam').length;
+  const itch = k.itch ?? games.filter(g => g.platform === 'Itch.io').length;
+  const revenueTotal = k.revenue_est_total_40x ?? games.reduce((s, g) => s + (g.revenue_est || 0), 0);
 
   el.innerHTML = `
-    <div class="kpi-card"><div class="kpi-value">${total}</div><div class="kpi-label">Juegos analizados</div></div>
+    <div class="kpi-card"><div class="kpi-value">${k.total ?? games.length}</div><div class="kpi-label">Juegos analizados</div></div>
     <div class="kpi-card"><div class="kpi-value">${steam} / ${itch}</div><div class="kpi-label">Steam / Itch.io</div></div>
-    <div class="kpi-card"><div class="kpi-value">$${totalRevenue > 1e6 ? (totalRevenue/1e6).toFixed(1) + 'M' : Math.round(totalRevenue).toLocaleString()}</div><div class="kpi-label">Revenue total est. (USD)</div></div>
-    <div class="kpi-card"><div class="kpi-value">$${Math.round(avgPrice).toLocaleString()}</div><div class="kpi-label">Precio promedio (CLP)</div></div>
+    <div class="kpi-card"><div class="kpi-value">$${k.median_steam_price_usd?.toFixed(2) ?? '—'}</div><div class="kpi-label">Mediana precio Steam (USD)</div></div>
+    <div class="kpi-card"><div class="kpi-value">${k.no_recommendations_pct}%</div><div class="kpi-label">Sin recomendaciones</div><div class="kpi-delta">${k.no_recommendations}/${k.total}</div></div>
+    <div class="kpi-card"><div class="kpi-value">${k.hhi}</div><div class="kpi-label">HHI por género</div><div class="kpi-delta">competitivo (&lt;1500)</div></div>
+    <div class="kpi-card"><div class="kpi-value">$${(revenueTotal / 1e6).toFixed(1)}M</div><div class="kpi-label">Revenue est. total (Boxleiter 40x)</div></div>
   `;
 }
 
@@ -178,7 +179,7 @@ function renderTopGames() {
             <td style="padding:8px;font-weight:600">${g.name}</td>
             <td style="padding:8px"><span style="color:${g.platform === 'Steam' ? COLORS.steam : COLORS.itch}">${g.platform}</span></td>
             <td style="padding:8px;color:#8b949e">${g.genre}</td>
-            <td style="padding:8px;text-align:right">${g.year}</td>
+            <td style="padding:8px;text-align:right">${g.year || '—'}</td>
             <td style="padding:8px;text-align:right;font-weight:600">$${(g.revenue_est || 0) > 1000 ? ((g.revenue_est || 0)/1000).toFixed(1) + 'K' : Math.round(g.revenue_est || 0)}</td>
           </tr>
         `).join('')}

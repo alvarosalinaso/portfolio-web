@@ -109,7 +109,7 @@
       <section class="strategy-lab">
         <div class="lab-header">
           <h2 class="section-heading">Ecosistema Interactivo de Decisiones <span class="pulse-dot"></span></h2>
-          <p class="section-subheading">Laboratorio de simulación en tiempo real. Interactúa con las métricas para evaluar la correlación entre estrategia deportiva, financiera y de mercado.</p>
+          <p class="section-subheading">Dashboards interactivos por proyecto: explora las métricas y el código fuente detrás de cada análisis.</p>
         </div>
 
         <div class="glass-lab-container">
@@ -122,10 +122,6 @@
             <button class="tab-btn" data-tab="manutd-tab">
               <span class="tab-icon">⚽</span>
               <span class="tab-text">Manchester United Performance</span>
-            </button>
-            <button class="tab-btn" data-tab="passing-tab">
-              <span class="tab-icon">🕸️</span>
-              <span class="tab-text">Red de Pases United</span>
             </button>
             <button class="tab-btn" data-tab="gamer-sim-tab">
               <span class="tab-icon">🎮</span>
@@ -171,13 +167,13 @@
             <div class="tab-content" id="manutd-tab">
               <div class="dashboard-header">
                 <h3>⚽ Manchester United · Performance Intelligence</h3>
-                <p>Benchmarking directivo · Premier League 2013-2024 · Herramienta de decisión deportiva</p>
+                <p>Premier League 2014-2024 · brecha media de 23.1 pts vs campeón · datos de tablas finales de la PL</p>
               </div>
               <div id="manutd-kpis" class="kpi-grid"></div>
               <div id="manutd-filters" class="dashboard-filters"></div>
               <div class="dashboard-tabs">
                 <button class="dash-tab-btn active" data-dash-tab="manutd-historical">📊 Rendimiento Histórico</button>
-                <button class="dash-tab-btn" data-dash-tab="manutd-managers">👔 Análisis por Entrenador</button>
+                <button class="dash-tab-btn" data-dash-tab="manutd-managers">👔 Entrenador & PPG</button>
                 <button class="dash-tab-btn" data-dash-tab="manutd-diagnostics">🔬 Diagnóstico Sistémico</button>
                 <button class="dash-tab-btn" data-dash-tab="manutd-simulator">🔮 Proyección & Simulador</button>
               </div>
@@ -189,10 +185,7 @@
                 </div>
               </div>
               <div class="dash-tab-content" id="manutd-managers">
-                <div class="chart-row two-cols">
-                  <div id="manutd-mgr-bar" class="chart-container"></div>
-                  <div id="manutd-mgr-scatter" class="chart-container"></div>
-                </div>
+                <div id="manutd-mgr-bar" class="chart-container"></div>
                 <div id="manutd-mgr-table" class="table-container"></div>
               </div>
               <div class="dash-tab-content" id="manutd-diagnostics">
@@ -206,28 +199,6 @@
                 <div class="simulator-container"></div>
                 <div id="manutd-gauge-chart" class="chart-container"></div>
               </div>
-            </div>
-
-            <!-- TAB 3: UNITED PASSING NETWORK -->
-            <div class="tab-content" id="passing-tab">
-              <div class="dashboard-header">
-                <div class="header-with-crest">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man United Crest" class="crest-img">
-                  <div>
-                    <h3>Manchester United</h3>
-                    <p>Red de Pases · Análisis de Redes Complejas · 2024-25</p>
-                  </div>
-                </div>
-              </div>
-              <div class="desc-box" style="border-left-color: var(--red);">
-                <strong>🏟️ ¿De qué trata esto?</strong> Este dashboard analiza cómo circula el balón en el <strong>Manchester United</strong>
-                durante la temporada 2024-25 usando teoría de redes (Complex Network Analysis). Podés ver <strong>quién conecta con quién</strong>,
-                <strong>qué jugadores son más importantes</strong> en la circulación y <strong>cómo rinde el equipo</strong> comparado con
-                la Premier League. Los datos son sintéticos pero están basados en métricas reales de rendimiento.
-              </div>
-              <div id="passing-kpis" class="kpi-grid"></div>
-              <div id="passing-view-selector" class="dashboard-filters"></div>
-              <div id="passing-content"></div>
             </div>
 
             <!-- TAB 5: GAMER VIABILITY SIMULATOR -->
@@ -283,7 +254,7 @@
                         <span class="metric-value text-glow-green" id="g-revenue">$0</span>
                       </div>
                       <div class="mini-metric-card">
-                        <span class="metric-title">Costo de Sostenibilidad Local</span>
+                        <span class="metric-title">Costo de Sostenibilidad Local (parámetro ilustrativo)</span>
                         <span class="metric-value" id="g-cost">$720 USD/Mes</span>
                       </div>
                     </div>
@@ -302,7 +273,7 @@
               <div class="lab-grid">
                 <div class="lab-controls">
                   <h3>Análisis de Redes de Pase (Complex Network)</h3>
-                  <p class="control-description">Deconstruye el partido como un Sistema Complejo. Draggea los nodos de los jugadores en la simulación física integrada para comprender las dinámicas relacionales.</p>
+                  <p class="control-description">Demo conceptual: la simulación física y las métricas de los jugadores son ilustrativas. El análisis real sobre datos abiertos de StatsBomb (Canadá–Marruecos, 790 pases completados) está publicado en el <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" style="color:var(--accent-color)">repo del proyecto</a> (grafo interactivo en GitHub Pages).</p>
                   
                   <div class="control-group">
                     <label>Estrategia de Presión del Oponente</label>
@@ -368,10 +339,9 @@
                   <div id="geo-ner-chart" class="chart-container" style="height:300px;"></div>
                   <div id="geo-sentiment-chart" class="chart-container" style="height:300px;"></div>
                 </div>
-                <div id="geo-timeline-chart" class="chart-container" style="height:350px;"></div>
                 <div class="executive-insight-card" style="margin-top:1rem;">
                   <h4 class="insight-title"><span class="insight-icon">🌍</span> Síntesis NLP + GIS</h4>
-                  <p>Análisis NER sobre 16 textos sintéticos (1842-2000) con spaCy. Sentimiento TextBlob. Mapa interactivo Folium con heatmap de menciones geográficas. Correlación Chi-cuadrado entre distribución de entidades y período histórico.</p>
+                  <p>NER con spaCy sobre 20 mensajes presidenciales reales a la BCN (1832–2022, Ley 17.336 art. 41): 5.724 menciones GPE/LOC, 3.009 formas únicas. El corpus histórico desmiente la dominancia metropolitana: "Chile" es el lugar más nombrado (487) frente a Santiago (56, 1,0%).</p>
                 </div>
               </div>
             </div>
@@ -383,14 +353,11 @@
             <div class="tab-panel">
               <div class="lab-visualizer" style="width:100%">
                 <div id="wc-kpis" class="kpi-grid" style="margin-bottom:1rem;"></div>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
-                  <div id="wc-bracket-chart" class="chart-container" style="height:350px;"></div>
-                  <div id="wc-attendance-chart" class="chart-container" style="height:350px;"></div>
-                </div>
+                <div id="wc-bracket-chart" class="chart-container" style="height:320px; margin-bottom:1rem;"></div>
                 <div id="wc-monte-carlo-chart" class="chart-container" style="height:400px;"></div>
                 <div class="executive-insight-card" style="margin-top:1rem;">
-                  <h4 class="insight-title"><span class="insight-icon">🏆</span> Simulación Estocástica</h4>
-                  <p>48 selecciones, 104 partidos, 6.8M asistentes. Base de datos normalizada (7 tablas, FK). Ranking ELO, optimización de capacidad por sede.</p>
+                  <h4 class="insight-title"><span class="insight-icon">🏆</span> Datos reales del torneo</h4>
+                  <p>Resultados reales de openfootball (CC0), contrastados contra la API de la FIFA el 19-10-2026: 104 partidos, 308 goles. Final: España 1–0 Argentina (prórroga). Tercer puesto: Francia 4–6 Inglaterra. Comparativo de goles/asistencia de los Mundiales 2014–2022 desde la base histórica del repo.</p>
                 </div>
               </div>
             </div>
@@ -402,7 +369,7 @@
         <div class="tab-content" id="chile-geo-tab">
           <div class="dashboard-header">
             <h3>🗺️ Chile Geografía Histórica</h3>
-            <p>41 presidentes, 113 registros censales, 24 eventos históricos · Datos de BCN, INE y Wikipedia</p>
+            <p>41 presidentes, 42 registros censales (1992–2017), 24 eventos · Datos de BCN e INE</p>
           </div>
           <div id="chile-geo-kpis" class="kpi-grid"></div>
           <div class="chart-grid-2">
@@ -425,8 +392,8 @@
           <div class="glass-card">
             <div class="card-icon">🗺️</div>
             <h3>Geopolítica Textual NLP</h3>
-            <p>Cartografía espacial interactiva de discursos y oficios políticos basada en IA y modelos spaCy. Extrae locaciones mencionadas y mapea las fricciones de poder territorial.</p>
-            <div class="tags"><span class="tag">AI NLP</span><span class="tag">Geopandas</span><span class="tag">Folium GIS</span></div>
+            <p>NER (spaCy) sobre 20 discursos y oficios reales a la BCN (1832–2022): 5.724 menciones de lugares y 3.009 formas únicas. "Chile" domina el mapa, no Santiago.</p>
+            <div class="tags"><span class="tag">NLP</span><span class="tag">spaCy</span><span class="tag">BCN Historia</span></div>
             <div class="card-links">
               <a href="https://github.com/alvarosalinaso/geopolitica-textual-nlp" target="_blank" class="card-link">GitHub →</a>
             </div>
@@ -436,8 +403,8 @@
           <div class="glass-card">
             <div class="card-icon">🕸️</div>
             <h3>Redes Tácticas & Grafos (CNA)</h3>
-            <p>Modelado relacional y análisis de sistemas complejos para evaluar la circulación táctica de pases, detectando puntos únicos de falla (SPOF) mediante NetworkX y PyVis.</p>
-            <div class="tags"><span class="tag">Network Science</span><span class="tag">NetworkX</span><span class="tag">PyVis HTML</span></div>
+            <p>Análisis de redes de pase sobre datos abiertos de StatsBomb (Canadá–Marruecos): 790 pases completados agregados en 24 aristas, con grafo interactivo publicado en GitHub Pages.</p>
+            <div class="tags"><span class="tag">Network Science</span><span class="tag">NetworkX</span><span class="tag">StatsBomb</span></div>
             <div class="card-links">
               <a href="https://github.com/alvarosalinaso/tactical-narrative-graph-analysis" target="_blank" class="card-link">GitHub →</a>
             </div>
@@ -459,7 +426,7 @@
           <div class="glass-card">
             <div class="card-icon">⚽</div>
             <h3>Manchester United Performance</h3>
-            <p>Auditoría de gasto neto en fichajes frente a la retribución real en puntos. <strong>Tests 11/11 pasan.</strong></p>
+            <p>Once temporadas de la Premier League (2014–2024): brecha media de 23,1 puntos vs el campeón y comparación PPG con la media real de la liga.</p>
              <div class="tags"><span class="tag">Finance Audit</span><span class="tag">Pandas ETL</span><span class="tag">Plotly.js</span></div>
             <div class="card-links">
               <a href="#manutd-tab" class="card-link primary" onclick="switchTab('manutd-tab'); return false;">📊 Dashboard →</a>
@@ -467,49 +434,15 @@
             </div>
           </div>
 
-          <!-- CARD 6 -->
-          <div class="glass-card">
-            <div class="card-icon">🎯</div>
-            <h3>United Passing Network</h3>
-            <p>Panel táctico que evalúa el rendimiento del mediocampo bajo presión extrema.</p>
-             <div class="tags"><span class="tag">Network Science</span><span class="tag">Plotly.js</span></div>
-            <div class="card-links">
-              <a href="#passing-tab" class="card-link primary" onclick="switchTab('passing-tab'); return false;">📊 Dashboard →</a>
-              <a href="https://github.com/alvarosalinaso/united-passing-efficiency-24-25" target="_blank" class="card-link">GitHub →</a>
-            </div>
-          </div>
-
           <!-- CARD 7 -->
           <div class="glass-card">
             <div class="card-icon">🌍</div>
             <h3>World Cup 2026</h3>
-            <p>Comparación de selecciones y análisis de asistencia por estadio. <strong>Datos simulados.</strong></p>
-            <div class="tags"><span class="tag">Elo Ratings</span></div>
+            <p>Resultados reales del torneo (openfootball CC0, validados con la API de la FIFA): 104 partidos y 308 goles, con comparativo histórico 2014–2026.</p>
+            <div class="tags"><span class="tag">openfootball CC0</span><span class="tag">SQLite</span></div>
             <div class="card-links">
               <a href="#worldcup-tab" class="card-link primary" onclick="switchTab('worldcup-tab'); return false;">📊 Dashboard →</a>
               <a href="https://github.com/alvarosalinaso/worldcup-2026" target="_blank" class="card-link">GitHub →</a>
-            </div>
-          </div>
-
-          <!-- CARD 8 -->
-          <div class="glass-card">
-            <div class="card-icon">📦</div>
-            <h3>Cajas Alimentación Santiago</h3>
-            <p>Análisis espacial con K-Means (10 clusters, 80K+ puntos). Dashboard Dash estilo Keith Haring.</p>
-            <div class="tags"><span class="tag">Spatial Analysis</span><span class="tag">K-Means</span><span class="tag">Dash</span></div>
-            <div class="card-links">
-              <a href="https://github.com/alvarosalinaso/cajas-alimentacion" target="_blank" class="card-link">GitHub →</a>
-            </div>
-          </div>
-
-          <!-- CARD 9 -->
-          <div class="glass-card">
-            <div class="card-icon">🏙️</div>
-            <h3>Sanitización Santiago</h3>
-            <p>87 puntos de solicitud de sanitización. Dashboard Dash estilo Mondrian con filtros interactivos.</p>
-            <div class="tags"><span class="tag">GIS</span><span class="tag">KML</span><span class="tag">Dash</span></div>
-            <div class="card-links">
-              <a href="https://github.com/alvarosalinaso/sanitizacion-santiago" target="_blank" class="card-link">GitHub →</a>
             </div>
           </div>
 
@@ -527,8 +460,6 @@
             <a href="https://videogames-chile.onrender.com" target="_blank" class="deploy-link">🎮 Videojuegos Chile</a>
             <a href="https://nlp-discurso.onrender.com" target="_blank" class="deploy-link">📜 NLP Discurso Presidencial</a>
             <a href="https://geografia-chile.onrender.com" target="_blank" class="deploy-link">🗺️ Geografía Histórica</a>
-            <a href="https://cajas-alimentacion.onrender.com" target="_blank" class="deploy-link">📦 Cajas Alimentación</a>
-            <a href="https://sanitizacion.onrender.com" target="_blank" class="deploy-link">🏙️ Sanitización Santiago</a>
           </div>
         </div>
       </section>
