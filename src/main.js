@@ -39,6 +39,16 @@ window.toggleLanguage = function() {
   applyTranslations();
 };
 
+export function getLang() {
+  return currentLang;
+}
+
+export function t(key) {
+  return (translations[currentLang] && translations[currentLang][key])
+    || (translations.es && translations.es[key])
+    || key;
+}
+
 loadTranslations().then(() => {
   applyTranslations();
 });

@@ -81,7 +81,7 @@ function renderStagesChart() {
 }
 
 function renderHistoricalChart() {
-  const el = document.getElementById('wc-monte-carlo-chart');
+  const el = document.getElementById('wc-comparison-chart');
   if (!el) return;
 
   const hist = wcData.historical;

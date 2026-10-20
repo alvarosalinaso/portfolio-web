@@ -84,7 +84,7 @@ function renderTopPlacesChart() {
 }
 
 function renderSantiagoChart() {
-  const el = document.getElementById('geo-sentiment-chart');
+  const el = document.getElementById('geo-santiago-chart');
   if (!el) return;
 
   const chile = geoData.top_places.find(t => t.place === 'Chile')?.mentions ?? 0;

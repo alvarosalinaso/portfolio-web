@@ -1,4 +1,5 @@
 import './style.css';
+import { t } from './src/main.js';
 import { initChileanVideogames } from './src/charts/ChileanVideogamesChart.js';
 import { initManchesterUnited } from './src/charts/ManchesterUnitedChart.js';
 import { initGeopolitica } from './src/charts/GeopoliticaChart.js';
@@ -83,13 +84,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const marketing = marketingFocus.value;
 
     simulateGameBtn.disabled = true;
-    simulateGameBtn.textContent = "Calculando con reglas simples...";
+    simulateGameBtn.textContent = t('sim_calculating');
 
     // Reset gauge visually during calculation
     gSuccessBar.style.width = "0%";
     gSuccessPercent.textContent = "0%";
     gRevenue.textContent = "Procesando...";
-    gInsightText.textContent = "Evaluando vectores descriptivos de mercado y cruzando base histórica de benchmarks...";
+    gInsightText.textContent = t('sim_insight_initial');
 
     setTimeout(() => {
       let baseSuccess = 50;
@@ -155,16 +156,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // Strategic recommendation synthesis
       let strategicText = "";
       if (successChance > 70) {
-        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes, parámetro ilustrativo). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial.`;
+        strategicText = t('sim_text_high').replace('{revenue}', `$${projectedRevenue.toLocaleString()} USD`);
       } else if (successChance >= 45) {
-        strategicText = `VIABILIDAD COMERCIAL MODERADA. El proyecto presenta oportunidades de retorno de capital, pero está expuesto a un alto riesgo operativo por saturación de nicho. Se recomienda optimizar el presupuesto inicial a un sweet-spot de ~$60,000 USD y explorar un acuerdo de pre-financiamiento con un Publisher para transferir el riesgo de marketing digital.`;
+        strategicText = t('sim_text_mid');
       } else {
-        strategicText = `VULNERABILIDAD FINANCIERA CRÍTICA. El simulador clasifica este proyecto bajo zona de alta tasa de mortalidad comercial. La combinación de género de software con la estrategia de lanzamiento no genera el volumen mínimo de reviews orgánicas exigido por algoritmos de distribución (Steam). Decisión Recomendada: Pivotar el concepto o re-estructurar costos antes de iniciar la inversión.`;
+        strategicText = t('sim_text_low');
       }
       gInsightText.textContent = strategicText;
 
       simulateGameBtn.disabled = false;
-      simulateGameBtn.textContent = "Calcular Viabilidad Comercial";
+      simulateGameBtn.textContent = t('sim_button');
     }, 1200);
   }
 
@@ -369,9 +370,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Update Strategic CNA Narrative
       if (pressActive) {
-        cnaInsightText.textContent = "ALERTA TÁCTICA: El oponente despliega una presión alta orientada a estrangular el eje Casemiro (DMF). Su betweenness centrality colapsa a 0.05 (Bloqueado), lo que desactiva la progresión del mediocentro. El juego se embotella y Bruno Fernandes (AMF) se ve obligado a descender de su zona de influencia para recibir bajo estrés (Betweenness sube a 0.72), incrementando el riesgo de pérdidas en transiciones críticas.";
+        cnaInsightText.textContent = t('cna_text_high');
       } else {
-        cnaInsightText.textContent = "ESTRUCTURA RELACIONAL SALUDABLE: En escenario de bloque bajo rival, la distribución de cargas de pase es balanceada. Casemiro opera con libertad como pivote articulador principal (Betweenness de 0.42), facilitando transiciones fluidas hacia Bruno Fernandes, quien puede retener y asistir en zonas limpias de finalización con un índice óptimo de ROI de peligro esperado.";
+        cnaInsightText.textContent = t('cna_text_low');
       }
     }
 
