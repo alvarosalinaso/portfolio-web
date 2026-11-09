@@ -1,146 +1,72 @@
 {
-  "entities": [
-    "Chile",
-    "Santiago",
-    "Valparaíso",
-    "Concepción",
-    "Antofagasta",
-    "Iquique",
-    "Temuco",
-    "Valdivia",
-    "Punta Arenas",
-    "Arica",
-    "Argentina",
-    "Perú",
-    "Bolivia",
-    "Europa",
-    "Estados Unidos",
-    "Congreso",
-    "Senado",
-    "Cámara",
-    "Gobierno",
-    "República"
-  ],
-  "ner_counts": [
-    198,
-    22,
-    26,
-    18,
-    0,
-    0,
-    24,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    23,
-    21,
-    0,
-    0,
-    0,
-    42,
-    44
-  ],
-  "entity_types": [
-    "LOC",
-    "PERSON",
-    "ORG",
-    "GPE",
-    "NORP"
-  ],
-  "entity_type_counts": [
-    248,
-    30,
-    25,
-    35,
-    15
-  ],
-  "timeline": [
+  "n_speeches": 20,
+  "year_min": 1832,
+  "year_max": 2022,
+  "model": "es_core_news_sm",
+  "total_gpe_loc_mentions": 5724,
+  "unique_places": 3009,
+  "santiago_mentions": 56,
+  "santiago_share_pct": 1,
+  "top_places": [
     {
-      "president": "José Joaquín Prieto",
-      "year": 1832,
-      "sentiment": 1.0
+      "place": "Chile",
+      "mentions": 487
     },
     {
-      "president": "Manuel Montt",
-      "year": 1842,
-      "sentiment": 1.0
+      "place": "Gobierno",
+      "mentions": 329
     },
     {
-      "president": "Manuel Montt",
-      "year": 1861,
-      "sentiment": 1.0
+      "place": "Estado",
+      "mentions": 168
     },
     {
-      "president": "José Manuel Balmaceda",
-      "year": 1873,
-      "sentiment": 1.0
+      "place": "Quiero",
+      "mentions": 70
     },
     {
-      "president": "Germán Riesco",
-      "year": 1902,
-      "sentiment": 0.0
+      "place": "Santiago",
+      "mentions": 53
     },
     {
-      "president": "Emiliano Figueroa",
-      "year": 1925,
-      "sentiment": 0.0
+      "place": "“",
+      "mentions": 50
     },
     {
-      "president": "Juan Esteban Montero",
-      "year": 1932,
-      "sentiment": -1.0
+      "place": "Congreso Nacional",
+      "mentions": 37
     },
     {
-      "president": "Juan Antonio Ríos",
-      "year": 1942,
-      "sentiment": -1.0
+      "place": "Valparaíso",
+      "mentions": 33
     },
     {
-      "president": "Gabriel González Videla",
-      "year": 1946,
-      "sentiment": 1.0
+      "place": "También",
+      "mentions": 32
     },
     {
-      "president": "Carlos Ibáñez del Campo",
-      "year": 1952,
-      "sentiment": 1.0
+      "place": "la Ley",
+      "mentions": 31
     },
     {
-      "president": "Jorge Alessandri",
-      "year": 1960,
-      "sentiment": 0.0
+      "place": "CHILE",
+      "mentions": 28
     },
     {
-      "president": "Eduardo Frei Montalva",
-      "year": 1965,
-      "sentiment": 1.0
+      "place": "Tenemos",
+      "mentions": 28
     },
     {
-      "president": "Salvador Allende",
-      "year": 1973,
-      "sentiment": -1.0
+      "place": "Europa",
+      "mentions": 26
     },
     {
-      "president": "Patricio Aylwin",
-      "year": 1990,
-      "sentiment": 1.0
+      "place": "Nación",
+      "mentions": 24
     },
     {
-      "president": "Eduardo Frei Ruiz-Tagle",
-      "year": 1994,
-      "sentiment": 1.0
-    },
-    {
-      "president": "Ricardo Lagos",
-      "year": 2000,
-      "sentiment": 1.0
+      "place": "Vamos",
+      "mentions": 24
     }
-  ],
-  "total_speeches": 16,
-  "total_entities": 418,
-  "avg_sentiment": 0.562,
-  "coverage_years": "2000-1832 (16 Cuentas Públicas)"
+  ]
 }

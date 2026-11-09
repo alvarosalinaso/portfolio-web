@@ -8,15 +8,19 @@ export async function initChileGeografia() {
     kpiContainer.innerHTML = `
       <div class="kpi-card">
         <span class="kpi-value">${data.total_presidents}</span>
-        <span class="kpi-label">Presidentes</span>
+        <span class="kpi-label">Presidentes (BCN)</span>
       </div>
       <div class="kpi-card">
         <span class="kpi-value">${data.total_census_records}</span>
-        <span class="kpi-label">Registros Censales</span>
+        <span class="kpi-label">Registros censales (${data.census_years?.[0]}–${data.census_years?.slice(-1)})</span>
       </div>
       <div class="kpi-card">
         <span class="kpi-value">${data.total_events}</span>
-        <span class="kpi-label">Eventos Históricos</span>
+        <span class="kpi-label">Eventos históricos</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-value">${data.census_national?.slice(-1)[0]?.population?.toLocaleString('es-CL')}</span>
+        <span class="kpi-label">Población 2017 (INE)</span>
       </div>
     `;
   }
@@ -64,14 +68,18 @@ export async function initChileGeografia() {
     x: regions.map(r => r[0]),
     y: regions.map(r => r[1]),
     type: 'bar',
-    marker: { color: '#3fb950' }
+    marker: { color: '#3fb950' },
+    text: regions.map(r => r[1].toLocaleString('es-CL')),
+    textposition: 'outside',
+    textfont: { size: 10, color: '#e6edf3' },
+    hovertemplate: '<b>%{x}</b><br>Población: %{y:,.0f} personas<extra></extra>'
   }], {
     paper_bgcolor: 'transparent',
     plot_bgcolor: 'transparent',
     font: { color: '#e6edf3' },
-    margin: { t: 30, b: 80, l: 40, r: 20 },
+    margin: { t: 30, b: 80, l: 60, r: 20 },
     xaxis: { tickangle: -45, title: 'Región' },
-    yaxis: { title: 'Población (miles)' },
-    title: { text: 'Población por Región (Censo más reciente)', font: { size: 14 } }
+    yaxis: { title: 'Personas (Censo 2017, INE)' },
+    title: { text: 'Población por Región (Censo 2017, personas exactas INE)', font: { size: 14 } }
   }, { responsive: true });
 }

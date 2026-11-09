@@ -28,144 +28,86 @@ export async function initGeopolitica() {
   try {
     geoData = await loadJSON('./data/geopolitica.json');
   } catch {
-    geoData = generateSyntheticData();
+    const el = document.getElementById('geo-kpis');
+    if (el) el.innerHTML = '<p style="color:#8b949e">No se pudieron cargar las cifras del corpus BCN.</p>';
+    return;
   }
-  renderNERChart();
-  renderSentimentChart();
-  renderTimelineChart();
   renderKPIs();
-}
-
-function generateSyntheticData() {
-  const presidents = [
-    'Pinto', 'Balmaceda', 'Alessandri', 'Ibáñez', 'Alessandri',
-    'Aguirre Cerda', 'González Videla', 'Alessandri', 'Frei', 'Allende',
-    'Pinochet', 'Aylwin', 'Frei Ruiz-Tagle', 'Lagos', 'Bachelet',
-    'Piñera', 'Boric'
-  ];
-  const entities = [
-    'Chile', 'Estados Unidos', 'Argentina', 'Perú', 'Bolivia',
-    'Europa', 'Inglaterra', 'Francia', 'España', 'Brasil'
-  ];
-  const sentiments = presidents.map(() => ({
-    value: (Math.random() * 2 - 1).toFixed(3),
-    magnitude: (Math.random() * 1.5 + 0.2).toFixed(3)
-  }));
-  return {
-    presidents,
-    entities,
-    ner_counts: entities.map(() => Math.floor(Math.random() * 200 + 50)),
-    entity_types: ['LOC', 'PERSON', 'ORG', 'GPE', 'NORP'],
-    entity_type_counts: [45, 32, 18, 25, 12],
-    sentiments,
-    timeline: presidents.map((p, i) => ({ president: p, year: 1833 + i * 12, sentiment: parseFloat(sentiments[i].value) })),
-    total_speeches: 39,
-    total_entities: 1520,
-    avg_sentiment: 0.12,
-    coverage_years: '1881-2010'
-  };
+  renderTopPlacesChart();
+  renderSantiagoChart();
 }
 
 function renderKPIs() {
   const container = document.getElementById('geo-kpis');
   if (!container) return;
   container.innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Discursos Analizados</div><div class="kpi-value">${geoData.total_speeches}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Entidades NER Detectadas</div><div class="kpi-value">${geoData.total_entities.toLocaleString()}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Sentimiento Promedio</div><div class="kpi-value ${geoData.avg_sentiment > 0 ? 'positive' : 'negative'}">${geoData.avg_sentiment > 0 ? '+' : ''}${geoData.avg_sentiment}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Cobertura Temporal</div><div class="kpi-value">${geoData.coverage_years}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Mensajes BCN</div><div class="kpi-value">${geoData.n_speeches}</div><div class="kpi-delta">corpus real</div></div>
+    <div class="kpi-card"><div class="kpi-label">Menciones GPE/LOC</div><div class="kpi-value">${geoData.total_gpe_loc_mentions.toLocaleString('es-CL')}</div><div class="kpi-delta">${geoData.unique_places.toLocaleString('es-CL')} formas únicas</div></div>
+    <div class="kpi-card"><div class="kpi-label">Santiago</div><div class="kpi-value">${geoData.santiago_mentions}</div><div class="kpi-delta">${geoData.santiago_share_pct}% de las menciones</div></div>
+    <div class="kpi-card"><div class="kpi-label">Cobertura</div><div class="kpi-value">${geoData.year_min}–${geoData.year_max}</div><div class="kpi-delta">un mensaje por gobierno</div></div>
   `;
 }
 
-function renderNERChart() {
+function renderTopPlacesChart() {
   const el = document.getElementById('geo-ner-chart');
   if (!el) return;
 
+  const top = geoData.top_places.slice(0, 10);
   const trace = {
-    x: geoData.entities,
-    y: geoData.ner_counts,
+    y: top.map(t => t.place),
+    x: top.map(t => t.mentions),
     type: 'bar',
+    orientation: 'h',
     marker: {
-      color: geoData.entities.map((_, i) => {
+      color: top.map((_, i) => {
         const colors = [COLORS.accent, COLORS.green, COLORS.orange, COLORS.purple, COLORS.red];
         return colors[i % colors.length];
       }),
       line: { width: 0 }
     },
-    text: geoData.ner_counts.map(v => v.toLocaleString()),
+    text: top.map(t => t.mentions.toLocaleString('es-CL')),
     textposition: 'outside',
     textfont: { color: COLORS.text, size: 11 },
+    hovertemplate: '<b>%{y}</b><br>Menciones: %{x}<extra></extra>'
+  };
+
+  const layout = {
+    ...PLOTLY_THEME,
+    title: { text: 'Top lugares por menciones GPE/LOC (NER spaCy)', font: { size: 14, color: COLORS.text } },
+    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Menciones' },
+    yaxis: { ...PLOTLY_THEME.yaxis, automargin: true, autorange: 'reversed' },
+    showlegend: false,
+    margin: { ...PLOTLY_THEME.margin, l: 130 }
+  };
+
+  Plotly.newPlot(el, [trace], layout, { responsive: true, displayModeBar: false });
+}
+
+function renderSantiagoChart() {
+  const el = document.getElementById('geo-santiago-chart');
+  if (!el) return;
+
+  const chile = geoData.top_places.find(t => t.place === 'Chile')?.mentions ?? 0;
+  const santiago = geoData.santiago_mentions;
+
+  const trace = {
+    x: ['"Chile" (país)', 'Santiago'],
+    y: [chile, santiago],
+    type: 'bar',
+    marker: { color: [COLORS.accent, COLORS.orange], line: { width: 0 } },
+    text: [`${chile} menciones`, `${santiago} (${geoData.santiago_share_pct}%)`],
+    textposition: 'outside',
+    textfont: { color: COLORS.text, size: 12 },
     hovertemplate: '<b>%{x}</b><br>Menciones: %{y}<extra></extra>'
   };
 
   const layout = {
     ...PLOTLY_THEME,
-    title: { text: 'Distribución de Entidades Nombradas (NER)', font: { size: 14, color: COLORS.text } },
-    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Entidad' },
-    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Frecuencia' },
-    showlegend: false
-  };
-
-  Plotly.newPlot(el, [trace], layout, { responsive: true, displayModeBar: false });
-}
-
-function renderSentimentChart() {
-  const el = document.getElementById('geo-sentiment-chart');
-  if (!el) return;
-
-  const trace = {
-    x: geoData.timeline.map(t => t.president),
-    y: geoData.timeline.map(t => t.sentiment),
-    type: 'bar',
-    marker: {
-      color: geoData.timeline.map(t => t.sentiment >= 0 ? COLORS.green : COLORS.red),
-      line: { width: 0 }
-    },
-    hovertemplate: '<b>%{x}</b><br>Sentimiento: %{y:.3f}<extra></extra>'
-  };
-
-  const layout = {
-    ...PLOTLY_THEME,
-    title: { text: 'Sentimiento por Presidente (1881-2010)', font: { size: 14, color: COLORS.text } },
-    xaxis: { ...PLOTLY_THEME.xaxis, tickangle: -45 },
-    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Sentimiento', zeroline: true, zerolinecolor: '#58a6ff', zerolinewidth: 1 },
+    title: { text: 'Sin dominancia metropolitana: manda el país', font: { size: 14, color: COLORS.text } },
+    xaxis: { ...PLOTLY_THEME.xaxis },
+    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Menciones' },
     showlegend: false,
-    shapes: [{
-      type: 'line', x0: -0.5, x1: geoData.timeline.length - 0.5,
-      y0: 0, y1: 0, line: { color: '#58a6ff', width: 1, dash: 'dot' }
-    }]
-  };
-
-  Plotly.newPlot(el, [trace], layout, { responsive: true, displayModeBar: false });
-}
-
-function renderTimelineChart() {
-  const el = document.getElementById('geo-timeline-chart');
-  if (!el) return;
-
-  const trace = {
-    x: geoData.timeline.map(t => t.year),
-    y: geoData.timeline.map(t => t.sentiment),
-    text: geoData.timeline.map(t => t.president),
-    type: 'scatter',
-    mode: 'lines+markers+text',
-    textposition: 'top center',
-    textfont: { size: 10, color: COLORS.text2 },
-    line: { color: COLORS.accent, width: 2 },
-    marker: {
-      size: 10,
-      color: geoData.timeline.map(t => t.sentiment >= 0 ? COLORS.green : COLORS.red),
-      line: { color: COLORS.text, width: 1 }
-    },
-    hovertemplate: '<b>%{text}</b><br>Año: %{x}<br>Sentimiento: %{y:.3f}<extra></extra>'
-  };
-
-  const layout = {
-    ...PLOTLY_THEME,
-    title: { text: 'Evolución Temporal del Sentimiento Político', font: { size: 14, color: COLORS.text } },
-    xaxis: { ...PLOTLY_THEME.xaxis, title: 'Año' },
-    yaxis: { ...PLOTLY_THEME.yaxis, title: 'Sentimiento' },
-    showlegend: false
+    margin: { ...PLOTLY_THEME.margin, b: 60 }
   };
 
   Plotly.newPlot(el, [trace], layout, { responsive: true, displayModeBar: false });

@@ -1,9 +1,10 @@
 import './style.css';
+import { t } from './src/main.js';
 import { initChileanVideogames } from './src/charts/ChileanVideogamesChart.js';
 import { initManchesterUnited } from './src/charts/ManchesterUnitedChart.js';
-import { initUnitedPassing } from './src/charts/UnitedPassingChart.js';
 import { initGeopolitica } from './src/charts/GeopoliticaChart.js';
 import { initWorldCup } from './src/charts/WorldCupChart.js';
+import { initChileGeografia } from './src/charts/ChileGeografiaChart.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Sistema de Decisiones e Inteligencia de Datos Inicializado.");
@@ -41,10 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
           initManchesterUnited().catch(err => console.error('ManUtd chart init failed:', err));
           window.manutdInitialized = true;
         }
-        if (tabId === "passing-tab" && !window.passingInitialized) {
-          initUnitedPassing().catch(err => console.error('Passing chart init failed:', err));
-          window.passingInitialized = true;
-        }
         if (tabId === "geopolitica-tab" && !window.geopoliticaInitialized) {
           initGeopolitica().catch(err => console.error('Geopolitica chart init failed:', err));
           window.geopoliticaInitialized = true;
@@ -53,117 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
           initWorldCup().catch(err => console.error('WorldCup chart init failed:', err));
           window.worldcupInitialized = true;
         }
+        if (tabId === "chile-geo-tab" && !window.chileGeoInitialized) {
+          initChileGeografia().catch(err => console.error('ChileGeo chart init failed:', err));
+          window.chileGeoInitialized = true;
+        }
       }
     });
   });
-
-  // ==========================================
-  // TAB 1: MANCHESTER UNITED FINANCIAL AUDIT
-  // ==========================================
-  const coachSelect = document.getElementById("coach-select");
-  const netSpendSlider = document.getElementById("net-spend-slider");
-  const sliderVal = document.getElementById("slider-val");
-  
-  const mNetSpend = document.getElementById("m-net-spend");
-  const mPoints = document.getElementById("m-points");
-  const mSpendPerPoint = document.getElementById("m-spend-per-point");
-  const mTermination = document.getElementById("m-termination");
-  const mInsightText = document.getElementById("m-insight-text");
-
-  const coachData = {
-    mourinho: {
-      name: "José Mourinho",
-      basePoints: 64,
-      multiplier: 0.12,
-      termination: 19.6,
-      insights: [
-        "El cese reactivo de Mourinho representó una pérdida directa de £19.6M en finiquitos, equivalentes al 35% del presupuesto neto de transferencias del siguiente mercado.",
-        "Inversión de alta eficiencia táctica pero insostenible relacionalmente. Bajo esta configuración presupuestaria, cada punto obtenido exige una prima de inversión neta media de £2.8M.",
-        "Riesgo Operativo Crítico: La concentración de capital en perfiles maduros (alto costo de traspaso, cero valor de reventa) limita drásticamente la flexibilidad de caja de la institución a mediano plazo."
-      ]
-    },
-    solskjaer: {
-      name: "Ole Gunnar Solskjær",
-      basePoints: 58,
-      multiplier: 0.10,
-      termination: 7.5,
-      insights: [
-        "Gestión de transición operativa estable. La indemnización por despido de £7.5M representó la menor fricción financiera de la década.",
-        "Retorno deportivo decreciente por libra invertida. La incapacidad de capitalizar en momentos clave de Premier League demuestra un techo de rendimiento operativo ante bloques defensivos altos.",
-        "El análisis relacional demuestra que una inyección adicional de £100M en esta era no hubiese alterado el promedio de puntos, evidenciando un problema de arquitectura táctica, no de falta de recursos."
-      ]
-    },
-    tenhag: {
-      name: "Erik ten Hag",
-      basePoints: 52,
-      multiplier: 0.08,
-      termination: 17.2,
-      insights: [
-        "Auditoría de Ineficiencia Extrema: Ten Hag registra el menor ROI de la era moderna, con un gasto neto por punto que escala por sobre los £4.2M en escenarios de alto presupuesto.",
-        "El desajuste presupuestario por adquisición de talento de la Eredivisie generó una depreciación de activos del 42% en libros en solo 24 meses.",
-        "El costo del despido acumulado (£17.2M) limita la capacidad de reestructurar la plantilla en el mercado inmediato de verano, forzando la retención de contratos de alto costo operativo."
-      ]
-    },
-    amorim: {
-      name: "Rúben Amorim",
-      basePoints: 68,
-      multiplier: 0.15,
-      termination: 0.0,
-      insights: [
-        "Proyección de Alta Eficiencia: Se proyecta una optimización del ROI del 25% mediante la transición a un esquema de tres centrales que optimiza las piezas heredadas de bajo rendimiento.",
-        "La inyección de capital en perfiles jóvenes y con alto índice de progresión vertical garantiza una plusvalía contable en libros e incrementa la flexibilidad del Fair Play Financiero.",
-        "Recomendación Directiva: Mantener la estabilidad técnica por un mínimo de 36 meses. El modelado demuestra que blindar la estructura ante variaciones iniciales de resultados neutraliza la trampa de rescisiones."
-      ]
-    }
-  };
-
-  function updateManchesterAudit() {
-    const coachKey = coachSelect.value;
-    const spendValue = parseFloat(netSpendSlider.value);
-    const data = coachData[coachKey];
-
-    // Update Slider text
-    sliderVal.textContent = `${spendValue} M£`;
-
-    // Dynamic Calculations
-    mNetSpend.textContent = `${spendValue.toFixed(1)} M£`;
-    
-    // Proyected Points based on spend and coach efficiency
-    let projectedPoints = Math.round(data.basePoints + (spendValue - 100) * data.multiplier);
-    // Cap points logically between 38 (relegation limit) and 98 (league champion standard)
-    projectedPoints = Math.min(98, Math.max(38, projectedPoints));
-    mPoints.textContent = `${projectedPoints} pts`;
-
-    // Spend per point (ROI)
-    const spendPerPointVal = spendValue / projectedPoints;
-    mSpendPerPoint.textContent = `${spendPerPointVal.toFixed(2)} M£/pt`;
-
-    // Termination cost
-    mTermination.textContent = `${data.termination.toFixed(1)} M£`;
-    if (data.termination > 15) {
-      mTermination.className = "metric-value text-glow-red";
-    } else if (data.termination === 0) {
-      mTermination.className = "metric-value text-glow-green";
-    } else {
-      mTermination.className = "metric-value";
-    }
-
-    // Select dynamic insight index based on spend levels
-    let insightIndex = 0;
-    if (spendValue > 300) {
-      insightIndex = 2;
-    } else if (spendValue < 150) {
-      insightIndex = 1;
-    }
-    mInsightText.textContent = data.insights[insightIndex];
-  }
-
-  if (coachSelect && netSpendSlider) {
-    coachSelect.addEventListener("change", updateManchesterAudit);
-    netSpendSlider.addEventListener("input", updateManchesterAudit);
-    // Initial run
-    updateManchesterAudit();
-  }
 
   // ==========================================
   // TAB 2: GAMER VIABILITY SIMULATOR
@@ -191,13 +84,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const marketing = marketingFocus.value;
 
     simulateGameBtn.disabled = true;
-    simulateGameBtn.textContent = "Calculando con Random Forest...";
+    simulateGameBtn.textContent = t('sim_calculating');
 
     // Reset gauge visually during calculation
     gSuccessBar.style.width = "0%";
     gSuccessPercent.textContent = "0%";
     gRevenue.textContent = "Procesando...";
-    gInsightText.textContent = "Evaluando vectores descriptivos de mercado y cruzando base histórica de benchmarks...";
+    gInsightText.textContent = t('sim_insight_initial');
 
     setTimeout(() => {
       let baseSuccess = 50;
@@ -263,16 +156,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // Strategic recommendation synthesis
       let strategicText = "";
       if (successChance > 70) {
-        strategicText = `PROYECTO ALTAMENTE VIABLE. El revenue proyectado de $${projectedRevenue.toLocaleString()} USD excede holgadamente la estructura local chilena de costos de desarrollo ($720 USD/mes teóricos). La estrategia de Early Access combinada con actualizaciones recurrentes asegura tracción comercial. Decisión Recomendada: Comprometer capital inicial y avanzar a fase de desarrollo intensiva.`;
+        strategicText = t('sim_text_high').replace('{revenue}', `$${projectedRevenue.toLocaleString()} USD`);
       } else if (successChance >= 45) {
-        strategicText = `VIABILIDAD COMERCIAL MODERADA. El proyecto presenta oportunidades de retorno de capital, pero está expuesto a un alto riesgo operativo por saturación de nicho. Se recomienda optimizar el presupuesto inicial a un sweet-spot de ~$60,000 USD y explorar un acuerdo de pre-financiamiento con un Publisher para transferir el riesgo de marketing digital.`;
+        strategicText = t('sim_text_mid');
       } else {
-        strategicText = `VULNERABILIDAD FINANCIERA CRÍTICA. El modelado predictivo clasifica este proyecto bajo zona de alta tasa de mortalidad comercial. La combinación de género de software con la estrategia de lanzamiento no genera el volumen mínimo de reviews orgánicas exigido por algoritmos de distribución (Steam). Decisión Recomendada: Pivotar el concepto o re-estructurar costos antes de iniciar la inversión.`;
+        strategicText = t('sim_text_low');
       }
       gInsightText.textContent = strategicText;
 
       simulateGameBtn.disabled = false;
-      simulateGameBtn.textContent = "Calcular Viabilidad Comercial";
+      simulateGameBtn.textContent = t('sim_button');
     }, 1200);
   }
 
@@ -477,9 +370,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Update Strategic CNA Narrative
       if (pressActive) {
-        cnaInsightText.textContent = "ALERTA TÁCTICA: El oponente despliega una presión alta orientada a estrangular el eje Casemiro (DMF). Su betweenness centrality colapsa a 0.05 (Bloqueado), lo que desactiva la progresión del mediocentro. El juego se embotella y Bruno Fernandes (AMF) se ve obligado a descender de su zona de influencia para recibir bajo estrés (Betweenness sube a 0.72), incrementando el riesgo de pérdidas en transiciones críticas.";
+        cnaInsightText.textContent = t('cna_text_high');
       } else {
-        cnaInsightText.textContent = "ESTRUCTURA RELACIONAL SALUDABLE: En escenario de bloque bajo rival, la distribución de cargas de pase es balanceada. Casemiro opera con libertad como pivote articulador principal (Betweenness de 0.42), facilitando transiciones fluidas hacia Bruno Fernandes, quien puede retener y asistir en zonas limpias de finalización con un índice óptimo de ROI de peligro esperado.";
+        cnaInsightText.textContent = t('cna_text_low');
       }
     }
 

@@ -1,37 +1,72 @@
 {
+  "total_presidents": 41,
+  "total_events": 24,
+  "total_census_records": 42,
+  "census_years": [
+    1992,
+    2002,
+    2017
+  ],
   "birthplace_counts": {
+    "Buenos Aires": 1,
     "Santiago": 23,
-    "Concepción": 3,
-    "Longaví": 2,
-    "Temuco": 2,
-    "Valparaíso": 2,
-    "La Serena": 2,
+    "Concepción": 2,
     "Petorca": 1,
     "Casablanca": 1,
     "Rancagua": 1,
+    "Longaví": 2,
+    "Temuco": 2,
+    "Valparaíso": 2,
     "Nacimiento": 1,
+    "La Serena": 2,
     "Punitaqui": 1,
     "Viña del Mar": 1,
     "Punta Arenas": 1
   },
   "region_population": {
-    "Arica y Parinacota": 226,
-    "Tarapacá": 382,
-    "Antofagasta": 607,
-    "Atacama": 301,
-    "Coquimbo": 757,
-    "Valparaíso": 1855,
-    "Metropolitana": 7113,
-    "O'Higgins": 915,
-    "Maule": 1045,
-    "Ñuble": 511,
-    "Biobío": 1555,
-    "La Araucanía": 957,
-    "Los Ríos": 406,
-    "Los Lagos": 823,
-    "Aysén": 107,
-    "Magallanes": 178
+    "Arica y Parinacota": 226068,
+    "Tarapacá": 330558,
+    "Antofagasta": 607534,
+    "Atacama": 286168,
+    "Coquimbo": 757586,
+    "Valparaíso": 1815902,
+    "Metropolitana": 7112808,
+    "O'Higgins": 914555,
+    "Maule": 1044950,
+    "Ñuble": 480609,
+    "Biobío": 1556805,
+    "La Araucanía": 957224,
+    "Los Ríos": 384837,
+    "Los Lagos": 828708,
+    "Aysén": 103158,
+    "Magallanes": 166533
   },
+  "census_national": [
+    {
+      "year": 1907,
+      "population": 3231022
+    },
+    {
+      "year": 1940,
+      "population": 5023539
+    },
+    {
+      "year": 1970,
+      "population": 8884768
+    },
+    {
+      "year": 1992,
+      "population": 13348401
+    },
+    {
+      "year": 2002,
+      "population": 15116435
+    },
+    {
+      "year": 2017,
+      "population": 17574003
+    }
+  ],
   "events": [
     {
       "year": 1810,
@@ -59,8 +94,8 @@
       "type": "político"
     },
     {
-      "year": 1866,
-      "event": "Batalla de Iquique",
+      "year": 1879,
+      "event": "Combate Naval de Iquique",
       "type": "militar"
     },
     {
@@ -119,7 +154,7 @@
       "type": "político"
     },
     {
-      "year": 1985,
+      "year": 1986,
       "event": "Atentado contra Pinochet",
       "type": "político"
     },
@@ -153,8 +188,5 @@
       "event": "Proceso Constituyente",
       "type": "político"
     }
-  ],
-  "total_presidents": 41,
-  "total_census_records": 113,
-  "total_events": 24
+  ]
 }

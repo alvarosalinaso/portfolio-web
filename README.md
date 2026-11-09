@@ -4,6 +4,10 @@
 
 Portfolio web personal desarrollado con **Vite + JavaScript**. Diseñado como landing page profesional para mostrar proyectos y habilidades como Data Analyst.
 
+## Captura
+
+![Portfolio web - vista principal](docs/screenshot.png)
+
 ## 🚀 Desarrollo
 
 ```bash

@@ -33,7 +33,7 @@ let currentFilters = {
 export async function initManchesterUnited() {
   manutdData = await loadJSON('./data/manutd.json');
   currentFilters.seasons = manutdData.seasons.map(s => s.season);
-  currentFilters.managers = [...new Set(manutdData.seasons.map(s => s.manager_clean))];
+  currentFilters.managers = [...new Set(manutdData.seasons.map(s => s.manager))];
   
   renderFilters();
   renderKPIs();
@@ -44,7 +44,7 @@ export async function initManchesterUnited() {
 function getFilteredData() {
   return manutdData.seasons.filter(s => 
     currentFilters.seasons.includes(s.season) &&
-    currentFilters.managers.includes(s.manager_clean)
+    currentFilters.managers.includes(s.manager)
   );
 }
 
@@ -124,21 +124,20 @@ function updateFilterDisplay() {
 function renderKPIs() {
   const df = getFilteredData();
   const container = document.getElementById('manutd-kpis');
+  const facts = manutdData.facts || {};
+  
+  const totalGap = df.reduce((sum, s) => sum + s.gap, 0);
+  const avgGap = df.length ? (totalGap / df.length).toFixed(1) : '—';
+  const avgPpg = df.length ? (df.reduce((sum, s) => sum + s.ppg, 0) / df.length).toFixed(2) : '—';
+  const avgPos = df.length ? (df.reduce((sum, s) => sum + s.position, 0) / df.length).toFixed(1) : '—';
+  
   if (!container) return;
-  
-  const totalGap = df.reduce((sum, s) => sum + (s.champ_pts - s.points), 0);
-  const avgGap = df.length ? (totalGap / df.length).toFixed(0) : 0;
-  const avgPpg = df.length ? (df.reduce((sum, s) => sum + s.ppg, 0) / df.length).toFixed(2) : 0;
-  const bestPpg = manutdData.manager_summary.reduce((max, m) => Math.max(max, m.ppg), 0).toFixed(2);
-  const totalComp = manutdData.totals.total_comp_fee;
-  const avgPos = df.length ? (df.reduce((sum, s) => sum + s.position, 0) / df.length).toFixed(1) : 0;
-  
   container.innerHTML = `
     <div class="kpi-card"><div class="kpi-value">${df.length}</div><div class="kpi-label">Temporadas analizadas</div></div>
-    <div class="kpi-card"><div class="kpi-value">${totalGap}</div><div class="kpi-label">Puntos perdidos vs campeón</div><div class="kpi-delta down">${avgGap} pts/temporada</div></div>
-    <div class="kpi-card"><div class="kpi-value">${avgPpg}</div><div class="kpi-label">PPG promedio</div><div class="kpi-delta">${avgPpg >= bestPpg ? 'up' : 'down'}vs ${bestPpg} (Mourinho)</div></div>
-    <div class="kpi-card"><div class="kpi-value">£${totalComp}M</div><div class="kpi-label">Coste indemnizaciones</div><div class="kpi-delta off">10 años</div></div>
-    <div class="kpi-card"><div class="kpi-value">1</div><div class="kpi-label">Títulos Premier</div><div class="kpi-delta down">-9 vs Top6 líderes</div></div>
+    <div class="kpi-card"><div class="kpi-value">${avgGap} pts</div><div class="kpi-label">Brecha media vs campeón</div><div class="kpi-delta down">${facts.period || '2014-2024'}</div></div>
+    <div class="kpi-card"><div class="kpi-value">${avgPpg}</div><div class="kpi-label">PPG promedio</div><div class="kpi-delta">mejor: ${facts.best_manager} (${facts.best_ppg})</div></div>
+    <div class="kpi-card"><div class="kpi-value">${facts.worst_ppg}</div><div class="kpi-label">Peor PPG</div><div class="kpi-delta down">${facts.worst_manager}</div></div>
+    <div class="kpi-card"><div class="kpi-value">${facts.pl_titles_in_period}</div><div class="kpi-label">Títulos Premier</div><div class="kpi-delta down">${facts.period || '2014-2024'}</div></div>
     <div class="kpi-card"><div class="kpi-value">${avgPos}°</div><div class="kpi-label">Posición promedio PL</div></div>
   `;
 }
@@ -158,7 +157,7 @@ function renderTab1() {
     x: seasons, y: df.map(s => s.points), type: 'bar', name: 'Man Utd',
     marker: { color: df.map(s => s.points), colorscale: [[0, COLORS.bad], [0.5, COLORS.warn], [1, COLORS.manutd]], showscale: false },
     text: df.map(s => s.points), textposition: 'outside', textfont: { size: 11, color: COLORS.text },
-    customdata: df.map(s => [s.manager_clean, s.season]),
+    customdata: df.map(s => [s.manager, s.season]),
     hovertemplate: '<b>%{customdata[1]}</b><br>Puntos: %{y}<br>DT: %{customdata[0]}<extra></extra>'
   }];
   
@@ -204,7 +203,7 @@ function renderTab1() {
   }));
   
   const annotations = firedSeasons.map(s => ({
-    x: seasonPositions[s], y: 1, yref: 'paper', text: '⚠ Despido',
+    x: seasonPositions[s], y: 1, yref: 'paper', text: '⚠ Cambio de DT',
     showarrow: false, font: { color: COLORS.warn, size: 10 }, yshift: -10
   }));
   
@@ -260,52 +259,54 @@ function renderPositionChart(df) {
 }
 
 function renderTab2() {
-  const mgrDf = manutdData.manager_summary.sort((a,b) => a.ppg - b.ppg);
+  const df = [...getFilteredData()].sort((a, b) => +a.season - +b.season);
   
-  const barColors = mgrDf.map(m => m.ppg >= 1.8 ? COLORS.manutd : (m.ppg >= 1.6 ? COLORS.warn : COLORS.bad));
-  
-  const figMgr = {
-    data: [{
-      y: mgrDf.map(m => m.manager_clean), x: mgrDf.map(m => m.ppg), orientation: 'h', type: 'bar',
-      marker: { color: barColors, opacity: 0.85 }, text: mgrDf.map(m => m.ppg.toFixed(3)), textposition: 'outside', textfont: { size: 12 }
-    }],
-    layout: { ...PLOTLY_THEME, title: 'Puntos por partido (PPG) — Comparativa de gestiones', height: 360, shapes: [{ type: 'line', x0: 2.0, x1: 2.0, y0: -0.5, y1: mgrDf.length - 0.5, line: { dash: 'dot', color: COLORS.champ } }], annotations: [{ x: 2.0, y: mgrDf.length - 0.5, text: 'Elite (>2.0 ppg)', showarrow: false, font: { color: COLORS.champ, size: 10 }, xshift: 40 }] }
+  const figPpg = {
+    data: [
+      { x: df.map(s => s.season), y: df.map(s => s.ppg), name: 'United PPG', type: 'bar',
+        marker: { color: COLORS.manutd, opacity: 0.85 },
+        text: df.map(s => s.ppg.toFixed(2)), textposition: 'outside', textfont: { size: 11 },
+        hovertemplate: '<b>%{x}</b><br>United PPG: %{y:.2f}<extra></extra>' },
+      { x: df.map(s => s.season), y: df.map(s => s.pl_avg_ppg), name: 'Media PL (sin United)', type: 'scatter', mode: 'lines+markers',
+        line: { color: COLORS.champ, width: 2, dash: 'dash' }, marker: { size: 6 },
+        hovertemplate: '<b>%{x}</b><br>Media PL: %{y:.2f}<extra></extra>' }
+    ],
+    layout: {
+      ...PLOTLY_THEME,
+      title: 'PPG por temporada — United vs media de la Premier League',
+      height: 360,
+      barmode: 'group',
+      legend: { orientation: 'h', y: -0.2, x: 0 },
+      shapes: [{ type: 'line', x0: -0.5, x1: df.length - 0.5, y0: 2.0, y1: 2.0, line: { dash: 'dot', color: COLORS.champ } }],
+      annotations: [{ x: df.length - 1, y: 2.0, text: 'Élite (>2.0 ppg)', showarrow: false, font: { color: COLORS.champ, size: 10 }, yshift: 8 }]
+    }
   };
-  Plotly.newPlot('manutd-mgr-bar', figMgr.data, figMgr.layout, { responsive: true, displayModeBar: false });
+  Plotly.newPlot('manutd-mgr-bar', figPpg.data, figPpg.layout, { responsive: true, displayModeBar: false });
   
-  // Scatter PPG vs GF
-  const figScat = {
-    data: [{
-      x: mgrDf.map(m => m.ppg), y: mgrDf.map(m => m.avg_gf), mode: 'markers+text', type: 'scatter',
-      text: mgrDf.map(m => m.manager_clean), textposition: 'top center', textfont: { size: 10 },
-      marker: { size: mgrDf.map(m => m.seasons * 15), color: mgrDf.map((_,i) => i), colorscale: 'Plotly', showscale: false, line: { color: '#0d1117', width: 1 } },
-      hovertemplate: '<b>%{text}</b><br>PPG: %{x}<br>GF/temp: %{y}<extra></extra>'
-    }],
-    layout: { ...PLOTLY_THEME, title: 'PPG vs Goles a favor (tamaño = temporadas)', height: 360, showlegend: false }
-  };
-  Plotly.newPlot('manutd-mgr-scatter', figScat.data, figScat.layout, { responsive: true, displayModeBar: false });
-  
-  // Table
+  // Season table (DT + KPIs por temporada, fuente: tablas PL + análisis del repo)
   const tableContainer = document.getElementById('manutd-mgr-table');
   if (tableContainer) {
     tableContainer.innerHTML = `
       <table class="data-table">
-        <thead><tr><th>Entrenador</th><th>Temporadas</th><th>Pts totales</th><th>PPG</th><th>Pos. media</th><th>GF/temp.</th><th>GA/temp.</th><th>Indemniz. (£M)</th></tr></thead>
+        <thead><tr><th>Temporada</th><th>Entrenador</th><th>Pts</th><th>Pos.</th><th>GF</th><th>GA</th><th>PPG</th><th>Δ vs media PL</th></tr></thead>
         <tbody>
-          ${manutdData.manager_summary.sort((a,b)=>b.ppg-a.ppg).map(m => `
+          ${df.map(s => {
+            const delta = (s.ppg - s.pl_avg_ppg).toFixed(2);
+            return `
             <tr>
-              <td>${m.manager_clean}</td>
-              <td>${m.seasons}</td>
-              <td>${m.pts_total}</td>
-              <td style="background: ${m.ppg >= 1.8 ? 'rgba(63,185,80,0.2)' : m.ppg >= 1.6 ? 'rgba(227,179,65,0.2)' : 'rgba(247,129,102,0.2)'}"><strong>${m.ppg.toFixed(3)}</strong></td>
-              <td>${m.avg_pos.toFixed(1)}</td>
-              <td>${m.avg_gf.toFixed(1)}</td>
-              <td>${m.avg_ga.toFixed(1)}</td>
-              <td style="background: ${m.total_comp > 0 ? 'rgba(247,129,102,0.2)' : 'transparent'}">${m.total_comp.toFixed(1)}</td>
-            </tr>
-          `).join('')}
+              <td>${s.season}</td>
+              <td>${s.manager}${s.manager_fired ? ' <span style="color:#e3b341">(cambio de DT)</span>' : ''}</td>
+              <td>${s.points}</td>
+              <td>${s.position}°</td>
+              <td>${s.gf}</td>
+              <td>${s.ga}</td>
+              <td><strong>${s.ppg.toFixed(2)}</strong></td>
+              <td style="color:${delta >= 0 ? '#3fb950' : '#f78166'}">${delta >= 0 ? '+' : ''}${delta}</td>
+            </tr>`;
+          }).join('')}
         </tbody>
       </table>
+      <p style="color:#8b949e;font-size:0.8rem;margin-top:0.5rem">Fuente: tablas finales de la Premier League y benchmark PPG del repo manchester-united-analisis (FBref-style export).</p>
     `;
   }
 }
@@ -437,9 +438,10 @@ function updateSimulator() {
   }
   
   // Gauge
+  const refPpg = manutdData.facts?.avg_ppg ?? 1.79;
   const figGauge = {
-    data: [{ type: 'indicator', mode: 'gauge+number+delta', value: ppg, delta: { reference: 1.64, valueformat: '.2f' },
-      title: { text: 'PPG vs Media Histórica ManUtd (1.64)', font: { size: 14 } },
+    data: [{ type: 'indicator', mode: 'gauge+number+delta', value: ppg, delta: { reference: refPpg, valueformat: '.2f' },
+      title: { text: `PPG vs media del período ${manutdData.facts?.period || '2014-2024'} (${refPpg})`, font: { size: 14 } },
       gauge: {
         axis: { range: [1.0, 2.3], tickcolor: '#8b949e' },
         bar: { color: COLORS.manutd },
